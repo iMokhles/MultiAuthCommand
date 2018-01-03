@@ -3,9 +3,8 @@
 namespace iMokhles\MultiAuthCommand\Command;
 
 use Illuminate\Database\Console\Migrations\BaseCommand;
-use Illuminate\Support\Composer;
 use Illuminate\Database\Migrations\MigrationCreator;
-
+use Illuminate\Support\Composer;
 
 class MultiAuthPrepare extends BaseCommand
 {
@@ -54,7 +53,7 @@ class MultiAuthPrepare extends BaseCommand
     /**
      * Execute the console command.
      *
-     * @return mixed
+     * @return boolean
      */
     public function handle()
     {
@@ -74,11 +73,10 @@ class MultiAuthPrepare extends BaseCommand
     /**
      * Install Migration.
      *
-     * @return mixed
+     * @return boolean
      */
     public function installMigration()
     {
-//        $nameSmall = snake_case($this->getParsedNameInput());
         $nameSmallPlural = str_plural(snake_case($this->getParsedNameInput()));
         $name = ucfirst($this->getParsedNameInput());
         $namePlural = str_plural($name);
@@ -113,6 +111,7 @@ class MultiAuthPrepare extends BaseCommand
         $migrationResetModelPath = $this->getMigrationPath().DIRECTORY_SEPARATOR.$migrationResetName;
         file_put_contents($migrationResetModelPath, $modelResetPasswordTableContentNew);
 
+        return true;
 
     }
 
@@ -120,14 +119,12 @@ class MultiAuthPrepare extends BaseCommand
     /**
      * Install Model.
      *
-     * @return mixed
+     * @return boolean
      */
     public function installModel()
     {
         $nameSmall = snake_case($this->getParsedNameInput());
-//        $nameSmallPlural = str_plural(snake_case($this->getParsedNameInput()));
         $name = ucfirst($this->getParsedNameInput());
-//        $namePlural = str_plural($name);
 
 
         $modelContent = file_get_contents(__DIR__ . '/Model/model.stub');
@@ -157,19 +154,18 @@ class MultiAuthPrepare extends BaseCommand
         $resetNotificationPath = $createFolder.DIRECTORY_SEPARATOR.$name."ResetPasswordNotification.php";
         file_put_contents($resetNotificationPath, $resetNotificationContentNew);
 
+        return true;
+
     }
 
     /**
      * Install View.
      *
-     * @return mixed
+     * @return boolean
      */
     public function installView()
     {
         $nameSmall = snake_case($this->getParsedNameInput());
-//        $nameSmallPlural = str_plural(snake_case($this->getParsedNameInput()));
-        $name = ucfirst($this->getParsedNameInput());
-//        $namePlural = str_plural($name);
 
 
         $appBlade = file_get_contents(__DIR__ . '/Views/layouts/app.blade.stub');
@@ -250,12 +246,14 @@ class MultiAuthPrepare extends BaseCommand
         file_put_contents($createFolderAuthPasswords.'/email.blade.php', $emailBladeNew);
         file_put_contents($createFolderAuthPasswords.'/reset.blade.php', $resetBladeNew);
 
+        return true;
+
     }
 
     /**
      * Install RouteMaps.
      *
-     * @return mixed
+     * @return boolean
      */
 
     public function installRouteMaps()
@@ -280,12 +278,14 @@ class MultiAuthPrepare extends BaseCommand
         $this->insert($this->getRouteServicesPath(), '        //
     }', $mapFunctionNew, true);
 
+        return true;
+
     }
 
     /**
      * Install RouteFile.
      *
-     * @return mixed
+     * @return boolean
      */
 
     public function installRouteFiles()
@@ -308,12 +308,15 @@ class MultiAuthPrepare extends BaseCommand
         ], $routeFileContent);
         $routeFile = $createFolder.DIRECTORY_SEPARATOR.$nameSmall.".php";
         file_put_contents($routeFile, $routeFileContentNew);
+
+        return true;
+
     }
 
     /**
      * Install Controller.
      *
-     * @return mixed
+     * @return boolean
      */
 
     public function installControllers()
@@ -400,12 +403,15 @@ class MultiAuthPrepare extends BaseCommand
         file_put_contents($forgotFile, $forgotFileContentNew);
         file_put_contents($registerFile, $registerFileContentNew);
         file_put_contents($resetFile, $resetFileContentNew);
+
+        return true;
+
     }
 
     /**
      * Install Configs.
      *
-     * @return mixed
+     * @return boolean
      */
 
     public function installConfigs()
@@ -443,19 +449,20 @@ class MultiAuthPrepare extends BaseCommand
         $this->insert($authConfigFile, '    \'passwords\' => [', $passwordFileContentNew, true);
 
         $this->insert($authConfigFile, '    \'providers\' => [', $providerFileContentNew, true);
+
+        return true;
+
     }
 
     /**
      * Install Middleware.
      *
-     * @return mixed
+     * @return boolean
      */
 
     public function installMiddleware()
     {
         $nameSmall = snake_case($this->getParsedNameInput());
-//        $nameSmallPlural = str_plural(snake_case($this->getParsedNameInput()));
-//        $name = ucfirst($this->getParsedNameInput());
 
         $redirectIfMiddlewareFile = $this->getMiddlewarePath().DIRECTORY_SEPARATOR."RedirectIfAuthenticated.php";
         $middlewareKernelFile = $this->getHttpPath().DIRECTORY_SEPARATOR."Kernel.php";
@@ -481,6 +488,8 @@ class MultiAuthPrepare extends BaseCommand
         $this->insert($middlewareKernelFile, '    protected $middlewareGroups = [', $redirectIfMiddlewareGroupContentNew2, true);
 
         $this->insert($redirectIfMiddlewareFile, '        switch ($guard) {', $redirectIfMiddlewareGuardContentNew2, true);
+
+        return true;
 
     }
 
@@ -609,12 +618,32 @@ class MultiAuthPrepare extends BaseCommand
         return $this->getAppFolderPath().DIRECTORY_SEPARATOR.'Http'.DIRECTORY_SEPARATOR.'Middleware';
     }
 
-    public function insert_into_file($filePath, $insert_marker, $text, $after = true) {
+    /**
+     * insert text into file
+     *
+     * @param string $filePath
+     * @param string $insertMarker
+     * @param string $text
+     * @param boolean $after
+     *
+     * @return mixed
+     */
+    public function insertIntoFile($filePath, $insertMarker, $text, $after = true) {
         $contents = file_get_contents($filePath);
-        $new_contents = preg_replace($insert_marker,($after) ? '$0' . $text : $text . '$0', $contents);
+        $new_contents = preg_replace($insertMarker,($after) ? '$0' . $text : $text . '$0', $contents);
         return file_put_contents($filePath, $new_contents);
     }
 
+    /**
+     * insert text into file
+     *
+     * @param string $filePath
+     * @param string $keyword
+     * @param string $body
+     * @param boolean $after
+     *
+     * @return mixed
+     */
     public function insert($filePath, $keyword, $body, $after = true) {
 
         $contents = file_get_contents($filePath);
