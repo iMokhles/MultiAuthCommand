@@ -260,12 +260,9 @@ class MultiAuthPrepare extends BaseCommand
     {
         $nameSmall = snake_case($this->getParsedNameInput());
         $name = ucfirst($this->getParsedNameInput());
-
         $mapCallFunction = file_get_contents(__DIR__ . '/Route/mapRoute.stub');
         $mapCallFunctionNew = str_replace('{{$name}}', "$name", $mapCallFunction);
         $this->insert($this->getRouteServicesPath(), '$this->mapWebRoutes();', $mapCallFunctionNew, true);
-
-
         $mapFunction = file_get_contents(__DIR__ . '/Route/mapRouteFunction.stub');
         $mapFunctionNew = str_replace([
             '{{$name}}',
@@ -274,12 +271,9 @@ class MultiAuthPrepare extends BaseCommand
             "$name",
             "$nameSmall"
         ], $mapFunction);
-
         $this->insert($this->getRouteServicesPath(), '        //
     }', $mapFunctionNew, true);
-
         return true;
-
     }
 
     /**
@@ -292,12 +286,10 @@ class MultiAuthPrepare extends BaseCommand
     {
         $nameSmall = snake_case($this->getParsedNameInput());
         $name = ucfirst($this->getParsedNameInput());
-
         $createFolder = $this->getRoutesFolderPath().DIRECTORY_SEPARATOR.$nameSmall;
         if (!file_exists($createFolder)) {
             mkdir($createFolder);
         }
-
         $routeFileContent = file_get_contents(__DIR__ . '/Route/routeFile.stub');
         $routeFileContentNew = str_replace([
             '{{$name}}',
@@ -308,9 +300,7 @@ class MultiAuthPrepare extends BaseCommand
         ], $routeFileContent);
         $routeFile = $createFolder.DIRECTORY_SEPARATOR.$nameSmall.".php";
         file_put_contents($routeFile, $routeFileContentNew);
-
         return true;
-
     }
 
     /**
@@ -626,7 +616,7 @@ class MultiAuthPrepare extends BaseCommand
      * @param string $text
      * @param boolean $after
      *
-     * @return mixed
+     * @return integer
      */
     public function insertIntoFile($filePath, $insertMarker, $text, $after = true) {
         $contents = file_get_contents($filePath);
@@ -642,7 +632,7 @@ class MultiAuthPrepare extends BaseCommand
      * @param string $body
      * @param boolean $after
      *
-     * @return mixed
+     * @return integer
      */
     public function insert($filePath, $keyword, $body, $after = true) {
 
