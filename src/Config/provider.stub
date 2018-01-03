@@ -1,0 +1,4 @@
+        '{{$nameSmallPlural}}' => [
+            'driver' => 'eloquent',
+            'model' => App\{{$name}}::class,
+        ],

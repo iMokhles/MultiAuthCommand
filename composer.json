@@ -1,0 +1,37 @@
+{
+    "name": "imokhles/multi-auth-command",
+    "description": "create laravel multi-auth setup files, middleware, models, migrations etc",
+    "keywords": [
+        "laravel",
+        "laravel multiauth",
+        "laravel multi-auth",
+        "laravel multiple authentication",
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "illuminate/support": "~5.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "iMokhles",
+            "email": "mokhleshussien@aol.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "iMokhles\\MultiAuthCommand\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "iMokhles\\MultiAuthCommand\\MultiAuthCommandServiceProvider"
+            ]
+        }
+    }
+}

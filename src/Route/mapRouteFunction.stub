@@ -1,0 +1,15 @@
+
+    /**
+     * Define the "{{$nameSmall}}" routes for the application.
+     *
+     * These routes all receive session state, CSRF protection, etc.
+     *
+     * @return void
+     */
+    protected function map{{$name}}Routes()
+    {
+        Route::prefix('{{$nameSmall}}')
+            ->middleware('{{$nameSmall}}')
+            ->namespace($this->namespace.'\\{{$name}}')
+            ->group(base_path('routes/{{$nameSmall}}/{{$nameSmall}}.php'));
+    }

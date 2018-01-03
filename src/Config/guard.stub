@@ -1,0 +1,4 @@
+        '{{$nameSmall}}' => [
+            'driver' => 'session',
+            'provider' => '{{$nameSmallPlural}}',
+        ],

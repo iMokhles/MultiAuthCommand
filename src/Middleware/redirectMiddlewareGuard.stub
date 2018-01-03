@@ -1,0 +1,5 @@
+            case '{{$nameSmall}}':
+                if (Auth::guard($guard)->check()) {
+                    return redirect(route('{{$nameSmall}}.home'));
+                }
+            break;
