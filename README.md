@@ -50,4 +50,4 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [link-packagist]: https://packagist.org/packages/imokhles/multi-auth-command
 [link-downloads]: https://packagist.org/packages/imokhles/multi-auth-command
 [link-author]: https://github.com/imokhles
-[link-code-quality]: https://scrutinizer-ci.com/g/zalazdi/laravel-imap
+[link-code-quality]: https://scrutinizer-ci.com/g/iMokhles/MultiAuthCommand
