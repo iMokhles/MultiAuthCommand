@@ -1,6 +1,8 @@
 # MultiAuthCommand
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/iMokhles/MultiAuthCommand/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/iMokhles/MultiAuthCommand/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/iMokhles/MultiAuthCommand/badges/build.png?b=master)](https://scrutinizer-ci.com/g/iMokhles/MultiAuthCommand/build-status/master)
 [![Total Downloads][ico-downloads]][link-downloads]
 [![Software License][ico-license]](LICENSE.md)
 

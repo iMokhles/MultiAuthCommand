@@ -2,10 +2,8 @@
 
 namespace iMokhles\MultiAuthCommand\Command;
 
-use Illuminate\Console\Command;
 use Illuminate\Database\Console\Migrations\BaseCommand;
 use Illuminate\Support\Composer;
-use Symfony\Component\Console\Input\InputOption;
 use Illuminate\Database\Migrations\MigrationCreator;
 
 
@@ -44,7 +42,7 @@ class MultiAuthPrepare extends BaseCommand
      *
      * @param  \Illuminate\Database\Migrations\MigrationCreator  $creator
      * @param  \Illuminate\Support\Composer  $composer
-     * @return void
+     * @return mixed
      */
     public function __construct(MigrationCreator $creator, Composer $composer)
     {
@@ -76,11 +74,11 @@ class MultiAuthPrepare extends BaseCommand
     /**
      * Install Migration.
      *
-     * @return bool
+     * @return mixed
      */
     public function installMigration()
     {
-        $nameSmall = snake_case($this->getParsedNameInput());
+//        $nameSmall = snake_case($this->getParsedNameInput());
         $nameSmallPlural = str_plural(snake_case($this->getParsedNameInput()));
         $name = ucfirst($this->getParsedNameInput());
         $namePlural = str_plural($name);
@@ -122,14 +120,14 @@ class MultiAuthPrepare extends BaseCommand
     /**
      * Install Model.
      *
-     * @return bool
+     * @return mixed
      */
     public function installModel()
     {
         $nameSmall = snake_case($this->getParsedNameInput());
-        $nameSmallPlural = str_plural(snake_case($this->getParsedNameInput()));
+//        $nameSmallPlural = str_plural(snake_case($this->getParsedNameInput()));
         $name = ucfirst($this->getParsedNameInput());
-        $namePlural = str_plural($name);
+//        $namePlural = str_plural($name);
 
 
         $modelContent = file_get_contents(__DIR__ . '/Model/model.stub');
@@ -164,14 +162,14 @@ class MultiAuthPrepare extends BaseCommand
     /**
      * Install View.
      *
-     * @return bool
+     * @return mixed
      */
     public function installView()
     {
         $nameSmall = snake_case($this->getParsedNameInput());
-        $nameSmallPlural = str_plural(snake_case($this->getParsedNameInput()));
+//        $nameSmallPlural = str_plural(snake_case($this->getParsedNameInput()));
         $name = ucfirst($this->getParsedNameInput());
-        $namePlural = str_plural($name);
+//        $namePlural = str_plural($name);
 
 
         $appBlade = file_get_contents(__DIR__ . '/Views/layouts/app.blade.stub');
@@ -257,7 +255,7 @@ class MultiAuthPrepare extends BaseCommand
     /**
      * Install RouteMaps.
      *
-     * @return bool
+     * @return mixed
      */
 
     public function installRouteMaps()
@@ -287,7 +285,7 @@ class MultiAuthPrepare extends BaseCommand
     /**
      * Install RouteFile.
      *
-     * @return bool
+     * @return mixed
      */
 
     public function installRouteFiles()
@@ -315,7 +313,7 @@ class MultiAuthPrepare extends BaseCommand
     /**
      * Install Controller.
      *
-     * @return bool
+     * @return mixed
      */
 
     public function installControllers()
@@ -407,7 +405,7 @@ class MultiAuthPrepare extends BaseCommand
     /**
      * Install Configs.
      *
-     * @return bool
+     * @return mixed
      */
 
     public function installConfigs()
@@ -450,14 +448,14 @@ class MultiAuthPrepare extends BaseCommand
     /**
      * Install Middleware.
      *
-     * @return bool
+     * @return mixed
      */
 
     public function installMiddleware()
     {
         $nameSmall = snake_case($this->getParsedNameInput());
-        $nameSmallPlural = str_plural(snake_case($this->getParsedNameInput()));
-        $name = ucfirst($this->getParsedNameInput());
+//        $nameSmallPlural = str_plural(snake_case($this->getParsedNameInput()));
+//        $name = ucfirst($this->getParsedNameInput());
 
         $redirectIfMiddlewareFile = $this->getMiddlewarePath().DIRECTORY_SEPARATOR."RedirectIfAuthenticated.php";
         $middlewareKernelFile = $this->getHttpPath().DIRECTORY_SEPARATOR."Kernel.php";
@@ -511,7 +509,7 @@ class MultiAuthPrepare extends BaseCommand
      * @param  string  $name
      * @param  string  $table
      * @param  bool    $create
-     * @return string
+     * @return mixed
      */
     protected function writeMigration($name, $table, $create)
     {
@@ -611,16 +609,16 @@ class MultiAuthPrepare extends BaseCommand
         return $this->getAppFolderPath().DIRECTORY_SEPARATOR.'Http'.DIRECTORY_SEPARATOR.'Middleware';
     }
 
-    function insert_into_file($file_path, $insert_marker, $text, $after = true) {
-        $contents = file_get_contents($file_path);
+    public function insert_into_file($filePath, $insert_marker, $text, $after = true) {
+        $contents = file_get_contents($filePath);
         $new_contents = preg_replace($insert_marker,($after) ? '$0' . $text : $text . '$0', $contents);
-        return file_put_contents($file_path, $new_contents);
+        return file_put_contents($filePath, $new_contents);
     }
 
-    function insert($file_path, $keyword, $body, $after = true) {
+    public function insert($filePath, $keyword, $body, $after = true) {
 
-        $contents = file_get_contents($file_path);
+        $contents = file_get_contents($filePath);
         $new_contents = substr_replace($contents, PHP_EOL . $body, ($after) ? strpos($contents, $keyword) + strlen($keyword) : strpos($contents, $keyword), 0);
-        return file_put_contents($file_path, $new_contents);
+        return file_put_contents($filePath, $new_contents);
     }
 }
