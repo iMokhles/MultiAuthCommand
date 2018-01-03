@@ -10,7 +10,7 @@ create laravel multi-auth setup files, middleware, models, migrations etc
 
 1. In your terminal via composer:
 
-``` bash
+```
 composer require imokhles/multi-auth-command
 ```
 
@@ -23,7 +23,7 @@ iMokhles\MultiAuthCommand\MultiAuthCommandServiceProvider::class
 Example usage: 
 
 
-``` bash
+```
 php artisan make:multi-auth Admin --force
 ```
 
