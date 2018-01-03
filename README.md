@@ -51,3 +51,5 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [link-downloads]: https://packagist.org/packages/imokhles/multi-auth-command
 [link-author]: https://github.com/imokhles
 [link-code-quality]: https://scrutinizer-ci.com/g/iMokhles/MultiAuthCommand
+
+[![Beerpay](https://beerpay.io/iMokhles/MultiAuthCommand/badge.svg?style=beer-square)](https://beerpay.io/iMokhles/MultiAuthCommand)  [![Beerpay](https://beerpay.io/iMokhles/MultiAuthCommand/make-wish.svg?style=flat-square)](https://beerpay.io/iMokhles/MultiAuthCommand?focus=wish)
