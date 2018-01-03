@@ -1,7 +1,7 @@
 # MultiAuthCommand
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/iMokhles/MultiAuthCommand/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/iMokhles/MultiAuthCommand/?branch=master)
+[![Scrutinizer Code Quality][ico-code-quality]][link-code-quality]
 [![Build Status](https://scrutinizer-ci.com/g/iMokhles/MultiAuthCommand/badges/build.png?b=master)](https://scrutinizer-ci.com/g/iMokhles/MultiAuthCommand/build-status/master)
 [![Total Downloads][ico-downloads]][link-downloads]
 [![Software License][ico-license]](LICENSE.md)
@@ -45,7 +45,9 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [ico-version]: https://img.shields.io/packagist/v/imokhles/multi-auth-command.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/imokhles/multi-auth-command.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/iMokhles/MultiAuthCommand.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/imokhles/multi-auth-command
 [link-downloads]: https://packagist.org/packages/imokhles/multi-auth-command
 [link-author]: https://github.com/imokhles
+[link-code-quality]: https://scrutinizer-ci.com/g/zalazdi/laravel-imap
