@@ -41,7 +41,6 @@ class MultiAuthPrepare extends BaseCommand
      *
      * @param  \Illuminate\Database\Migrations\MigrationCreator  $creator
      * @param  \Illuminate\Support\Composer  $composer
-     * @return mixed
      */
     public function __construct(MigrationCreator $creator, Composer $composer)
     {
@@ -107,7 +106,9 @@ class MultiAuthPrepare extends BaseCommand
         $migrationModelPath = $this->getMigrationPath().DIRECTORY_SEPARATOR.$migrationName;
         file_put_contents($migrationModelPath, $modelTableContentNew);
 
-        $migrationResetName = date('Y_m_d_His') . '_'.'create_' . str_plural(snake_case($name)) .'_password_resets_table.php';
+        $migrationResetName = date('Y_m_d_His') . '_'
+            .'create_' . str_plural(snake_case($name))
+            .'_password_resets_table.php';
         $migrationResetModelPath = $this->getMigrationPath().DIRECTORY_SEPARATOR.$migrationResetName;
         file_put_contents($migrationResetModelPath, $modelResetPasswordTableContentNew);
 
@@ -167,7 +168,6 @@ class MultiAuthPrepare extends BaseCommand
     {
         $nameSmall = snake_case($this->getParsedNameInput());
 
-
         $appBlade = file_get_contents(__DIR__ . '/Views/layouts/app.blade.stub');
         $welcomeBlade = file_get_contents(__DIR__ . '/Views/welcome.blade.stub');
         $homeBlade = file_get_contents(__DIR__ . '/Views/home.blade.stub');
@@ -181,17 +181,22 @@ class MultiAuthPrepare extends BaseCommand
             mkdir($createFolder);
         }
 
-        $createFolderLayouts = $this->getViewsFolderPath().DIRECTORY_SEPARATOR."$nameSmall".DIRECTORY_SEPARATOR."layouts";
+        $createFolderLayouts = $this->getViewsFolderPath().DIRECTORY_SEPARATOR
+            ."$nameSmall"
+            .DIRECTORY_SEPARATOR."layouts";
         if (!file_exists($createFolderLayouts)) {
             mkdir($createFolderLayouts);
         }
 
-        $createFolderAuth = $this->getViewsFolderPath().DIRECTORY_SEPARATOR."$nameSmall".DIRECTORY_SEPARATOR."auth";
+        $createFolderAuth = $this->getViewsFolderPath().DIRECTORY_SEPARATOR."$nameSmall"
+            .DIRECTORY_SEPARATOR."auth";
         if (!file_exists($createFolderAuth)) {
             mkdir($createFolderAuth);
         }
 
-        $createFolderAuthPasswords = $this->getViewsFolderPath().DIRECTORY_SEPARATOR."$nameSmall".DIRECTORY_SEPARATOR."auth".DIRECTORY_SEPARATOR."passwords";
+        $createFolderAuthPasswords = $this->getViewsFolderPath().DIRECTORY_SEPARATOR.
+            "$nameSmall".DIRECTORY_SEPARATOR
+            ."auth".DIRECTORY_SEPARATOR."passwords";
         if (!file_exists($createFolderAuthPasswords)) {
             mkdir($createFolderAuthPasswords);
         }
@@ -472,12 +477,16 @@ class MultiAuthPrepare extends BaseCommand
         $redirectIfMiddlewareGroupContentNew = file_get_contents(__DIR__ . '/Middleware/redirectMiddleware.stub');
         $redirectIfMiddlewareGuardContentNew = file_get_contents(__DIR__ . '/Middleware/redirectMiddlewareGuard.stub');
 
-        $redirectIfMiddlewareGroupContentNew2 = str_replace('{{$nameSmall}}', "$nameSmall", $redirectIfMiddlewareGroupContentNew);
-        $redirectIfMiddlewareGuardContentNew2 = str_replace('{{$nameSmall}}', "$nameSmall", $redirectIfMiddlewareGuardContentNew);
+        $redirectIfMiddlewareGroupContentNew2 = str_replace('{{$nameSmall}}', "$nameSmall",
+            $redirectIfMiddlewareGroupContentNew);
+        $redirectIfMiddlewareGuardContentNew2 = str_replace('{{$nameSmall}}', "$nameSmall",
+            $redirectIfMiddlewareGuardContentNew);
 
-        $this->insert($middlewareKernelFile, '    protected $middlewareGroups = [', $redirectIfMiddlewareGroupContentNew2, true);
+        $this->insert($middlewareKernelFile, '    protected $middlewareGroups = [',
+            $redirectIfMiddlewareGroupContentNew2, true);
 
-        $this->insert($redirectIfMiddlewareFile, '        switch ($guard) {', $redirectIfMiddlewareGuardContentNew2, true);
+        $this->insert($redirectIfMiddlewareFile, '        switch ($guard) {',
+            $redirectIfMiddlewareGuardContentNew2, true);
 
         return true;
 
@@ -637,7 +646,9 @@ class MultiAuthPrepare extends BaseCommand
     public function insert($filePath, $keyword, $body, $after = true) {
 
         $contents = file_get_contents($filePath);
-        $new_contents = substr_replace($contents, PHP_EOL . $body, ($after) ? strpos($contents, $keyword) + strlen($keyword) : strpos($contents, $keyword), 0);
+        $new_contents = substr_replace($contents, PHP_EOL . $body,
+            ($after) ? strpos($contents, $keyword) + strlen($keyword) : strpos($contents, $keyword)
+            , 0);
         return file_put_contents($filePath, $new_contents);
     }
 }
