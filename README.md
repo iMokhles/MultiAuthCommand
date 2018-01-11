@@ -8,7 +8,7 @@
 
 create laravel multi-auth setup files, middleware, models, migrations etc
 
-## Install ( no need for Laravel 5.5 and above )
+## Install
 
 1. In your terminal via composer:
 
@@ -16,7 +16,7 @@ create laravel multi-auth setup files, middleware, models, migrations etc
 composer require imokhles/multi-auth-command
 ```
 
-2. Add this provider to your config/app.php :
+2. Add this provider to your config/app.php ( no need for Laravel 5.5 and above ) :
 ```
 iMokhles\MultiAuthCommand\MultiAuthCommandServiceProvider::class
 ```
