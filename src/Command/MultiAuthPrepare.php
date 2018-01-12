@@ -82,7 +82,7 @@ class MultiAuthPrepare extends BaseCommand
 
 
 
-        $modelTableContent = file_get_contents(__DIR__ . '/Migration/modelTable.stub');
+        $modelTableContent = file_get_contents(__DIR__ . '/../Migration/modelTable.stub');
         $modelTableContentNew = str_replace([
             '{{$namePlural}}',
             '{{$nameSmallPlural}}',
@@ -92,7 +92,7 @@ class MultiAuthPrepare extends BaseCommand
         ], $modelTableContent);
 
 
-        $modelResetPasswordTableContent = file_get_contents(__DIR__ . '/Migration/passwordResetsTable.stub');
+        $modelResetPasswordTableContent = file_get_contents(__DIR__ . '/../Migration/passwordResetsTable.stub');
         $modelResetPasswordTableContentNew = str_replace([
             '{{$namePlural}}',
             '{{$nameSmallPlural}}',
@@ -128,7 +128,7 @@ class MultiAuthPrepare extends BaseCommand
         $name = ucfirst($this->getParsedNameInput());
 
 
-        $modelContent = file_get_contents(__DIR__ . '/Model/model.stub');
+        $modelContent = file_get_contents(__DIR__ . '/../Model/model.stub');
         $modelContentNew = str_replace([
             '{{$name}}',
         ], [
@@ -138,7 +138,7 @@ class MultiAuthPrepare extends BaseCommand
         file_put_contents($modelPath, $modelContentNew);
 
 
-        $resetNotificationContent = file_get_contents(__DIR__ . '/Notification/resetPasswordNotification.stub');
+        $resetNotificationContent = file_get_contents(__DIR__ . '/../Notification/resetPasswordNotification.stub');
         $resetNotificationContentNew = str_replace([
             '{{$name}}',
             '{{$nameSmall}}',
@@ -168,13 +168,13 @@ class MultiAuthPrepare extends BaseCommand
     {
         $nameSmall = snake_case($this->getParsedNameInput());
 
-        $appBlade = file_get_contents(__DIR__ . '/Views/layouts/app.blade.stub');
-        $welcomeBlade = file_get_contents(__DIR__ . '/Views/welcome.blade.stub');
-        $homeBlade = file_get_contents(__DIR__ . '/Views/home.blade.stub');
-        $loginBlade = file_get_contents(__DIR__ . '/Views/auth/login.blade.stub');
-        $registerBlade = file_get_contents(__DIR__ . '/Views/auth/register.blade.stub');
-        $resetBlade = file_get_contents(__DIR__ . '/Views/auth/passwords/reset.blade.stub');
-        $emailBlade = file_get_contents(__DIR__ . '/Views/auth/passwords/email.blade.stub');
+        $appBlade = file_get_contents(__DIR__ . '/../Views/layouts/app.blade.stub');
+        $welcomeBlade = file_get_contents(__DIR__ . '/../Views/welcome.blade.stub');
+        $homeBlade = file_get_contents(__DIR__ . '/../Views/home.blade.stub');
+        $loginBlade = file_get_contents(__DIR__ . '/../Views/auth/login.blade.stub');
+        $registerBlade = file_get_contents(__DIR__ . '/../Views/auth/register.blade.stub');
+        $resetBlade = file_get_contents(__DIR__ . '/../Views/auth/passwords/reset.blade.stub');
+        $emailBlade = file_get_contents(__DIR__ . '/../Views/auth/passwords/email.blade.stub');
 
         $createFolder = $this->getViewsFolderPath().DIRECTORY_SEPARATOR."$nameSmall";
         if (!file_exists($createFolder)) {
@@ -265,10 +265,10 @@ class MultiAuthPrepare extends BaseCommand
     {
         $nameSmall = snake_case($this->getParsedNameInput());
         $name = ucfirst($this->getParsedNameInput());
-        $mapCallFunction = file_get_contents(__DIR__ . '/Route/mapRoute.stub');
+        $mapCallFunction = file_get_contents(__DIR__ . '/../Route/mapRoute.stub');
         $mapCallFunctionNew = str_replace('{{$name}}', "$name", $mapCallFunction);
         $this->insert($this->getRouteServicesPath(), '$this->mapWebRoutes();', $mapCallFunctionNew, true);
-        $mapFunction = file_get_contents(__DIR__ . '/Route/mapRouteFunction.stub');
+        $mapFunction = file_get_contents(__DIR__ . '/../Route/mapRouteFunction.stub');
         $mapFunctionNew = str_replace([
             '{{$name}}',
             '{{$nameSmall}}'
@@ -295,7 +295,7 @@ class MultiAuthPrepare extends BaseCommand
         if (!file_exists($createFolder)) {
             mkdir($createFolder);
         }
-        $routeFileContent = file_get_contents(__DIR__ . '/Route/routeFile.stub');
+        $routeFileContent = file_get_contents(__DIR__ . '/../Route/routeFile.stub');
         $routeFileContentNew = str_replace([
             '{{$name}}',
             '{{$nameSmall}}'
@@ -330,12 +330,12 @@ class MultiAuthPrepare extends BaseCommand
             mkdir($authFolder);
         }
 
-        $controllerContent = file_get_contents(__DIR__ . '/Controllers/Controller.stub');
-        $homeControllerContent = file_get_contents(__DIR__ . '/Controllers/HomeController.stub');
-        $loginControllerContent = file_get_contents(__DIR__ . '/Controllers/Auth/LoginController.stub');
-        $forgotControllerContent = file_get_contents(__DIR__ . '/Controllers/Auth/ForgotPasswordController.stub');
-        $registerControllerContent = file_get_contents(__DIR__ . '/Controllers/Auth/RegisterController.stub');
-        $resetControllerContent = file_get_contents(__DIR__ . '/Controllers/Auth/ResetPasswordController.stub');
+        $controllerContent = file_get_contents(__DIR__ . '/../Controllers/Controller.stub');
+        $homeControllerContent = file_get_contents(__DIR__ . '/../Controllers/HomeController.stub');
+        $loginControllerContent = file_get_contents(__DIR__ . '/../Controllers/Auth/LoginController.stub');
+        $forgotControllerContent = file_get_contents(__DIR__ . '/../Controllers/Auth/ForgotPasswordController.stub');
+        $registerControllerContent = file_get_contents(__DIR__ . '/../Controllers/Auth/RegisterController.stub');
+        $resetControllerContent = file_get_contents(__DIR__ . '/../Controllers/Auth/ResetPasswordController.stub');
 
         $controllerFileContentNew = str_replace('{{$name}}', "$name", $controllerContent);
 
@@ -417,9 +417,9 @@ class MultiAuthPrepare extends BaseCommand
 
         $authConfigFile = $this->getConfigsFolderPath().DIRECTORY_SEPARATOR."auth.php";
 
-        $guardContent = file_get_contents(__DIR__ . '/Config/guard.stub');
-        $passwordContent = file_get_contents(__DIR__ . '/Config/password.stub');
-        $providerContent = file_get_contents(__DIR__ . '/Config/provider.stub');
+        $guardContent = file_get_contents(__DIR__ . '/../Config/guard.stub');
+        $passwordContent = file_get_contents(__DIR__ . '/../Config/password.stub');
+        $providerContent = file_get_contents(__DIR__ . '/../Config/provider.stub');
 
         $guardFileContentNew = str_replace([
             '{{$nameSmall}}',
@@ -464,7 +464,7 @@ class MultiAuthPrepare extends BaseCommand
 
         $redirectIfMiddlewareFileContent = file_get_contents($redirectIfMiddlewareFile);
 
-        $redirectIfMiddlewareContentNew = file_get_contents(__DIR__ . '/Middleware/redirectIf.stub');
+        $redirectIfMiddlewareContentNew = file_get_contents(__DIR__ . '/../Middleware/redirectIf.stub');
 
         if (!str_contains($redirectIfMiddlewareFileContent, 'MultiAuthGuards')) {
             // replace old file
@@ -474,8 +474,8 @@ class MultiAuthPrepare extends BaseCommand
             }
         }
 
-        $redirectIfMiddlewareGroupContentNew = file_get_contents(__DIR__ . '/Middleware/redirectMiddleware.stub');
-        $redirectIfMiddlewareGuardContentNew = file_get_contents(__DIR__ . '/Middleware/redirectMiddlewareGuard.stub');
+        $redirectIfMiddlewareGroupContentNew = file_get_contents(__DIR__ . '/../Middleware/redirectMiddleware.stub');
+        $redirectIfMiddlewareGuardContentNew = file_get_contents(__DIR__ . '/../Middleware/redirectMiddlewareGuard.stub');
 
         $redirectIfMiddlewareGroupContentNew2 = str_replace('{{$nameSmall}}', "$nameSmall",
             $redirectIfMiddlewareGroupContentNew);
