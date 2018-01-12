@@ -14,21 +14,25 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
-Route::get('/', function () {
-    return view('{{$nameSmall}}.welcome');
-});
+
 
 // Authentication Routes...
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('{{$nameSmall}}.login');
-Route::post('login', 'Auth\LoginController@login');
+Route::post('login', 'Auth\LoginController@login')->name('{{$nameSmall}}.login');
 Route::post('logout', 'Auth\LoginController@logout')->name('{{$nameSmall}}.logout');
 // Registration Routes...
 Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('{{$nameSmall}}.register');
-Route::post('register', 'Auth\RegisterController@register');
+Route::post('register', 'Auth\RegisterController@register')->name('{{$nameSmall}}.register');
 // Password Reset Routes...
 Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('{{$nameSmall}}.password.request');
 Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('{{$nameSmall}}.password.email');
 Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('{{$nameSmall}}.password.reset');
-Route::post('password/reset', 'Auth\ResetPasswordController@reset');
+Route::post('password/reset', 'Auth\ResetPasswordController@reset')->name('{{$nameSmall}}.password.reset');
 
 Route::get('/home', 'HomeController@index')->name('{{$nameSmall}}.home');
+Route::get('/', 'HomeController@redirect')->name('{{$nameSmall}}.redirect');
+
+Route::get('edit-account-info', 'Auth\MyAccountController@showAccountInfoForm')->name('{{$nameSmall}}.account.info');
+Route::post('edit-account-info', 'Auth\MyAccountController@accountInfoForm')->name('{{$nameSmall}}.account.info');
+Route::get('change-password', 'Auth\MyAccountController@showChangePasswordForm')->name('{{$nameSmall}}.account.password');
+Route::post('change-password', 'Auth\MyAccountController@changePasswordForm')->name('{{$nameSmall}}.account.password');

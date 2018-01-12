@@ -5,6 +5,8 @@ namespace iMokhles\MultiAuthCommand\Command;
 use Illuminate\Database\Console\Migrations\BaseCommand;
 use Illuminate\Database\Migrations\MigrationCreator;
 use Illuminate\Support\Composer;
+use Symfony\Component\Process\Exception\ProcessFailedException;
+use Symfony\Component\Process\Process;
 
 class MultiAuthPrepare extends BaseCommand
 {
@@ -56,6 +58,9 @@ class MultiAuthPrepare extends BaseCommand
      */
     public function handle()
     {
+
+        $this->info("### Preparing For MultiAuth. Please wait...");
+
         $this->installMigration();
         $this->installModel();
         $this->installRouteMaps();
@@ -64,9 +69,26 @@ class MultiAuthPrepare extends BaseCommand
         $this->installConfigs();
         $this->installMiddleware();
         $this->installView();
+        $this->installPrologueAlert();
+
+
         $this->composer->dumpAutoloads();
 
+        $this->info("### Finished MultiAuth.");
+
         return true;
+    }
+
+    /**
+     * Publish Prologue Alert
+     *
+     * @return boolean
+     */
+    public function installPrologueAlert() {
+        $alertsConfigFile = $this->getConfigsFolderPath().DIRECTORY_SEPARATOR."prologue/alerts.php";
+        if (!file_exists($alertsConfigFile)) {
+            $this->executeProcess('php artisan vendor:publish --provider="Prologue\Alerts\AlertsServiceProvider"', 'publishing config for notifications - prologue/alerts');
+        }
     }
 
     /**
@@ -490,6 +512,39 @@ class MultiAuthPrepare extends BaseCommand
 
         return true;
 
+    }
+
+    /**
+     * Run a SSH command.
+     *
+     * @param string $command      The SSH command that needs to be run
+     * @param bool   $beforeNotice Information for the user before the command is run
+     * @param bool   $afterNotice  Information for the user after the command is run
+     *
+     * @return mixed Command-line output
+     */
+    public function executeProcess($command, $beforeNotice = false, $afterNotice = false)
+    {
+        if ($beforeNotice) {
+            $this->info('### '.$beforeNotice);
+        } else {
+            $this->info('### Running: '.$command);
+        }
+        $process = new Process($command);
+        $process->run(function ($type, $buffer) {
+            if (Process::ERR === $type) {
+                echo '... > '.$buffer;
+            } else {
+                echo 'OUT > '.$buffer;
+            }
+        });
+        // executes after the command finishes
+        if (!$process->isSuccessful()) {
+            throw new ProcessFailedException($process);
+        }
+        if ($afterNotice) {
+            $this->info('### '.$afterNotice);
+        }
     }
 
     /**

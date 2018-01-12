@@ -9,13 +9,16 @@
     ],
     "require": {
         "php": ">=5.5.0",
-        "illuminate/support": "~5.3"
+        "illuminate/support": "~5.3",
+        "prologue/alerts": "^0.4.1"
     },
     "license": "MIT",
     "authors": [
         {
             "name": "iMokhles",
-            "email": "mokhleshussien@aol.com"
+            "email": "mokhleshussien@aol.com",
+            "homepage": "https://imokhles.com",
+            "role": "Software Engineer"
         }
     ],
     "minimum-stability": "stable",

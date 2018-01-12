@@ -25,4 +25,13 @@ class HomeController extends Controller
     {
         return view('{{$nameSmall}}.home');
     }
+    /**
+     * redirect to dashboard.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function redirect()
+    {
+        return redirect(route('{{$nameSmall}}.home'));
+    }
 }
