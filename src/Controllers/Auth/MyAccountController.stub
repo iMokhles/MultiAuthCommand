@@ -8,6 +8,8 @@ use App\Http\Controllers\{{$name}}\Requests\{{$name}}AccountInfoRequest;
 use App\Http\Controllers\{{$name}}\Requests\{{$name}}ChangePasswordRequest;
 use \Prologue\Alerts\Facades\Alert;
 use App\Http\Controllers\{{$name}}\Controller;
+use Illuminate\Support\Facades\Hash;
+
 
 class {{$name}}AccountController extends Controller
 {
