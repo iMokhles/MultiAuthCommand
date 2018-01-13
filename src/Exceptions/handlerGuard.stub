@@ -1,0 +1,4 @@
+            case '{{$nameSmall}}':
+                $login_route = '{{$nameSmall}}.login';
+                return redirect()->guest(route($login_route));
+                break;

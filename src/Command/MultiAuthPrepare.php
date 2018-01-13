@@ -563,6 +563,39 @@ class MultiAuthPrepare extends BaseCommand
     }
 
     /**
+     * Install Unauthenticated Handler.
+     *
+     * @return boolean
+     */
+    public function installUnauthenticated()
+    {
+        $nameSmall = snake_case($this->getParsedNameInput());
+        $exceptionHandlerFile = $this->getAppFolderPath().DIRECTORY_SEPARATOR."Exceptions".DIRECTORY_SEPARATOR
+            ."Handler.php";
+        $exceptionHandlerFileContent = file_get_contents($exceptionHandlerFile);
+        $exceptionHandlerFileContentNew = file_get_contents(__DIR__ . '/../Exceptions/handlerUnauthorized.stub');
+
+
+        if (!str_contains($exceptionHandlerFileContent, 'MultiAuthUnAuthenticated')) {
+            // replace old file
+            $deleted = unlink($exceptionHandlerFile);
+            if ($deleted) {
+                file_put_contents($exceptionHandlerFile, $exceptionHandlerFileContentNew);
+            }
+        }
+
+        $exceptionHandlerGuardContentNew = file_get_contents(__DIR__ . '/../Exceptions/handlerGuard.stub');
+        $exceptionHandlerGuardContentNew2 = str_replace('{{$nameSmall}}', "$nameSmall",
+            $exceptionHandlerGuardContentNew);
+
+        $this->insert($exceptionHandlerFile, '        switch(array_get($exception->guards(), 0)) {',
+            $exceptionHandlerGuardContentNew2, true);
+
+        return true;
+
+    }
+
+    /**
      * Install Middleware.
      *
      * @return boolean

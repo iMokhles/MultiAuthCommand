@@ -24,15 +24,11 @@ class RedirectIfAuthenticated
             case 'web':
                 if (Auth::guard($guard)->check()) {
                     return redirect('/home');
-                } else {
-                    return redirect(route('login'));
                 }
             break;
             default:
                 if (Auth::guard($guard)->check()) {
                     return redirect('/home');
-                } else {
-                    return redirect(route('login'));
                 }
             break;
         }
