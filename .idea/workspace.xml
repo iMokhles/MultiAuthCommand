@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ea327e4-ed27-4c84-ba0e-659e8a2452e9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Command/MultiAuthPrepare.php" afterPath="$PROJECT_DIR$/src/Command/MultiAuthPrepare.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Views/auth/account/update_info.blade.stub" afterPath="$PROJECT_DIR$/src/Views/auth/account/update_info.blade.stub" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,21 +13,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="update_info.blade.stub" pinned="false" current-in-tab="true">
+      <file leaf-file-name="update_info.blade.stub" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Views/auth/account/update_info.blade.stub">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+            <state relative-caret-position="255">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MultiAuthPrepare.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MultiAuthPrepare.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Command/MultiAuthPrepare.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="284" column="24" lean-forward="true" selection-start-line="284" selection-start-column="24" selection-end-line="284" selection-end-column="24" />
+            <state relative-caret-position="205">
+              <caret line="70" column="40" lean-forward="false" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
               <folding>
                 <element signature="e#53#108#0#PHP" expanded="true" />
               </folding>
@@ -57,6 +55,8 @@
       <find>$name</find>
       <find>update_</find>
       <find>{{$name}}</find>
+      <find>switch(array_get($exception-&gt;guards(), 0)) {</find>
+      <find>installUnauthenticated</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -85,8 +85,8 @@
         <option value="$PROJECT_DIR$/src/Controllers/Auth/ForgotPasswordController.stub" />
         <option value="$PROJECT_DIR$/src/Controllers/Auth/LoginController.stub" />
         <option value="$PROJECT_DIR$/src/Controllers/Auth/MyAccountController.stub" />
-        <option value="$PROJECT_DIR$/src/Command/MultiAuthPrepare.php" />
         <option value="$PROJECT_DIR$/src/Views/auth/account/update_info.blade.stub" />
+        <option value="$PROJECT_DIR$/src/Command/MultiAuthPrepare.php" />
       </list>
     </option>
   </component>
@@ -98,7 +98,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="206" />
+    <option name="x" value="116" />
     <option name="y" value="23" />
     <option name="width" value="1384" />
     <option name="height" value="852" />
@@ -233,15 +233,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1515760111402</updated>
-      <workItem from="1515760113322" duration="20016000" />
+      <workItem from="1515760113322" duration="20168000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20016000" />
+    <option name="totallyTimeSpent" value="20168000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="206" y="23" width="1384" height="852" extended-state="0" />
+    <frame x="116" y="23" width="1384" height="852" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26005962" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -506,21 +506,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Command/MultiAuthPrepare.php">
+    <entry file="file://$PROJECT_DIR$/src/Views/auth/account/update_info.blade.stub">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="284" column="24" lean-forward="true" selection-start-line="284" selection-start-column="24" selection-end-line="284" selection-end-column="24" />
-          <folding>
-            <element signature="e#53#108#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Views/auth/account/update_info.blade.stub">
+    <entry file="file://$PROJECT_DIR$/src/Command/MultiAuthPrepare.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="205">
+          <caret line="70" column="40" lean-forward="false" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
+          <folding>
+            <element signature="e#53#108#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

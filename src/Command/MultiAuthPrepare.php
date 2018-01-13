@@ -68,6 +68,7 @@ class MultiAuthPrepare extends BaseCommand
         $this->installRequests();
         $this->installConfigs();
         $this->installMiddleware();
+        $this->installUnauthenticated();
         $this->installView();
         $this->installPrologueAlert();
         $this->composer->dumpAutoloads();
