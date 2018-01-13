@@ -1,10 +1,10 @@
 @extends('{{$nameSmall}}.layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row">
+    <div class="container">
+        <div class="row">
 
-        <div class="col-md-3">
+            <div class="col-md-3">
                 <div class="panel panel-default">
                     <div class="panel-body text-center">
                         <div class="pv-lg"><img class="center-block img-responsive img-circle img-thumbnail thumb96" src="https://placehold.it/160x160/00a65a/ffffff/&text={{$user->name}}" alt="{{$name}} Avatar"></div>
@@ -14,11 +14,11 @@
                         </div>
                     </div>
                 </div>
-        </div
+            </div>
 
-        <div class="col-md-9">
-            <div class="panel panel-default">
-                <div class="panel-heading">Update Account</div>
+            <div class="col-md-9">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Update Account</div>
                     <div class="panel-body">
                         <form class="form-horizontal" method="POST" action="{{ route('{{$nameSmall}}.account.info') }}">
 
@@ -65,5 +65,4 @@
             </div>
         </div>
     </div>
-</div>
 @endsection

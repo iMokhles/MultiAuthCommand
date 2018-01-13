@@ -189,6 +189,7 @@ class MultiAuthPrepare extends BaseCommand
     public function installView()
     {
         $nameSmall = snake_case($this->getParsedNameInput());
+        $name = ucfirst($this->getParsedNameInput());
 
         $appBlade = file_get_contents(__DIR__ . '/../Views/layouts/app.blade.stub');
         $welcomeBlade = file_get_contents(__DIR__ . '/../Views/welcome.blade.stub');
@@ -283,13 +284,15 @@ class MultiAuthPrepare extends BaseCommand
             '{{$nameSmall}}',
             '{{$name}}',
         ], [
-            $nameSmall
+            $nameSmall,
+            $name
         ], $update_infoBlade);
 
         $change_passwordBladeNew = str_replace([
             '{{$nameSmall}}',
         ], [
-            $nameSmall
+            $nameSmall,
+            $name
         ], $change_passwordBlade);
 
 
