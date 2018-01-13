@@ -4,11 +4,11 @@ namespace App\Http\Controllers\{{$name}}\Auth;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use App\Http\Controllers\{{$name}}\Requests\AccountInfoRequest;
-use App\Http\Controllers\{{$name}}\Requests\ChangePasswordRequest;
+use App\Http\Controllers\{{$name}}\Requests\{{$name}}AccountInfoRequest;
+use App\Http\Controllers\{{$name}}\Requests\{{$name}}ChangePasswordRequest;
 use \Prologue\Alerts\Facades\Alert;
 
-class MyAccountController extends Controller
+class {{$name}}AccountController extends Controller
 {
 
     protected $data = [];
@@ -32,7 +32,7 @@ class MyAccountController extends Controller
         return view('{{$nameSmall}}.auth.account.update_info', $this->data);
     }
 
-    public function accountInfoForm(AccountInfoRequest $request)
+    public function accountInfoForm({{$name}}AccountInfoRequest $request)
     {
         $result = $this->guard()->user()->update($request->except(['_token']));
         if ($result) {
@@ -51,7 +51,7 @@ class MyAccountController extends Controller
         return view('{{$nameSmall}}.auth.account.change_password', $this->data);
     }
 
-    public function changePasswordForm(ChangePasswordRequest $request)
+    public function changePasswordForm({{$name}}ChangePasswordRequest $request)
     {
         $user = $this->guard()->user();
         $user->password = Hash::make($request->new_password);

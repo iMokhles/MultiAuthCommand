@@ -52,6 +52,8 @@
                                 </a>
 
                                 <ul class="dropdown-menu">
+                                    <li><a href="{{ route('{{$nameSmall}}.account.info') }}">My Account</a></li>
+                                    <li><a href="{{ route('{{$nameSmall}}.account.password') }}">Change Password</a></li>
                                     <li>
                                         <a href="{{ route('{{$nameSmall}}.logout') }}"
                                             onclick="event.preventDefault();

@@ -60,20 +60,17 @@ class MultiAuthPrepare extends BaseCommand
     {
 
         $this->info("### Preparing For MultiAuth. Please wait...");
-
         $this->installMigration();
         $this->installModel();
         $this->installRouteMaps();
         $this->installRouteFiles();
         $this->installControllers();
+        $this->installRequests();
         $this->installConfigs();
         $this->installMiddleware();
         $this->installView();
         $this->installPrologueAlert();
-
-
         $this->composer->dumpAutoloads();
-
         $this->info("### Finished MultiAuth.");
 
         return true;
@@ -87,8 +84,11 @@ class MultiAuthPrepare extends BaseCommand
     public function installPrologueAlert() {
         $alertsConfigFile = $this->getConfigsFolderPath().DIRECTORY_SEPARATOR."prologue/alerts.php";
         if (!file_exists($alertsConfigFile)) {
-            $this->executeProcess('php artisan vendor:publish --provider="Prologue\Alerts\AlertsServiceProvider"', 'publishing config for notifications - prologue/alerts');
+            $this->executeProcess('php artisan vendor:publish --provider="Prologue\Alerts\AlertsServiceProvider"',
+                'publishing config for notifications - prologue/alerts');
         }
+
+        return true;
     }
 
     /**
@@ -198,6 +198,11 @@ class MultiAuthPrepare extends BaseCommand
         $resetBlade = file_get_contents(__DIR__ . '/../Views/auth/passwords/reset.blade.stub');
         $emailBlade = file_get_contents(__DIR__ . '/../Views/auth/passwords/email.blade.stub');
 
+        $update_infoBlade = file_get_contents(__DIR__
+            . '/../Views/auth/account/update_info.blade.stub');
+        $change_passwordBlade = file_get_contents(__DIR__
+            . '/../Views/auth/account/change_password.blade.stub');
+
         $createFolder = $this->getViewsFolderPath().DIRECTORY_SEPARATOR."$nameSmall";
         if (!file_exists($createFolder)) {
             mkdir($createFolder);
@@ -221,6 +226,13 @@ class MultiAuthPrepare extends BaseCommand
             ."auth".DIRECTORY_SEPARATOR."passwords";
         if (!file_exists($createFolderAuthPasswords)) {
             mkdir($createFolderAuthPasswords);
+        }
+
+        $createFolderAuthAccount = $this->getViewsFolderPath().DIRECTORY_SEPARATOR.
+            "$nameSmall".DIRECTORY_SEPARATOR
+            ."auth".DIRECTORY_SEPARATOR."account";
+        if (!file_exists($createFolderAuthAccount)) {
+            mkdir($createFolderAuthAccount);
         }
 
         $appBladeNew = str_replace([
@@ -265,6 +277,21 @@ class MultiAuthPrepare extends BaseCommand
             $nameSmall
         ], $resetBlade);
 
+        $update_infoBladeNew = str_replace([
+            '{{$nameSmall}}',
+            '{{$name}}',
+        ], [
+            $nameSmall
+        ], $update_infoBlade);
+
+        $change_passwordBladeNew = str_replace([
+            '{{$nameSmall}}',
+        ], [
+            $nameSmall
+        ], $change_passwordBlade);
+
+
+
         file_put_contents($createFolderLayouts.'/app.blade.php', $appBladeNew);
         file_put_contents($createFolder.'/welcome.blade.php', $welcomeBladeNew);
         file_put_contents($createFolder.'/home.blade.php', $homeBladeNew);
@@ -272,6 +299,9 @@ class MultiAuthPrepare extends BaseCommand
         file_put_contents($createFolderAuth.'/register.blade.php', $registerBladeNew);
         file_put_contents($createFolderAuthPasswords.'/email.blade.php', $emailBladeNew);
         file_put_contents($createFolderAuthPasswords.'/reset.blade.php', $resetBladeNew);
+
+        file_put_contents($createFolderAuthAccount.'/update_info.blade.php', $update_infoBladeNew);
+        file_put_contents($createFolderAuthAccount.'/change_password.blade.php', $change_passwordBladeNew);
 
         return true;
 
@@ -331,6 +361,54 @@ class MultiAuthPrepare extends BaseCommand
     }
 
     /**
+     * Install Requests.
+     *
+     * @return boolean
+     */
+
+    public function installRequests()
+    {
+        $nameSmall = snake_case($this->getParsedNameInput());
+        $name = ucfirst($this->getParsedNameInput());
+
+        $nameFolder = $this->getControllersPath().DIRECTORY_SEPARATOR.$name;
+        if (!file_exists($nameFolder)) {
+            mkdir($nameFolder);
+        }
+
+        $requestsFolder = $nameFolder.DIRECTORY_SEPARATOR."Requests";
+        if (!file_exists($requestsFolder)) {
+            mkdir($requestsFolder);
+        }
+        $accountInfoContent = file_get_contents(__DIR__ . '/../Request/AccountInfoRequest.stub');
+        $changePasswordContent = file_get_contents(__DIR__ . '/../Request/ChangePasswordRequest.stub');
+
+        $accountInfoContentNew = str_replace([
+            '{{$name}}',
+            '{{$nameSmall}}'
+        ], [
+            "$name",
+            "$nameSmall"
+        ], $accountInfoContent);
+
+        $changePasswordContentNew = str_replace([
+            '{{$name}}',
+            '{{$nameSmall}}'
+        ], [
+            "$name",
+            "$nameSmall"
+        ], $changePasswordContent);
+
+        $accountInfoFile = $requestsFolder.DIRECTORY_SEPARATOR."{$name}AccountInfoRequest.php";
+        $changePasswordFile = $requestsFolder.DIRECTORY_SEPARATOR."{$name}ChangePasswordRequest.php";
+
+        file_put_contents($accountInfoFile, $accountInfoContentNew);
+        file_put_contents($changePasswordFile, $changePasswordContentNew);
+
+        return true;
+
+    }
+    /**
      * Install Controller.
      *
      * @return boolean
@@ -358,6 +436,7 @@ class MultiAuthPrepare extends BaseCommand
         $forgotControllerContent = file_get_contents(__DIR__ . '/../Controllers/Auth/ForgotPasswordController.stub');
         $registerControllerContent = file_get_contents(__DIR__ . '/../Controllers/Auth/RegisterController.stub');
         $resetControllerContent = file_get_contents(__DIR__ . '/../Controllers/Auth/ResetPasswordController.stub');
+        $myAccountControllerContent = file_get_contents(__DIR__ . '/../Controllers/Auth/MyAccountController.stub');
 
         $controllerFileContentNew = str_replace('{{$name}}', "$name", $controllerContent);
 
@@ -407,6 +486,14 @@ class MultiAuthPrepare extends BaseCommand
             "$nameSmallPlural"
         ], $resetControllerContent);
 
+        $myAccountFileContentNew = str_replace([
+            '{{$name}}',
+            '{{$nameSmall}}'
+        ], [
+            "$name",
+            "$nameSmall"
+        ], $myAccountControllerContent);
+
         $controllerFile = $nameFolder.DIRECTORY_SEPARATOR."Controller.php";
         $homeFile = $nameFolder.DIRECTORY_SEPARATOR."HomeController.php";
         $loginFile = $authFolder.DIRECTORY_SEPARATOR."LoginController.php";
@@ -414,12 +501,16 @@ class MultiAuthPrepare extends BaseCommand
         $registerFile = $authFolder.DIRECTORY_SEPARATOR."RegisterController.php";
         $resetFile = $authFolder.DIRECTORY_SEPARATOR."ResetPasswordController.php";
 
+        $myAccountFile = $authFolder.DIRECTORY_SEPARATOR."{$name}AccountController.php";
+
+
         file_put_contents($controllerFile, $controllerFileContentNew);
         file_put_contents($homeFile, $homeFileContentNew);
         file_put_contents($loginFile, $loginFileContentNew);
         file_put_contents($forgotFile, $forgotFileContentNew);
         file_put_contents($registerFile, $registerFileContentNew);
         file_put_contents($resetFile, $resetFileContentNew);
+        file_put_contents($myAccountFile, $myAccountFileContentNew);
 
         return true;
 
