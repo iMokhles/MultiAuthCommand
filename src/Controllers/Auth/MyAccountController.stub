@@ -21,7 +21,7 @@ class {{$name}}AccountController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('{{$nameSmall}}');
+        $this->middleware('auth:{{$nameSmall}}');
     }
 
 

@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ea327e4-ed27-4c84-ba0e-659e8a2452e9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controllers/Auth/ForgotPasswordController.stub" afterPath="$PROJECT_DIR$/src/Controllers/Auth/ForgotPasswordController.stub" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controllers/Auth/LoginController.stub" afterPath="$PROJECT_DIR$/src/Controllers/Auth/LoginController.stub" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controllers/Auth/MyAccountController.stub" afterPath="$PROJECT_DIR$/src/Controllers/Auth/MyAccountController.stub" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controllers/Auth/RegisterController.stub" afterPath="$PROJECT_DIR$/src/Controllers/Auth/RegisterController.stub" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controllers/Auth/ResetPasswordController.stub" afterPath="$PROJECT_DIR$/src/Controllers/Auth/ResetPasswordController.stub" />
-    </list>
+    <list default="true" id="6ea327e4-ed27-4c84-ba0e-659e8a2452e9" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,8 +36,8 @@
       <file leaf-file-name="HomeController.stub" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controllers/HomeController.stub">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="41" />
+            <state relative-caret-position="225">
+              <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -70,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyAccountController.stub" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MyAccountController.stub" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controllers/Auth/MyAccountController.stub">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="360">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -90,7 +83,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginController.stub" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoginController.stub" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controllers/Auth/LoginController.stub">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
@@ -164,9 +157,9 @@
         <option value="$PROJECT_DIR$/src/Views/layouts/app.blade.stub" />
         <option value="$PROJECT_DIR$/src/Controllers/Auth/ResetPasswordController.stub" />
         <option value="$PROJECT_DIR$/src/Controllers/Auth/RegisterController.stub" />
-        <option value="$PROJECT_DIR$/src/Controllers/Auth/MyAccountController.stub" />
         <option value="$PROJECT_DIR$/src/Controllers/Auth/ForgotPasswordController.stub" />
         <option value="$PROJECT_DIR$/src/Controllers/Auth/LoginController.stub" />
+        <option value="$PROJECT_DIR$/src/Controllers/Auth/MyAccountController.stub" />
       </list>
     </option>
   </component>
@@ -292,12 +285,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1515760111402</updated>
-      <workItem from="1515760113322" duration="19527000" />
+      <workItem from="1515760113322" duration="19680000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19527000" />
+    <option name="totallyTimeSpent" value="19680000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="70" y="23" width="1384" height="852" extended-state="0" />
@@ -535,14 +528,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controllers/HomeController.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controllers/Auth/ResetPasswordController.stub">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -559,14 +544,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controllers/Auth/MyAccountController.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controllers/Auth/ForgotPasswordController.stub">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -579,6 +556,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controllers/HomeController.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controllers/Auth/MyAccountController.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
