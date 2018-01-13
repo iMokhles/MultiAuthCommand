@@ -32,7 +32,7 @@ Route::post('password/reset', 'Auth\ResetPasswordController@reset')->name('{{$na
 Route::get('/home', 'HomeController@index')->name('{{$nameSmall}}.home');
 Route::get('/', 'HomeController@redirect')->name('{{$nameSmall}}.redirect');
 
-Route::get('edit-account-info', 'Auth\MyAccountController@showAccountInfoForm')->name('{{$nameSmall}}.account.info');
-Route::post('edit-account-info', 'Auth\MyAccountController@accountInfoForm')->name('{{$nameSmall}}.account.info');
-Route::get('change-password', 'Auth\MyAccountController@showChangePasswordForm')->name('{{$nameSmall}}.account.password');
-Route::post('change-password', 'Auth\MyAccountController@changePasswordForm')->name('{{$nameSmall}}.account.password');
+Route::get('edit-account-info', 'Auth\{{$name}}AccountController@showAccountInfoForm')->name('{{$nameSmall}}.account.info');
+Route::post('edit-account-info', 'Auth\{{$name}}AccountController@accountInfoForm')->name('{{$nameSmall}}.account.info');
+Route::get('change-password', 'Auth\{{$name}}AccountController@showChangePasswordForm')->name('{{$nameSmall}}.account.password');
+Route::post('change-password', 'Auth\{{$name}}AccountController@changePasswordForm')->name('{{$nameSmall}}.account.password');
