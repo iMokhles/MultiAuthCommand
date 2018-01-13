@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\{{$name}}\Auth;
 
 use App\{{$name}};
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\{{$name}}\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Auth;
