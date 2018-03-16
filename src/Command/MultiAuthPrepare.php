@@ -14,6 +14,10 @@ use Symfony\Component\Process\Process;
 class MultiAuthPrepare extends BaseCommand
 {
     /**
+     * @var
+     */
+    protected $progressBar;
+    /**
      * The name and signature of the console command.
      *
      * @var string
@@ -62,7 +66,11 @@ class MultiAuthPrepare extends BaseCommand
     public function handle()
     {
 
-        $this->info("### Preparing For MultiAuth. Please wait...");
+        $this->progressBar = $this->output->createProgressBar(14);
+        $this->progressBar->start();
+
+        $this->info("Preparing For MultiAuth. Please wait...");
+        $this->progressBar->advance();
 
         $is_backpack = $this->option('is_backpack');
 
@@ -71,22 +79,69 @@ class MultiAuthPrepare extends BaseCommand
             $is_backpack_enabled = true;
         }
 
-        $this->installMigration($is_backpack_enabled);
-        $this->installModel($is_backpack_enabled);
-        $this->installRouteMaps($is_backpack_enabled);
-        $this->installRouteFiles($is_backpack_enabled);
-        $this->installControllers($is_backpack_enabled);
-        $this->installRequests($is_backpack_enabled);
-        $this->installConfigs($is_backpack_enabled);
-        $this->installMiddleware($is_backpack_enabled);
-        $this->installUnauthenticated($is_backpack_enabled);
-        $this->installView($is_backpack_enabled);
-        $this->installPrologueAlert($is_backpack_enabled);
+        if ($this->isAlreadySetup($is_backpack_enabled)) {
+            $this->info("installing migrations...");
+            $this->installMigration($is_backpack_enabled);
+            $this->progressBar->advance();
 
-        $this->composer->dumpAutoloads();
+            $this->info("installing models...");
+            $this->installModel($is_backpack_enabled);
+            $this->progressBar->advance();
 
-        $this->info("### Finished MultiAuth.");
-        $this->info("### Finished MultiAuth for Backpack.");
+            $this->info("installing route maps...");
+            $this->installRouteMaps($is_backpack_enabled);
+            $this->progressBar->advance();
+
+            $this->info("installing route files...");
+            $this->installRouteFiles($is_backpack_enabled);
+            $this->progressBar->advance();
+
+            $this->info("installing controllers...");
+            $this->installControllers($is_backpack_enabled);
+            $this->progressBar->advance();
+
+            $this->info("installing requests...");
+            $this->installRequests($is_backpack_enabled);
+            $this->progressBar->advance();
+
+            $this->info("installing configs...");
+            $this->installConfigs($is_backpack_enabled);
+            $this->progressBar->advance();
+
+            $this->info("installing middleware...");
+            $this->installMiddleware($is_backpack_enabled);
+            $this->progressBar->advance();
+
+            $this->info("installing unauthenticated function...");
+            $this->installUnauthenticated($is_backpack_enabled);
+            $this->progressBar->advance();
+
+            $this->info("installing views...");
+            $this->installView($is_backpack_enabled);
+            $this->progressBar->advance();
+
+            $this->info("installing prologue alert...");
+            $this->installPrologueAlert($is_backpack_enabled);
+            $this->progressBar->advance();
+
+            $this->info("dump autoload...");
+            $this->composer->dumpAutoloads();
+            $this->progressBar->advance();
+
+            if ($is_backpack_enabled == false) {
+                $this->info("finished MultiAuth.");
+                $this->progressBar->advance();
+            } else {
+                $this->info("finished MultiAuth for Backpack.");
+                $this->progressBar->advance();
+            }
+        } else {
+            $this->info("failed. already setup");
+            $this->progressBar->advance();
+            $this->progressBar->finish();
+        }
+
+
 
 
         return true;
@@ -456,6 +511,17 @@ class MultiAuthPrepare extends BaseCommand
         $this->insert($this->getRouteServicesPath(), '        //
     }', $mapFunctionNew, true);
         return true;
+    }
+
+    public function isAlreadySetup($is_backpack_enabled) {
+        $name = ucfirst($this->getParsedNameInput());
+
+        $routeServicesContent = file_get_contents($this->getRouteServicesPath());
+
+        if (str_contains($routeServicesContent,'$this->map'.$name.'Routes();')) {
+            return true;
+        }
+        return false;
     }
 
     /**

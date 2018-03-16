@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="6ea327e4-ed27-4c84-ba0e-659e8a2452e9" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/Backpack/Model/model.stub" afterPath="$PROJECT_DIR$/src/Backpack/Model/model.stub" />
+      <change beforePath="$PROJECT_DIR$/src/Backpack/Views/auth/login.blade.stub" afterPath="$PROJECT_DIR$/src/Backpack/Views/auth/login.blade.stub" />
+      <change beforePath="$PROJECT_DIR$/src/Backpack/Views/auth/passwords/email.blade.stub" afterPath="$PROJECT_DIR$/src/Backpack/Views/auth/passwords/email.blade.stub" />
+      <change beforePath="$PROJECT_DIR$/src/Backpack/Views/auth/passwords/reset.blade.stub" afterPath="$PROJECT_DIR$/src/Backpack/Views/auth/passwords/reset.blade.stub" />
+      <change beforePath="$PROJECT_DIR$/src/Backpack/Views/auth/register.blade.stub" afterPath="$PROJECT_DIR$/src/Backpack/Views/auth/register.blade.stub" />
       <change beforePath="$PROJECT_DIR$/src/Command/MultiAuthPrepare.php" afterPath="$PROJECT_DIR$/src/Command/MultiAuthPrepare.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,11 +25,81 @@
       <file leaf-file-name="MultiAuthPrepare.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Command/MultiAuthPrepare.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="419" column="82" lean-forward="false" selection-start-line="419" selection-start-column="82" selection-end-line="419" selection-end-column="82" />
+            <state relative-caret-position="137">
+              <caret line="124" column="42" lean-forward="true" selection-start-line="124" selection-start-column="42" selection-end-line="124" selection-end-column="42" />
               <folding>
                 <element signature="e#54#109#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mapRoute.stub" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Route/mapRoute.stub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="36" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="change_password.blade.stub" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/account/change_password.blade.stub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.blade.stub" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/login.blade.stub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.blade.stub" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/register.blade.stub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="email.blade.stub" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/passwords/email.blade.stub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reset.blade.stub" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/passwords/reset.blade.stub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="model.stub" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Backpack/Model/model.stub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -33,8 +108,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>$name</find>
-      <find>update_</find>
       <find>{{$name}}</find>
       <find>switch(array_get($exception-&gt;guards(), 0)) {</find>
       <find>installUnauthenticated</find>
@@ -63,6 +136,8 @@
       <find>{{ route('{{$nameSmall}}.home') }}</find>
       <find>{{$</find>
       <find>welcomeBlade</find>
+      <find>getRouteServicesPath</find>
+      <find>str_c</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/Backpack/Views/inc</dir>
@@ -97,7 +172,6 @@
         <option value="$PROJECT_DIR$/src/Model/model.stub" />
         <option value="$PROJECT_DIR$/src/Config/provider.stub" />
         <option value="$PROJECT_DIR$/src/Controllers/Auth/RegisterController.stub" />
-        <option value="$PROJECT_DIR$/src/Backpack/Model/model.stub" />
         <option value="$PROJECT_DIR$/src/Backpack/Views/inc/main_header.blade.php" />
         <option value="$PROJECT_DIR$/src/Backpack/Views/inc/menu.blade.php" />
         <option value="$PROJECT_DIR$/src/Backpack/Views/inc/main_header.blade.stub" />
@@ -106,13 +180,14 @@
         <option value="$PROJECT_DIR$/src/Backpack/Views/inc/sidebar_user_panel.blade.php" />
         <option value="$PROJECT_DIR$/src/Backpack/Views/layouts/layout.blade.stub" />
         <option value="$PROJECT_DIR$/src/Backpack/Views/home.blade.stub" />
-        <option value="$PROJECT_DIR$/src/Backpack/Views/auth/register.blade.stub" />
-        <option value="$PROJECT_DIR$/src/Backpack/Views/auth/passwords/reset.blade.stub" />
-        <option value="$PROJECT_DIR$/src/Backpack/Views/auth/passwords/email.blade.stub" />
-        <option value="$PROJECT_DIR$/src/Backpack/Views/auth/login.blade.stub" />
         <option value="$PROJECT_DIR$/src/Backpack/Views/auth/account/change_password.blade.stub" />
         <option value="$PROJECT_DIR$/src/Backpack/Views/auth/account/update_info.blade.stub" />
         <option value="$PROJECT_DIR$/src/Backpack/Views/auth/account/sidemenu.blade.php" />
+        <option value="$PROJECT_DIR$/src/Backpack/Views/auth/login.blade.stub" />
+        <option value="$PROJECT_DIR$/src/Backpack/Views/auth/register.blade.stub" />
+        <option value="$PROJECT_DIR$/src/Backpack/Views/auth/passwords/email.blade.stub" />
+        <option value="$PROJECT_DIR$/src/Backpack/Views/auth/passwords/reset.blade.stub" />
+        <option value="$PROJECT_DIR$/src/Backpack/Model/model.stub" />
         <option value="$PROJECT_DIR$/src/Command/MultiAuthPrepare.php" />
       </list>
     </option>
@@ -167,6 +242,13 @@
               <item name="MultiAuthCommand" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Backpack" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MultiAuthCommand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiAuthCommand" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Backpack" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -185,6 +267,15 @@
               <item name="Views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="auth" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="account" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MultiAuthCommand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiAuthCommand" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Backpack" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="auth" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="passwords" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="MultiAuthCommand" type="b2602c69:ProjectViewProjectNode" />
@@ -264,12 +355,12 @@
       <updated>1515760111402</updated>
       <workItem from="1515760113322" duration="23531000" />
       <workItem from="1521157799118" duration="9834000" />
-      <workItem from="1521222754698" duration="622000" />
+      <workItem from="1521222754698" duration="2563000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33987000" />
+    <option name="totallyTimeSpent" value="35928000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="852" extended-state="0" />
@@ -280,6 +371,7 @@
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -291,7 +383,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -306,13 +397,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Views/auth/account/change_password.blade.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="89" lean-forward="false" selection-start-line="10" selection-start-column="84" selection-end-line="10" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Request/AccountInfoRequest.stub">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -460,13 +544,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Model/model.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Backpack/Controllers/Controller.stub" />
     <entry file="file://$PROJECT_DIR$/src/Backpack/Controllers/HomeController.stub" />
     <entry file="file://$PROJECT_DIR$/src/Backpack/Controllers/Auth/ForgotPasswordController.stub" />
@@ -482,34 +559,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/register.blade.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="33" lean-forward="false" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/passwords/reset.blade.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="33" lean-forward="false" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/passwords/email.blade.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="33" lean-forward="false" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/login.blade.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="33" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -587,13 +636,62 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/login.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/register.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/passwords/email.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/passwords/reset.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Backpack/Model/model.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Route/mapRoute.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="36" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Command/MultiAuthPrepare.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="419" column="82" lean-forward="false" selection-start-line="419" selection-start-column="82" selection-end-line="419" selection-end-column="82" />
+        <state relative-caret-position="137">
+          <caret line="124" column="42" lean-forward="true" selection-start-line="124" selection-start-column="42" selection-end-line="124" selection-end-column="42" />
           <folding>
             <element signature="e#54#109#0#PHP" expanded="true" />
           </folding>
