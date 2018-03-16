@@ -1,10 +1,13 @@
 <?php
 
-namespace iMokhles\MultiAuthCommand\Command;
+namespace App\Console\Commands;
+
 
 use Illuminate\Database\Console\Migrations\BaseCommand;
 use Illuminate\Database\Migrations\MigrationCreator;
 use Illuminate\Support\Composer;
+use Symfony\Component\Console\Input\InputArgument;
+use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
 
@@ -15,7 +18,7 @@ class MultiAuthPrepare extends BaseCommand
      *
      * @var string
      */
-    protected $signature = 'make:multi-auth {name}';
+    protected $signature = 'test-make:multi-auth {name} {--is_backpack= : Check if backpack or not to publish correct views}';
 
     /**
      * The console command description.
@@ -60,19 +63,31 @@ class MultiAuthPrepare extends BaseCommand
     {
 
         $this->info("### Preparing For MultiAuth. Please wait...");
-        $this->installMigration();
-        $this->installModel();
-        $this->installRouteMaps();
-        $this->installRouteFiles();
-        $this->installControllers();
-        $this->installRequests();
-        $this->installConfigs();
-        $this->installMiddleware();
-        $this->installUnauthenticated();
-        $this->installView();
-        $this->installPrologueAlert();
+
+        $is_backpack = $this->option('is_backpack');
+
+        $is_backpack_enabled = false;
+        if ($is_backpack == 1) {
+            $is_backpack_enabled = true;
+        }
+
+        $this->installMigration($is_backpack_enabled);
+        $this->installModel($is_backpack_enabled);
+        $this->installRouteMaps($is_backpack_enabled);
+        $this->installRouteFiles($is_backpack_enabled);
+        $this->installControllers($is_backpack_enabled);
+        $this->installRequests($is_backpack_enabled);
+        $this->installConfigs($is_backpack_enabled);
+        $this->installMiddleware($is_backpack_enabled);
+        $this->installUnauthenticated($is_backpack_enabled);
+        $this->installView($is_backpack_enabled);
+        $this->installPrologueAlert($is_backpack_enabled);
+
         $this->composer->dumpAutoloads();
+
         $this->info("### Finished MultiAuth.");
+        $this->info("### Finished MultiAuth for Backpack.");
+
 
         return true;
     }
@@ -82,7 +97,7 @@ class MultiAuthPrepare extends BaseCommand
      *
      * @return boolean
      */
-    public function installPrologueAlert() {
+    public function installPrologueAlert($is_backpack_enabled) {
         $alertsConfigFile = $this->getConfigsFolderPath().DIRECTORY_SEPARATOR."prologue/alerts.php";
         if (!file_exists($alertsConfigFile)) {
             $this->executeProcess('php artisan vendor:publish --provider="Prologue\Alerts\AlertsServiceProvider"',
@@ -97,7 +112,7 @@ class MultiAuthPrepare extends BaseCommand
      *
      * @return boolean
      */
-    public function installMigration()
+    public function installMigration($is_backpack_enabled)
     {
         $nameSmallPlural = str_plural(snake_case($this->getParsedNameInput()));
         $name = ucfirst($this->getParsedNameInput());
@@ -145,20 +160,39 @@ class MultiAuthPrepare extends BaseCommand
      *
      * @return boolean
      */
-    public function installModel()
+    public function installModel($is_backpack_enabled)
     {
         $nameSmall = snake_case($this->getParsedNameInput());
         $name = ucfirst($this->getParsedNameInput());
 
 
-        $modelContent = file_get_contents(__DIR__ . '/../Model/model.stub');
-        $modelContentNew = str_replace([
+        $arrayToChange = [
             '{{$name}}',
-        ], [
+        ];
+
+        $newChanges = [
             $name,
-        ], $modelContent);
-        $modelPath = $this->getAppFolderPath().DIRECTORY_SEPARATOR.$name.".php";
+        ];
+        if ($is_backpack_enabled == true) {
+            $nameSmallPlural = str_plural(snake_case($this->getParsedNameInput()));
+            array_push($arrayToChange, '{{$nameSmallPlural}}');
+            array_push($newChanges, $nameSmallPlural);
+
+            $modelContent = file_get_contents(__DIR__ . '/../Backpack/Model/model.stub');
+            $modelContentNew = str_replace($arrayToChange, $newChanges, $modelContent);
+        } else {
+            $modelContent = file_get_contents(__DIR__ . '/../Model/model.stub');
+            $modelContentNew = str_replace($arrayToChange, $newChanges, $modelContent);
+        }
+
+        $createFolder = $this->getAppFolderPath().DIRECTORY_SEPARATOR."Models";
+        if (!file_exists($createFolder)) {
+            mkdir($createFolder);
+        }
+
+        $modelPath = $createFolder.DIRECTORY_SEPARATOR.$name.".php";
         file_put_contents($modelPath, $modelContentNew);
+
 
 
         $resetNotificationContent = file_get_contents(__DIR__ . '/../Notification/resetPasswordNotification.stub');
@@ -187,23 +221,61 @@ class MultiAuthPrepare extends BaseCommand
      *
      * @return boolean
      */
-    public function installView()
+    public function installView($is_backpack_enabled)
     {
         $nameSmall = snake_case($this->getParsedNameInput());
         $name = ucfirst($this->getParsedNameInput());
 
-        $appBlade = file_get_contents(__DIR__ . '/../Views/layouts/app.blade.stub');
-        $welcomeBlade = file_get_contents(__DIR__ . '/../Views/welcome.blade.stub');
-        $homeBlade = file_get_contents(__DIR__ . '/../Views/home.blade.stub');
-        $loginBlade = file_get_contents(__DIR__ . '/../Views/auth/login.blade.stub');
-        $registerBlade = file_get_contents(__DIR__ . '/../Views/auth/register.blade.stub');
-        $resetBlade = file_get_contents(__DIR__ . '/../Views/auth/passwords/reset.blade.stub');
-        $emailBlade = file_get_contents(__DIR__ . '/../Views/auth/passwords/email.blade.stub');
+        if ($is_backpack_enabled == true) {
+            $appBlade = file_get_contents(__DIR__ . '/../Backpack/Views/layouts/layout.blade.stub');
+        } else {
+            $appBlade = file_get_contents(__DIR__ . '/../Views/layouts/app.blade.stub');
+        }
 
-        $update_infoBlade = file_get_contents(__DIR__
-            . '/../Views/auth/account/update_info.blade.stub');
-        $change_passwordBlade = file_get_contents(__DIR__
-            . '/../Views/auth/account/change_password.blade.stub');
+
+
+
+
+        if ($is_backpack_enabled == true) {
+            $appBlade = file_get_contents(__DIR__ . '/../Backpack/Views/layouts/layout.blade.stub');
+            $homeBlade = file_get_contents(__DIR__ . '/../Backpack/Views/home.blade.stub');
+            $loginBlade = file_get_contents(__DIR__ . '/../Backpack/Views/auth/login.blade.stub');
+            $registerBlade = file_get_contents(__DIR__ . '/../Backpack/Views/auth/register.blade.stub');
+            $resetBlade = file_get_contents(__DIR__ . '/../Backpack/Views/auth/passwords/reset.blade.stub');
+            $emailBlade = file_get_contents(__DIR__ . '/../Backpack/Views/auth/passwords/email.blade.stub');
+
+            $update_infoBlade = file_get_contents(__DIR__
+                . '/../Backpack/Views/auth/account/update_info.blade.stub');
+            $change_passwordBlade = file_get_contents(__DIR__
+                . '/../Backpack/Views/auth/account/change_password.blade.stub');
+
+            $sidemenuBlade = file_get_contents(__DIR__
+                . '/../Backpack/Views/auth/account/sidemenu.blade.stub');
+            $main_headerBlade = file_get_contents(__DIR__
+                . '/../Backpack/Views/inc/main_header.blade.stub');
+            $menuBlade = file_get_contents(__DIR__
+                . '/../Backpack/Views/inc/menu.blade.stub');
+            $sidebarBlade = file_get_contents(__DIR__
+                . '/../Backpack/Views/inc/sidebar.blade.stub');
+            $sidebar_user_panelBlade = file_get_contents(__DIR__
+                . '/../Backpack/Views/inc/sidebar_user_panel.blade.stub');
+
+
+        } else {
+            $welcomeBlade = file_get_contents(__DIR__ . '/../Views/welcome.blade.stub');
+            $appBlade = file_get_contents(__DIR__ . '/../Views/layouts/app.blade.stub');
+            $homeBlade = file_get_contents(__DIR__ . '/../Views/home.blade.stub');
+            $loginBlade = file_get_contents(__DIR__ . '/../Views/auth/login.blade.stub');
+            $registerBlade = file_get_contents(__DIR__ . '/../Views/auth/register.blade.stub');
+            $resetBlade = file_get_contents(__DIR__ . '/../Views/auth/passwords/reset.blade.stub');
+            $emailBlade = file_get_contents(__DIR__ . '/../Views/auth/passwords/email.blade.stub');
+            $update_infoBlade = file_get_contents(__DIR__
+                . '/../Views/auth/account/update_info.blade.stub');
+            $change_passwordBlade = file_get_contents(__DIR__
+                . '/../Views/auth/account/change_password.blade.stub');
+
+        }
+
 
         $createFolder = $this->getViewsFolderPath().DIRECTORY_SEPARATOR."$nameSmall";
         if (!file_exists($createFolder)) {
@@ -215,6 +287,13 @@ class MultiAuthPrepare extends BaseCommand
             .DIRECTORY_SEPARATOR."layouts";
         if (!file_exists($createFolderLayouts)) {
             mkdir($createFolderLayouts);
+        }
+
+        $createFolderInc = $this->getViewsFolderPath().DIRECTORY_SEPARATOR
+            ."$nameSmall"
+            .DIRECTORY_SEPARATOR."inc";
+        if (!file_exists($createFolderInc)) {
+            mkdir($createFolderInc);
         }
 
         $createFolderAuth = $this->getViewsFolderPath().DIRECTORY_SEPARATOR."$nameSmall"
@@ -297,9 +376,50 @@ class MultiAuthPrepare extends BaseCommand
         ], $change_passwordBlade);
 
 
+        if ($is_backpack_enabled == true) {
+            $sidemenuBladeNew = str_replace([
+                '{{$nameSmall}}',
+            ], [
+                $nameSmall
+            ], $sidemenuBlade);
 
-        file_put_contents($createFolderLayouts.'/app.blade.php', $appBladeNew);
-        file_put_contents($createFolder.'/welcome.blade.php', $welcomeBladeNew);
+            $main_headerBladeNew = str_replace([
+                '{{$nameSmall}}',
+            ], [
+                $nameSmall
+            ], $main_headerBlade);
+
+            $menuBladeNew = str_replace([
+                '{{$nameSmall}}',
+            ], [
+                $nameSmall
+            ], $menuBlade);
+
+            $sidebarBladeNew = str_replace([
+                '{{$nameSmall}}',
+            ], [
+                $nameSmall
+            ], $sidebarBlade);
+
+            $sidebar_user_panelBladeNew = str_replace([
+                '{{$nameSmall}}',
+            ], [
+                $nameSmall
+            ], $sidebar_user_panelBlade);
+
+
+            file_put_contents($createFolderLayouts.'/layout.blade.php', $appBladeNew);
+
+            file_put_contents($createFolderAuthAccount.'/sidemenu.blade.php', $main_headerBladeNew);
+            file_put_contents($createFolderInc.'/main_header.blade.php', $main_headerBladeNew);
+            file_put_contents($createFolderInc.'/menu.blade.php', $menuBladeNew);
+            file_put_contents($createFolderInc.'/sidebar.blade.php', $sidebarBladeNew);
+            file_put_contents($createFolderInc.'/sidebar_user_panel.blade.php', $sidebar_user_panelBladeNew);
+
+        } else {
+            file_put_contents($createFolderLayouts.'/app.blade.php', $appBladeNew);
+            file_put_contents($createFolder.'/welcome.blade.php', $welcomeBladeNew);
+        }
         file_put_contents($createFolder.'/home.blade.php', $homeBladeNew);
         file_put_contents($createFolderAuth.'/login.blade.php', $loginBladeNew);
         file_put_contents($createFolderAuth.'/register.blade.php', $registerBladeNew);
@@ -319,7 +439,7 @@ class MultiAuthPrepare extends BaseCommand
      * @return boolean
      */
 
-    public function installRouteMaps()
+    public function installRouteMaps($is_backpack_enabled)
     {
         $nameSmall = snake_case($this->getParsedNameInput());
         $name = ucfirst($this->getParsedNameInput());
@@ -345,7 +465,7 @@ class MultiAuthPrepare extends BaseCommand
      * @return boolean
      */
 
-    public function installRouteFiles()
+    public function installRouteFiles($is_backpack_enabled)
     {
         $nameSmall = snake_case($this->getParsedNameInput());
         $name = ucfirst($this->getParsedNameInput());
@@ -372,7 +492,7 @@ class MultiAuthPrepare extends BaseCommand
      * @return boolean
      */
 
-    public function installRequests()
+    public function installRequests($is_backpack_enabled)
     {
         $nameSmall = snake_case($this->getParsedNameInput());
         $name = ucfirst($this->getParsedNameInput());
@@ -420,7 +540,7 @@ class MultiAuthPrepare extends BaseCommand
      * @return boolean
      */
 
-    public function installControllers()
+    public function installControllers($is_backpack_enabled)
     {
         $nameSmall = snake_case($this->getParsedNameInput());
         $nameSmallPlural = str_plural(snake_case($this->getParsedNameInput()));
@@ -528,7 +648,7 @@ class MultiAuthPrepare extends BaseCommand
      * @return boolean
      */
 
-    public function installConfigs()
+    public function installConfigs($is_backpack_enabled)
     {
         $nameSmall = snake_case($this->getParsedNameInput());
         $nameSmallPlural = str_plural(snake_case($this->getParsedNameInput()));
@@ -573,7 +693,7 @@ class MultiAuthPrepare extends BaseCommand
      *
      * @return boolean
      */
-    public function installUnauthenticated()
+    public function installUnauthenticated($is_backpack_enabled)
     {
         $nameSmall = snake_case($this->getParsedNameInput());
         $exceptionHandlerFile = $this->getAppFolderPath().DIRECTORY_SEPARATOR."Exceptions".DIRECTORY_SEPARATOR
@@ -607,7 +727,7 @@ class MultiAuthPrepare extends BaseCommand
      * @return boolean
      */
 
-    public function installMiddleware()
+    public function installMiddleware($is_backpack_enabled)
     {
         $nameSmall = snake_case($this->getParsedNameInput());
 
@@ -713,7 +833,7 @@ class MultiAuthPrepare extends BaseCommand
     }
 
     /**
-     * Get migration path (either specified by '--path' option or default location).
+     * Get migration path.
      *
      * @return string
      */

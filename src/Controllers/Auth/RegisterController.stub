@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\{{$name}}\Auth;
 
-use App\{{$name}};
+use App\Models\{{$name}};
 use App\Http\Controllers\{{$name}}\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -28,7 +28,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/{{$nameSmall}}/home';
 
     /**
      * Create a new controller instance.
@@ -59,7 +59,7 @@ class RegisterController extends Controller
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
-     * @return \App\{{$name}}
+     * @return \App\Models\{{$name}}
      */
     protected function create(array $data)
     {
