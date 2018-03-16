@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Console\Commands;
+namespace iMokhles\MultiAuthCommand\Command;
 
 
 use Illuminate\Database\Console\Migrations\BaseCommand;
