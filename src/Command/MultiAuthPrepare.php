@@ -18,7 +18,7 @@ class MultiAuthPrepare extends BaseCommand
      *
      * @var string
      */
-    protected $signature = 'test-make:multi-auth {name} {--is_backpack= : Check if backpack or not to publish correct views}';
+    protected $signature = 'make:multi-auth {name} {--is_backpack= : Check if backpack or not to publish correct views}';
 
     /**
      * The console command description.
