@@ -322,12 +322,6 @@ class MultiAuthPrepare extends BaseCommand
             $nameSmall
         ], $appBlade);
 
-        $welcomeBladeNew = str_replace([
-            '{{$nameSmall}}',
-        ], [
-            $nameSmall
-        ], $welcomeBlade);
-
         $homeBladeNew = str_replace([
             '{{$nameSmall}}',
             '{{$name}}',
@@ -417,6 +411,11 @@ class MultiAuthPrepare extends BaseCommand
             file_put_contents($createFolderInc.'/sidebar_user_panel.blade.php', $sidebar_user_panelBladeNew);
 
         } else {
+            $welcomeBladeNew = str_replace([
+                '{{$nameSmall}}',
+            ], [
+                $nameSmall
+            ], $welcomeBlade);
             file_put_contents($createFolderLayouts.'/app.blade.php', $appBladeNew);
             file_put_contents($createFolder.'/welcome.blade.php', $welcomeBladeNew);
         }

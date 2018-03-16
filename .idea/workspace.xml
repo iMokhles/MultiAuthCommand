@@ -20,8 +20,8 @@
       <file leaf-file-name="MultiAuthPrepare.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Command/MultiAuthPrepare.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+            <state relative-caret-position="214">
+              <caret line="419" column="82" lean-forward="false" selection-start-line="419" selection-start-column="82" selection-end-line="419" selection-end-column="82" />
               <folding>
                 <element signature="e#54#109#0#PHP" expanded="true" />
               </folding>
@@ -33,7 +33,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>$homeBlade</find>
       <find>$name</find>
       <find>update_</find>
       <find>{{$name}}</find>
@@ -63,6 +62,7 @@
       <find>{{$nameSmall}}</find>
       <find>{{ route('{{$nameSmall}}.home') }}</find>
       <find>{{$</find>
+      <find>welcomeBlade</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/Backpack/Views/inc</dir>
@@ -264,12 +264,12 @@
       <updated>1515760111402</updated>
       <workItem from="1515760113322" duration="23531000" />
       <workItem from="1521157799118" duration="9834000" />
-      <workItem from="1521222754698" duration="284000" />
+      <workItem from="1521222754698" duration="622000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33649000" />
+    <option name="totallyTimeSpent" value="33987000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="852" extended-state="0" />
@@ -592,8 +592,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Command/MultiAuthPrepare.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+        <state relative-caret-position="214">
+          <caret line="419" column="82" lean-forward="false" selection-start-line="419" selection-start-column="82" selection-end-line="419" selection-end-column="82" />
           <folding>
             <element signature="e#54#109#0#PHP" expanded="true" />
           </folding>
