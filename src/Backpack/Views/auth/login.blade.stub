@@ -19,7 +19,7 @@
         <div class="login-box-body">
             <p class="login-box-msg">{{ trans('backpack::base.login') }}</p>
 
-            <form role="form" method="POST" action="{{ route('{{$nameSmall}}.auth.login') }}">
+            <form role="form" method="POST" action="{{ route('{{$nameSmall}}.login') }}">
                 {!! csrf_field() !!}
 
                 <div class="form-group has-feedback {{ $errors->has('email') ? 'has-error' : '' }}">
@@ -62,12 +62,12 @@
             </form>
 
             <div class="auth-links">
-                <a href="{{ route('{{$nameSmall}}.auth.password.reset') }}"
+                <a href="{{ route('{{$nameSmall}}.password.request') }}"
                    class="text-center"
                 >{{ trans('backpack::base.forgot_your_password') }}</a>
                 <br>
                 @if (config('backpack.base.registration_open'))
-                    <a href="{{ route('{{$nameSmall}}.auth.register') }}"
+                    <a href="{{ route('{{$nameSmall}}.register') }}"
                        class="text-center"
                     >{{ trans('backpack::base.register') }}</a>
                 @endif

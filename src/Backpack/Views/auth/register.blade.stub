@@ -17,7 +17,7 @@
 
         <div class="register-box-body">
             <p class="login-box-msg">{{ trans('backpack::base.register') }}</p>
-            <form role="form" method="POST" action="{{ route('{{$nameSmall}}.auth.register') }}" method="post">
+            <form role="form" method="POST" action="{{ route('{{$nameSmall}}.register') }}" method="post">
                 {!! csrf_field() !!}
 
                 <div class="form-group has-feedback {{ $errors->has('name') ? 'has-error' : '' }}">
@@ -70,7 +70,7 @@
             </form>
 
             <div class="auth-links">
-                <a href="{{ route('{{$nameSmall}}.auth.login') }}"
+                <a href="{{ route('{{$nameSmall}}.login') }}"
                    class="text-center">{{ trans('backpack::base.login') }}</a>
             </div>
         </div>

@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="6ea327e4-ed27-4c84-ba0e-659e8a2452e9" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/Command/MultiAuthPrepare.php" afterPath="$PROJECT_DIR$/src/Command/MultiAuthPrepare.php" />
+      <change beforePath="$PROJECT_DIR$/src/Backpack/Views/auth/account/change_password.blade.stub" afterPath="$PROJECT_DIR$/src/Backpack/Views/auth/account/change_password.blade.stub" />
+      <change beforePath="$PROJECT_DIR$/src/Backpack/Views/auth/login.blade.stub" afterPath="$PROJECT_DIR$/src/Backpack/Views/auth/login.blade.stub" />
+      <change beforePath="$PROJECT_DIR$/src/Backpack/Views/auth/passwords/email.blade.stub" afterPath="$PROJECT_DIR$/src/Backpack/Views/auth/passwords/email.blade.stub" />
+      <change beforePath="$PROJECT_DIR$/src/Backpack/Views/auth/passwords/reset.blade.stub" afterPath="$PROJECT_DIR$/src/Backpack/Views/auth/passwords/reset.blade.stub" />
+      <change beforePath="$PROJECT_DIR$/src/Backpack/Views/auth/register.blade.stub" afterPath="$PROJECT_DIR$/src/Backpack/Views/auth/register.blade.stub" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,11 +21,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MultiAuthPrepare.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MultiAuthPrepare.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Command/MultiAuthPrepare.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="139" column="23" lean-forward="false" selection-start-line="139" selection-start-column="23" selection-end-line="139" selection-end-column="23" />
+            <state relative-caret-position="157">
+              <caret line="126" column="0" lean-forward="true" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="change_password.blade.stub" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/account/change_password.blade.stub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="100" column="38" lean-forward="false" selection-start-line="100" selection-start-column="32" selection-end-line="100" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="update_info.blade.stub" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/account/update_info.blade.stub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="44" column="44" lean-forward="false" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="email.blade.stub" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/passwords/email.blade.stub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="25" column="76" lean-forward="false" selection-start-line="25" selection-start-column="76" selection-end-line="25" selection-end-column="76" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reset.blade.stub" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/passwords/reset.blade.stub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="76" lean-forward="false" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.blade.stub" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/login.blade.stub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="67" column="20" lean-forward="true" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routeFile.stub" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Route/routeFile.stub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="205">
+              <caret line="28" column="75" lean-forward="false" selection-start-line="28" selection-start-column="68" selection-end-line="28" selection-end-column="75" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.blade.stub" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Views/auth/login.blade.stub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-475">
+              <caret line="14" column="45" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.blade.stub" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/register.blade.stub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="72" column="49" lean-forward="false" selection-start-line="72" selection-start-column="49" selection-end-line="72" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -31,9 +115,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>{{$name}}</find>
-      <find>switch(array_get($exception-&gt;guards(), 0)) {</find>
-      <find>installUnauthenticated</find>
       <find>options</find>
       <find>--path</find>
       <find>App\{{</find>
@@ -44,7 +125,6 @@
       <find>inc.</find>
       <find>::</find>
       <find>@include</find>
-      <find>route(</find>
       <find>route</find>
       <find>backpack_url</find>
       <find>sidemenu</find>
@@ -61,10 +141,15 @@
       <find>welcomeBlade</find>
       <find>getRouteServicesPath</find>
       <find>str_c</find>
+      <find>auth.</find>
+      <find>request</find>
+      <find>email</find>
+      <find>route(</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/Backpack/Views/inc</dir>
       <dir>$PROJECT_DIR$/src/Backpack/Views/</dir>
+      <dir>$PROJECT_DIR$/src/Backpack/Views</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -106,12 +191,12 @@
         <option value="$PROJECT_DIR$/src/Backpack/Views/auth/account/change_password.blade.stub" />
         <option value="$PROJECT_DIR$/src/Backpack/Views/auth/account/update_info.blade.stub" />
         <option value="$PROJECT_DIR$/src/Backpack/Views/auth/account/sidemenu.blade.php" />
-        <option value="$PROJECT_DIR$/src/Backpack/Views/auth/login.blade.stub" />
-        <option value="$PROJECT_DIR$/src/Backpack/Views/auth/register.blade.stub" />
-        <option value="$PROJECT_DIR$/src/Backpack/Views/auth/passwords/email.blade.stub" />
-        <option value="$PROJECT_DIR$/src/Backpack/Views/auth/passwords/reset.blade.stub" />
         <option value="$PROJECT_DIR$/src/Backpack/Model/model.stub" />
         <option value="$PROJECT_DIR$/src/Command/MultiAuthPrepare.php" />
+        <option value="$PROJECT_DIR$/src/Backpack/Views/auth/passwords/email.blade.stub" />
+        <option value="$PROJECT_DIR$/src/Backpack/Views/auth/passwords/reset.blade.stub" />
+        <option value="$PROJECT_DIR$/src/Backpack/Views/auth/register.blade.stub" />
+        <option value="$PROJECT_DIR$/src/Backpack/Views/auth/login.blade.stub" />
       </list>
     </option>
   </component>
@@ -228,6 +313,19 @@
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Route" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="MultiAuthCommand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiAuthCommand" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MultiAuthCommand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiAuthCommand" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="auth" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -278,16 +376,15 @@
       <updated>1515760111402</updated>
       <workItem from="1515760113322" duration="23531000" />
       <workItem from="1521157799118" duration="9834000" />
-      <workItem from="1521222754698" duration="3166000" />
+      <workItem from="1521222754698" duration="4636000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36531000" />
+    <option name="totallyTimeSpent" value="38001000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="852" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26037195" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -320,13 +417,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Request/AccountInfoRequest.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="1" lean-forward="false" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Request/ChangePasswordRequest.stub">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -482,6 +572,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -489,13 +580,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="91" column="18" lean-forward="true" selection-start-line="91" selection-start-column="18" selection-end-line="91" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Route/routeFile.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -510,6 +595,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
           <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <marker date="1521169061000" expanded="true" signature="30:50" ph="..." />
+            <marker date="1521169061000" expanded="true" signature="75:95" ph="..." />
+            <marker date="1521169061000" expanded="true" signature="136:166" ph="..." />
+            <marker date="1521169061000" expanded="true" signature="559:591" ph="..." />
+            <marker date="1521169061000" expanded="true" signature="661:689" ph="..." />
+            <marker date="1521169061000" expanded="true" signature="893:901" ph="..." />
+            <marker date="1521169061000" expanded="true" signature="984:993" ph="..." />
+            <marker date="1521169061000" expanded="true" signature="1098:1120" ph="..." />
+            <marker date="1521169061000" expanded="true" signature="1156:1172" ph="..." />
+            <marker date="1521169061000" expanded="true" signature="1184:1207" ph="..." />
+            <marker date="1521169061000" expanded="true" signature="1219:1241" ph="..." />
+            <marker date="1521169061000" expanded="true" signature="1251:1266" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -517,6 +616,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -524,6 +624,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="29" />
+          <folding>
+            <marker date="1521168273000" expanded="true" signature="311:321" ph="..." />
+            <marker date="1521168273000" expanded="true" signature="767:805" ph="..." />
+            <marker date="1521168273000" expanded="true" signature="834:871" ph="..." />
+            <marker date="1521168273000" expanded="true" signature="915:947" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -531,6 +637,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -538,37 +645,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="202" lean-forward="false" selection-start-line="6" selection-start-column="199" selection-end-line="6" selection-end-column="202" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/login.blade.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/register.blade.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/passwords/email.blade.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/passwords/reset.blade.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -593,39 +669,78 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="48" lean-forward="false" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="48" />
-          <folding>
-            <marker date="1521170504000" expanded="true" signature="125:185" ph="..." />
-            <marker date="1521170504000" expanded="true" signature="238:283" ph="..." />
-            <marker date="1521170504000" expanded="true" signature="402:462" ph="..." />
-            <marker date="1521170504000" expanded="true" signature="510:548" ph="..." />
-            <marker date="1521170504000" expanded="true" signature="554:599" ph="..." />
-            <marker date="1521170504000" expanded="true" signature="646:710" ph="..." />
-            <marker date="1521170504000" expanded="true" signature="758:800" ph="..." />
-            <marker date="1521170504000" expanded="true" signature="806:847" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/account/change_password.blade.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/account/update_info.blade.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="19" lean-forward="true" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Command/MultiAuthPrepare.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="139" column="23" lean-forward="false" selection-start-line="139" selection-start-column="23" selection-end-line="139" selection-end-column="23" />
+        <state relative-caret-position="157">
+          <caret line="126" column="0" lean-forward="true" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/account/change_password.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="100" column="38" lean-forward="false" selection-start-line="100" selection-start-column="32" selection-end-line="100" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/account/update_info.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="44" column="44" lean-forward="false" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/passwords/email.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="25" column="76" lean-forward="false" selection-start-line="25" selection-start-column="76" selection-end-line="25" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/passwords/reset.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="76" lean-forward="false" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/register.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="72" column="49" lean-forward="false" selection-start-line="72" selection-start-column="49" selection-end-line="72" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Route/routeFile.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="28" column="75" lean-forward="false" selection-start-line="28" selection-start-column="68" selection-end-line="28" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Views/auth/login.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-475">
+          <caret line="14" column="45" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/login.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="67" column="20" lean-forward="true" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
           <folding />
         </state>
       </provider>
