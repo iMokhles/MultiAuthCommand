@@ -69,7 +69,7 @@ class MultiAuthPrepare extends BaseCommand
         $this->progressBar = $this->output->createProgressBar(14);
         $this->progressBar->start();
 
-        $this->info("Preparing For MultiAuth. Please wait...");
+        $this->line("Preparing For MultiAuth. Please wait...");
         $this->progressBar->advance();
 
         $is_backpack = $this->option('is_backpack');
@@ -79,64 +79,65 @@ class MultiAuthPrepare extends BaseCommand
             $is_backpack_enabled = true;
         }
 
-        if ($this->isAlreadySetup($is_backpack_enabled)) {
-            $this->info("installing migrations...");
+        if ($this->isAlreadySetup($is_backpack_enabled) == false) {
+
+            $this->line("installing migrations...");
             $this->installMigration($is_backpack_enabled);
             $this->progressBar->advance();
 
-            $this->info("installing models...");
+            $this->line("installing models...");
             $this->installModel($is_backpack_enabled);
             $this->progressBar->advance();
 
-            $this->info("installing route maps...");
+            $this->line("installing route maps...");
             $this->installRouteMaps($is_backpack_enabled);
             $this->progressBar->advance();
 
-            $this->info("installing route files...");
+            $this->line("installing route files...");
             $this->installRouteFiles($is_backpack_enabled);
             $this->progressBar->advance();
 
-            $this->info("installing controllers...");
+            $this->line("installing controllers...");
             $this->installControllers($is_backpack_enabled);
             $this->progressBar->advance();
 
-            $this->info("installing requests...");
+            $this->line("installing requests...");
             $this->installRequests($is_backpack_enabled);
             $this->progressBar->advance();
 
-            $this->info("installing configs...");
+            $this->line("installing configs...");
             $this->installConfigs($is_backpack_enabled);
             $this->progressBar->advance();
 
-            $this->info("installing middleware...");
+            $this->line("installing middleware...");
             $this->installMiddleware($is_backpack_enabled);
             $this->progressBar->advance();
 
-            $this->info("installing unauthenticated function...");
+            $this->line("installing unauthenticated function...");
             $this->installUnauthenticated($is_backpack_enabled);
             $this->progressBar->advance();
 
-            $this->info("installing views...");
+            $this->line("installing views...");
             $this->installView($is_backpack_enabled);
             $this->progressBar->advance();
 
-            $this->info("installing prologue alert...");
+            $this->line("installing prologue alert...");
             $this->installPrologueAlert($is_backpack_enabled);
             $this->progressBar->advance();
 
-            $this->info("dump autoload...");
+            $this->line("dump autoload...");
             $this->composer->dumpAutoloads();
             $this->progressBar->advance();
 
             if ($is_backpack_enabled == false) {
-                $this->info("finished MultiAuth.");
-                $this->progressBar->advance();
+                $this->line("finished MultiAuth.");
+                $this->progressBar->finish();
             } else {
                 $this->info("finished MultiAuth for Backpack.");
-                $this->progressBar->advance();
+                $this->progressBar->finish();
             }
         } else {
-            $this->info("failed. already setup");
+            $this->line("failed. already setup");
             $this->progressBar->advance();
             $this->progressBar->finish();
         }
