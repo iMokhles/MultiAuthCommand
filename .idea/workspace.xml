@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6ea327e4-ed27-4c84-ba0e-659e8a2452e9" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/Backpack/Views/auth/account/change_password.blade.stub" afterPath="$PROJECT_DIR$/src/Backpack/Views/auth/account/change_password.blade.stub" />
-      <change beforePath="$PROJECT_DIR$/src/Backpack/Views/auth/login.blade.stub" afterPath="$PROJECT_DIR$/src/Backpack/Views/auth/login.blade.stub" />
-      <change beforePath="$PROJECT_DIR$/src/Backpack/Views/auth/passwords/email.blade.stub" afterPath="$PROJECT_DIR$/src/Backpack/Views/auth/passwords/email.blade.stub" />
-      <change beforePath="$PROJECT_DIR$/src/Backpack/Views/auth/passwords/reset.blade.stub" afterPath="$PROJECT_DIR$/src/Backpack/Views/auth/passwords/reset.blade.stub" />
-      <change beforePath="$PROJECT_DIR$/src/Backpack/Views/auth/register.blade.stub" afterPath="$PROJECT_DIR$/src/Backpack/Views/auth/register.blade.stub" />
+      <change beforePath="$PROJECT_DIR$/src/Model/model.stub" afterPath="$PROJECT_DIR$/src/Model/model.stub" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,8 +20,8 @@
       <file leaf-file-name="MultiAuthPrepare.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Command/MultiAuthPrepare.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="126" column="0" lean-forward="true" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+            <state relative-caret-position="1800">
+              <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -34,7 +30,7 @@
       <file leaf-file-name="change_password.blade.stub" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/account/change_password.blade.stub">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
+            <state relative-caret-position="1500">
               <caret line="100" column="38" lean-forward="false" selection-start-line="100" selection-start-column="32" selection-end-line="100" selection-end-column="38" />
               <folding />
             </state>
@@ -44,7 +40,7 @@
       <file leaf-file-name="update_info.blade.stub" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/account/update_info.blade.stub">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
+            <state relative-caret-position="660">
               <caret line="44" column="44" lean-forward="false" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="44" />
               <folding />
             </state>
@@ -54,7 +50,7 @@
       <file leaf-file-name="email.blade.stub" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/passwords/email.blade.stub">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
+            <state relative-caret-position="375">
               <caret line="25" column="76" lean-forward="false" selection-start-line="25" selection-start-column="76" selection-end-line="25" selection-end-column="76" />
               <folding />
             </state>
@@ -71,11 +67,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.blade.stub" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.blade.stub" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/login.blade.stub">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="67" column="20" lean-forward="true" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
+            <state relative-caret-position="186">
+              <caret line="65" column="38" lean-forward="false" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="model.stub" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Model/model.stub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -84,7 +90,7 @@
       <file leaf-file-name="routeFile.stub" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Route/routeFile.stub">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
+            <state relative-caret-position="420">
               <caret line="28" column="75" lean-forward="false" selection-start-line="28" selection-start-column="68" selection-end-line="28" selection-end-column="75" />
               <folding />
             </state>
@@ -94,7 +100,7 @@
       <file leaf-file-name="login.blade.stub" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Views/auth/login.blade.stub">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-475">
+            <state relative-caret-position="210">
               <caret line="14" column="45" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="45" />
               <folding />
             </state>
@@ -104,7 +110,7 @@
       <file leaf-file-name="register.blade.stub" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/register.blade.stub">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="1080">
               <caret line="72" column="49" lean-forward="false" selection-start-line="72" selection-start-column="49" selection-end-line="72" selection-end-column="49" />
               <folding />
             </state>
@@ -115,7 +121,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>options</find>
       <find>--path</find>
       <find>App\{{</find>
       <find>App\</find>
@@ -145,6 +150,7 @@
       <find>request</find>
       <find>email</find>
       <find>route(</find>
+      <find>route('{{$name</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/Backpack/Views/inc</dir>
@@ -177,7 +183,6 @@
         <option value="$PROJECT_DIR$/src/Controllers/Auth/MyAccountController.stub" />
         <option value="$PROJECT_DIR$/src/Controllers/Auth/ResetPasswordController.stub" />
         <option value="$PROJECT_DIR$/src/Controllers/Auth/LoginController.stub" />
-        <option value="$PROJECT_DIR$/src/Model/model.stub" />
         <option value="$PROJECT_DIR$/src/Config/provider.stub" />
         <option value="$PROJECT_DIR$/src/Controllers/Auth/RegisterController.stub" />
         <option value="$PROJECT_DIR$/src/Backpack/Views/inc/main_header.blade.php" />
@@ -197,6 +202,7 @@
         <option value="$PROJECT_DIR$/src/Backpack/Views/auth/passwords/reset.blade.stub" />
         <option value="$PROJECT_DIR$/src/Backpack/Views/auth/register.blade.stub" />
         <option value="$PROJECT_DIR$/src/Backpack/Views/auth/login.blade.stub" />
+        <option value="$PROJECT_DIR$/src/Model/model.stub" />
       </list>
     </option>
   </component>
@@ -311,6 +317,12 @@
               <item name="MultiAuthCommand" type="b2602c69:ProjectViewProjectNode" />
               <item name="MultiAuthCommand" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MultiAuthCommand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiAuthCommand" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Route" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -330,8 +342,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -376,33 +388,37 @@
       <updated>1515760111402</updated>
       <workItem from="1515760113322" duration="23531000" />
       <workItem from="1521157799118" duration="9834000" />
-      <workItem from="1521222754698" duration="4636000" />
+      <workItem from="1521222754698" duration="5023000" />
+      <workItem from="1521300210159" duration="451000" />
+      <workItem from="1521388554572" duration="285000" />
+      <workItem from="1521970865711" duration="8000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38001000" />
+    <option name="totallyTimeSpent" value="39132000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="852" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26037195" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27110156" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33553502" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.334214" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -522,13 +538,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/model.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Config/guard.stub">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -572,7 +581,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -580,7 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="91" column="18" lean-forward="true" selection-start-line="91" selection-start-column="18" selection-end-line="91" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -595,20 +602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
           <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <marker date="1521169061000" expanded="true" signature="30:50" ph="..." />
-            <marker date="1521169061000" expanded="true" signature="75:95" ph="..." />
-            <marker date="1521169061000" expanded="true" signature="136:166" ph="..." />
-            <marker date="1521169061000" expanded="true" signature="559:591" ph="..." />
-            <marker date="1521169061000" expanded="true" signature="661:689" ph="..." />
-            <marker date="1521169061000" expanded="true" signature="893:901" ph="..." />
-            <marker date="1521169061000" expanded="true" signature="984:993" ph="..." />
-            <marker date="1521169061000" expanded="true" signature="1098:1120" ph="..." />
-            <marker date="1521169061000" expanded="true" signature="1156:1172" ph="..." />
-            <marker date="1521169061000" expanded="true" signature="1184:1207" ph="..." />
-            <marker date="1521169061000" expanded="true" signature="1219:1241" ph="..." />
-            <marker date="1521169061000" expanded="true" signature="1251:1266" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -616,7 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -624,12 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="29" />
-          <folding>
-            <marker date="1521168273000" expanded="true" signature="311:321" ph="..." />
-            <marker date="1521168273000" expanded="true" signature="767:805" ph="..." />
-            <marker date="1521168273000" expanded="true" signature="834:871" ph="..." />
-            <marker date="1521168273000" expanded="true" signature="915:947" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -637,7 +623,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -645,7 +630,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="202" lean-forward="false" selection-start-line="6" selection-start-column="199" selection-end-line="6" selection-end-column="202" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -653,7 +637,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -661,7 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="36" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -669,21 +651,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="48" lean-forward="false" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Command/MultiAuthPrepare.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="126" column="0" lean-forward="true" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+        <state relative-caret-position="1800">
+          <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/account/change_password.blade.stub">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
+        <state relative-caret-position="1500">
           <caret line="100" column="38" lean-forward="false" selection-start-line="100" selection-start-column="32" selection-end-line="100" selection-end-column="38" />
           <folding />
         </state>
@@ -691,7 +672,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/account/update_info.blade.stub">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
+        <state relative-caret-position="660">
           <caret line="44" column="44" lean-forward="false" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="44" />
           <folding />
         </state>
@@ -699,7 +680,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/passwords/email.blade.stub">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
+        <state relative-caret-position="375">
           <caret line="25" column="76" lean-forward="false" selection-start-line="25" selection-start-column="76" selection-end-line="25" selection-end-column="76" />
           <folding />
         </state>
@@ -713,17 +694,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/register.blade.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="72" column="49" lean-forward="false" selection-start-line="72" selection-start-column="49" selection-end-line="72" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Route/routeFile.stub">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
+        <state relative-caret-position="420">
           <caret line="28" column="75" lean-forward="false" selection-start-line="28" selection-start-column="68" selection-end-line="28" selection-end-column="75" />
           <folding />
         </state>
@@ -731,16 +704,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Views/auth/login.blade.stub">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-475">
+        <state relative-caret-position="210">
           <caret line="14" column="45" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/register.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="72" column="49" lean-forward="false" selection-start-line="72" selection-start-column="49" selection-end-line="72" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/login.blade.stub">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="67" column="20" lean-forward="true" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
+        <state relative-caret-position="186">
+          <caret line="65" column="38" lean-forward="false" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/model.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
           <folding />
         </state>
       </provider>
