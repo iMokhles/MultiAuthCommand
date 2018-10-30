@@ -9,7 +9,7 @@ use Illuminate\Support\Composer;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
 
-class MultiAuthGenerator extends BaseCommand
+class MultiAuthPrepare extends BaseCommand
 {
     /**
      * The name and signature of the console command.
@@ -60,7 +60,7 @@ class MultiAuthGenerator extends BaseCommand
     /**
      * Execute the console command.
      *
-     * @return mixed
+     * @return boolean
      */
     public function handle()
     {
@@ -860,7 +860,7 @@ class MultiAuthGenerator extends BaseCommand
 
     /**
      * @param $nameSmall
-     * @return array
+     * @return string[]
      */
     protected function createViewsFolders($nameSmall) {
 
