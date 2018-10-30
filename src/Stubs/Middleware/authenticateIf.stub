@@ -1,0 +1,4 @@
+
+        if (!Auth::guard("{{$nameSmall}}")->check()) {
+            return route('{{$nameSmall}}.login');
+        }

@@ -1,0 +1,55 @@
+<?php
+
+return [
+
+    // labels
+    'name' => 'Name',
+    'email' => 'Email address',
+    'password' => 'Password',
+    'passwordConfirmation' => 'Confirm your password',
+    'account_info' => 'Account Info',
+    'change_password' => 'Change Password',
+    'old_password' => 'Old Password',
+    'new_password' => 'New Password',
+    'new_passwordConfirmation' => 'Confirm your new password',
+
+    'name_plh' => 'Enter your full name',
+    'email_plh' => 'Enter your email address',
+    'password_plh' => 'Enter your password',
+    'passwordConfirmation_plh' => 'Enter your password confirmation',
+    'old_password_plh' => 'Enter your old password',
+    'new_password_plh' => 'Enter your new password',
+    'new_passwordConfirmation_plh' => 'Enter your new password confirmation',
+
+    // strings
+    'remember_me' => 'Remember me',
+    'i_accept' => 'I accept',
+    'have_account' => 'Already have an account?',
+    'dont_have_account' => 'Don\'t have an account?',
+    'reset_instruction' => 'Enter your email address and we\'ll send you an email with instructions to reset your password.',
+    'reset_password_instruction' => 'Enter your email address and your new password twice to change your old one.',
+    'resent_verification_mail' => 'A fresh verification link has been sent to your email address.',
+    'check_verification_mail_before' => 'Before proceeding, please check your email for a verification link.',
+    'if_didnt_receive_verification_mail' => 'If you did not receive the email',
+    'login_status' => 'Logged in',
+    'welcome_message' => 'Welcome to your dashboard',
+    'see_more' => 'See More',
+    'dashboard' => 'Dashboard',
+    'notifications' => 'Notifications',
+    'english' => 'English',
+    'french' => 'French',
+    'arabic' => 'Arabic',
+    'profile' => 'Profile',
+    'logout' => 'Logout',
+
+    // buttons
+    'sign_in' => 'Sign In',
+    'sign_up' => 'Sign Up',
+    'forgot_password_btn' => 'Forgot your password?',
+    'conditions_btn' => 'Terms and Conditions',
+    'reset_password' => 'Reset Password',
+    'send_verification_mail' => 'click here to request another',
+    'apply_change' => 'Apply Changes',
+    'cancel_changes' => 'Cancel',
+
+];

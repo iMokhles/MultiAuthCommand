@@ -1,6 +1,6 @@
 {
     "name": "imokhles/multi-auth-command",
-    "description": "create laravel multi-auth setup files, middleware, models, migrations etc",
+    "description": "create laravel multi-auth guard setup files, middleware, models, migrations etc",
     "keywords": [
         "laravel",
         "laravel multiauth",
@@ -9,7 +9,7 @@
     ],
     "require": {
         "php": ">=5.5.0",
-        "illuminate/support": "~5.3",
+        "illuminate/support": "~5.7",
         "prologue/alerts": "^0.4.1"
     },
     "license": "MIT",

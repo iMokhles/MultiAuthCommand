@@ -1,0 +1,46 @@
+@extends('{{$nameSmall}}.layouts.layout_guest')
+
+@section('before_styles')
+    <link rel="stylesheet" href="{{ asset('start_ui') }}/css/separate/pages/login.min.css">
+@endsection
+
+@section('content')
+    <form class="sign-box" method="POST" action="{{ route('{{$nameSmall}}.password.email') }}">
+
+        @csrf
+
+        <div class="sign-avatar">
+            <img src="{{ asset('start_ui') }}/img/avatar-sign.png" alt="">
+        </div>
+
+        <div class="text-center">
+            <p>@lang('{{$nameSmall}}_dashboard.reset_instruction')</p>
+        </div>
+
+        <div class="form-group">
+            <input type="email" id="email" name="email" class="form-control" placeholder="@lang('{{$nameSmall}}_dashboard.email_plh')"/>
+        </div>
+
+        <button type="submit" class="btn btn-rounded">@lang('{{$nameSmall}}_dashboard.send_verification_mail')</button>
+        <p class="sign-note">Already have an account? <a href="{{ route('{{$nameSmall}}.login') }}">@lang('{{$nameSmall}}_dashboard.sign_in')</a></p>
+    </form>
+@endsection
+
+@section('after_scripts')
+    <script>
+        $(function() {
+            $('.page-center').matchHeight({
+                target: $('html')
+            });
+
+            $(window).resize(function(){
+                setTimeout(function(){
+                    $('.page-center').matchHeight({ remove: true });
+                    $('.page-center').matchHeight({
+                        target: $('html')
+                    });
+                },100);
+            });
+        });
+    </script>
+@endsection

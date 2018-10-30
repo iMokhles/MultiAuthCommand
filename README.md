@@ -6,7 +6,7 @@
 [![Total Downloads][ico-downloads]][link-downloads]
 [![Software License][ico-license]](LICENSE.md)
 
-create laravel multi-auth setup files, middleware, models, migrations etc
+create laravel multi-auth guard setup files, middleware, models, migrations etc
 
 ## Install
 
@@ -21,13 +21,60 @@ composer require imokhles/multi-auth-command
 iMokhles\MultiAuthCommand\MultiAuthCommandServiceProvider::class
 ```
 
+3. copy theme files to 
+```
+PROJECT_DIR/public/start_ui/*css,js,img,fonts
+```
+
+## Available themes
+
+* [StartUI](https://themeforest.net/item/startui-premium-bootstrap-4-admin-dashboard-template/15228250?ref=themesanytime)
+* more comes later ( and you are welcome to send me a pull request for more themes )
+
+## Theme folder structure 
+
+    .
+    ├── Views ( folder )
+    │   └── THEME_NAME ( folder )
+    │       ├── auth ( folder )
+    │       │    ├── account ( folder )
+    │       │    │   ├── account_info_tab.blade.stub
+    │       │    │   ├── change_password_tab.blade.stub
+    │       │    │   ├── left_box.blade.stub
+    │       │    │   ├── right_box.blade.stub
+    │       │    │   └── update_info.blade.stub
+    │       │    ├── passwords ( folder )
+    │       │    │   ├── email.blade.stub
+    │       │    │   └── reset.blade.stub
+    │       │    ├── login.blade.stub
+    │       │    ├── register.blade.stub
+    │       │    └── verify.blade.stub
+    │       ├── layouts ( folder )
+    │       │     ├── inc ( folder )
+    │       │     │    ├── alerts.blade.stub
+    │       │     │    ├── breadcrumb.blade.stub
+    │       │     │    ├── head.blade.stub
+    │       │     │    └── scripts.blade.stub
+    │       │     ├── main_header ( folder )
+    │       │     │    ├── languages.blade.stub
+    │       │     │    ├── main_header.blade.stub
+    │       │     │    ├── notifications.blade.stub
+    │       │     │    └── user.blade.stub
+    │       │     ├── sidemenu ( folder )
+    │       │     │    ├── items.blade.stub
+    │       │     │    └── list.blade.stub
+    │       │     ├── layout.blade.stub
+    │       │     └── layout_guest.blade.stub
+    │       └── dashboard.blade.stub
+    └── ...
+
 ## Usage
 
 Example usage: 
 
 
 ``` bash
-php artisan make:multi-auth Admin --force
+php artisan make:multi-auth Admin --admin_theme="startui"
 ```
 
 ## Security
