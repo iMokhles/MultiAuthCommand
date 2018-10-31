@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ea327e4-ed27-4c84-ba0e-659e8a2452e9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Controllers/Auth/LoginController.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Controllers/Auth/LoginController.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Controllers/Auth/RegisterController.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Controllers/Auth/RegisterController.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Controllers/Auth/ResetPasswordController.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Controllers/Auth/ResetPasswordController.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Controllers/Auth/VerificationController.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Controllers/Auth/VerificationController.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/login.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/login.blade.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/passwords/email.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/passwords/email.blade.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/account_info_tab.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/account_info_tab.blade.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/change_password_tab.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/change_password_tab.blade.stub" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,12 +29,12 @@
           <entry key="json" value="2" />
           <entry key="md" value="2" />
           <entry key="php" value="2" />
-          <entry key="stub" value="32" />
+          <entry key="stub" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Blade" value="32" />
+          <entry key="Blade" value="34" />
           <entry key="JSON" value="2" />
           <entry key="Markdown" value="2" />
           <entry key="PHP" value="2" />
@@ -49,12 +45,12 @@
           <entry key="json" value="9" />
           <entry key="md" value="677" />
           <entry key="php" value="116" />
-          <entry key="stub" value="219" />
+          <entry key="stub" value="223" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Blade" value="219" />
+          <entry key="Blade" value="223" />
           <entry key="JSON" value="9" />
           <entry key="Markdown" value="677" />
           <entry key="PHP" value="116" />
@@ -64,9 +60,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/account_info_tab.blade.stub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Stubs/Controllers/Auth/ForgotPasswordController.stub">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/change_password_tab.blade.stub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="353">
+              <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="21" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -105,7 +119,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Stubs/Controllers/Auth/VerificationController.stub">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
@@ -118,7 +132,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>::</find>
       <find>@include</find>
       <find>route</find>
       <find>backpack_url</find>
@@ -148,6 +161,7 @@
       <find>$title</find>
       <find>'title'</find>
       <find>.password.reset</find>
+      <find>admin.</find>
     </findStrings>
     <replaceStrings>
       <replace>@lang('dashboard</replace>
@@ -198,8 +212,6 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/main_header/notifications.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/left_box.blade.stub" />
-        <option value="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/change_password_tab.blade.stub" />
-        <option value="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/account_info_tab.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/main_header/main_header.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/inc/breadcrumb.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Controllers/DashboardController.stub" />
@@ -217,6 +229,8 @@
         <option value="$PROJECT_DIR$/src/Stubs/Controllers/Auth/RegisterController.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Controllers/Auth/ResetPasswordController.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Controllers/Auth/VerificationController.stub" />
+        <option value="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/change_password_tab.blade.stub" />
+        <option value="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/account_info_tab.blade.stub" />
       </list>
     </option>
   </component>
@@ -259,35 +273,6 @@
               <item name="MultiAuth" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Stubs" type="462c0819:PsiDirectoryNode" />
-              <item name="Config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiAuth" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiAuth" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Stubs" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiAuth" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiAuth" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Stubs" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiAuth" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiAuth" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Stubs" type="462c0819:PsiDirectoryNode" />
-              <item name="Route" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiAuth" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiAuth" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Stubs" type="462c0819:PsiDirectoryNode" />
               <item name="Views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -316,16 +301,6 @@
               <item name="StartUI" type="462c0819:PsiDirectoryNode" />
               <item name="auth" type="462c0819:PsiDirectoryNode" />
               <item name="account" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiAuth" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiAuth" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Stubs" type="462c0819:PsiDirectoryNode" />
-              <item name="Views" type="462c0819:PsiDirectoryNode" />
-              <item name="StartUI" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-              <item name="passwords" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -381,12 +356,12 @@
       <workItem from="1540742756357" duration="20000" />
       <workItem from="1540941332289" duration="3439000" />
       <workItem from="1540986038723" duration="2169000" />
-      <workItem from="1540988796412" duration="3146000" />
+      <workItem from="1540988796412" duration="3465000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47906000" />
+    <option name="totallyTimeSpent" value="48225000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1406" height="852" extended-state="0" />
@@ -472,13 +447,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/change_password_tab.blade.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="63" column="18" lean-forward="true" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/inc/breadcrumb.blade.stub">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -552,13 +520,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/account_info_tab.blade.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="32" column="18" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="32" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/register.blade.stub">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -627,6 +588,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="54" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/change_password_tab.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/account_info_tab.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
         </state>
       </provider>
     </entry>
