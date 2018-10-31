@@ -22,7 +22,7 @@
         <div class="form-group">
             <div class="checkbox float-left">
                 <input type="checkbox" id="remember" name="remember"/>
-                <label for="signed-in">@lang('{{$nameSmall}}_dashboard.remember_me')</label>
+                <label for="remember">@lang('{{$nameSmall}}_dashboard.remember_me')</label>
             </div>
             <div class="float-right reset">
                 <a href="{{ route('{{$nameSmall}}.password.reset') }}">@lang('{{$nameSmall}}_dashboard.forgot_password_btn')</a>

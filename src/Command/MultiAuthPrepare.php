@@ -859,7 +859,7 @@ class MultiAuthPrepare extends BaseCommand
     }
 
     /**
-     * @param $nameSmall
+     * @param string $nameSmall
      * @return string[]
      */
     protected function createViewsFolders($nameSmall) {
@@ -972,7 +972,7 @@ class MultiAuthPrepare extends BaseCommand
     /**
      * Run a SSH command.
      *
-     * @param $command
+     * @param string $command
      * @param string $beforeNotice
      * @param string $afterNotice
      */
