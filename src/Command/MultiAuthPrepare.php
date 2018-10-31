@@ -126,6 +126,10 @@ class MultiAuthPrepare extends BaseCommand
             $this->installLangs();
             $this->progressBar->advance();
 
+            $this->line(" installing project config file...");
+            $this->installProjectConfig();
+            $this->progressBar->advance();
+
             $this->line(" installing prologue alert...");
             $this->installPrologueAlert();
             $this->progressBar->advance();
@@ -936,6 +940,23 @@ class MultiAuthPrepare extends BaseCommand
 
         $dashboardLangFile = file_get_contents(__DIR__ . '/../Stubs/Languages/dashboard.stub');
         file_put_contents($this->getLangsFolderPath().'/'.$nameSmall.'_dashboard.php', $dashboardLangFile);
+
+        return true;
+
+    }
+
+    /**
+     * Install Project Config.
+     *
+     * @return boolean
+     */
+
+    public function installProjectConfig()
+    {
+        $nameSmall = snake_case($this->getParsedNameInput());
+
+        $projectConfigFile = file_get_contents(__DIR__ . '/../Stubs/Config/config.stub');
+        file_put_contents($this->getConfigsFolderPath().'/'.$nameSmall.'_config.php', $projectConfigFile);
 
         return true;
 
