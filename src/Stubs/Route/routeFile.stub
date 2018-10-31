@@ -28,8 +28,8 @@ Route::post('register', 'Auth\RegisterController@register')->name('{{$nameSmall}
 // Password Reset Routes...
 Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('{{$nameSmall}}.password.request');
 Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('{{$nameSmall}}.password.email');
-Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('{{$nameSmall}}.password.reset.token');
-Route::post('password/reset', 'Auth\ResetPasswordController@reset')->name('{{$nameSmall}}.password.reset');
+Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('{{$nameSmall}}.password.reset');
+Route::post('password/reset', 'Auth\ResetPasswordController@reset')->name('{{$nameSmall}}.password.update');
 
 Route::get('/dashboard', 'DashboardController@index')->name('{{$nameSmall}}.dashboard');
 Route::get('/', 'DashboardController@redirect')->name('{{$nameSmall}}.redirect');
