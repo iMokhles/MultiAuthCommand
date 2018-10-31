@@ -1,5 +1,5 @@
 @php
-    $userNotifiactions = auth('{{$nameSmall}}')->user()->unreadNotifications()->get();
+    $userNotifiactions = auth('{{$nameSmall}}')->user()->unreadNotifications()->limit(5)->get();
     $userLogged = auth('{{$nameSmall}}')->user();
 @endphp
 
