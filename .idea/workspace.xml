@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ea327e4-ed27-4c84-ba0e-659e8a2452e9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Controllers/Auth/MyAccountController.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Controllers/Auth/MyAccountController.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stubs/Config/config.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Config/config.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stubs/Route/routeFile.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Route/routeFile.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/login.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/login.blade.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/layout.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/layout.blade.stub" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,12 +31,12 @@
           <entry key="json" value="2" />
           <entry key="md" value="2" />
           <entry key="php" value="2" />
-          <entry key="stub" value="17" />
+          <entry key="stub" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Blade" value="17" />
+          <entry key="Blade" value="18" />
           <entry key="JSON" value="2" />
           <entry key="Markdown" value="2" />
           <entry key="PHP" value="2" />
@@ -44,12 +47,12 @@
           <entry key="json" value="9" />
           <entry key="md" value="677" />
           <entry key="php" value="116" />
-          <entry key="stub" value="139" />
+          <entry key="stub" value="208" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Blade" value="139" />
+          <entry key="Blade" value="208" />
           <entry key="JSON" value="9" />
           <entry key="Markdown" value="677" />
           <entry key="PHP" value="116" />
@@ -71,13 +74,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Stubs/Config/config.stub">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+            <state relative-caret-position="105">
+              <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/layout.blade.stub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="48" lean-forward="true" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Stubs/Controllers/Auth/MyAccountController.stub">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="259">
@@ -90,7 +102,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>inc.</find>
       <find>::</find>
       <find>@include</find>
       <find>route</find>
@@ -120,6 +131,7 @@
       <find>.dashboard</find>
       <find>$title</find>
       <find>'title'</find>
+      <find>.password.reset</find>
     </findStrings>
     <replaceStrings>
       <replace>@lang('dashboard</replace>
@@ -138,7 +150,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Controllers/AdminController.stub" />
         <option value="$PROJECT_DIR$/src/Route/backPackRouteFile.stub" />
         <option value="$PROJECT_DIR$/src/Controllers/HomeController.stub" />
         <option value="$PROJECT_DIR$/src/Request/AccountInfoRequest.php" />
@@ -186,9 +197,10 @@
         <option value="$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/inc/breadcrumb.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Controllers/DashboardController.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/inc/head.blade.stub" />
-        <option value="$PROJECT_DIR$/src/Stubs/Config/config.stub" />
         <option value="$PROJECT_DIR$/src/Command/MultiAuthPrepare.php" />
         <option value="$PROJECT_DIR$/src/Stubs/Controllers/Auth/MyAccountController.stub" />
+        <option value="$PROJECT_DIR$/src/Stubs/Config/config.stub" />
+        <option value="$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/layout.blade.stub" />
       </list>
     </option>
   </component>
@@ -224,12 +236,6 @@
               <item name="MultiAuth" type="b2602c69:ProjectViewProjectNode" />
               <item name="MultiAuth" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Command" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiAuth" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiAuth" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Stubs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -244,13 +250,6 @@
               <item name="MultiAuth" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Stubs" type="462c0819:PsiDirectoryNode" />
-              <item name="Languages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiAuth" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiAuth" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Stubs" type="462c0819:PsiDirectoryNode" />
               <item name="Views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -269,16 +268,6 @@
               <item name="Views" type="462c0819:PsiDirectoryNode" />
               <item name="StartUI" type="462c0819:PsiDirectoryNode" />
               <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiAuth" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiAuth" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Stubs" type="462c0819:PsiDirectoryNode" />
-              <item name="Views" type="462c0819:PsiDirectoryNode" />
-              <item name="StartUI" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-              <item name="inc" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -334,12 +323,12 @@
       <workItem from="1540742756357" duration="20000" />
       <workItem from="1540941332289" duration="3439000" />
       <workItem from="1540986038723" duration="2169000" />
-      <workItem from="1540988796412" duration="764000" />
+      <workItem from="1540988796412" duration="1835000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45524000" />
+    <option name="totallyTimeSpent" value="46595000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1406" height="852" extended-state="0" />
@@ -456,9 +445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/layout.blade.stub">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/inc/breadcrumb.blade.stub">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -511,17 +497,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stubs/Config/config.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Stubs/Controllers/Auth/MyAccountController.stub">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
           <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Config/config.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/layout.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="48" lean-forward="true" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
         </state>
       </provider>
     </entry>

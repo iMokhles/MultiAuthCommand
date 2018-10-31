@@ -25,7 +25,7 @@
                 <label for="remember">@lang('{{$nameSmall}}_dashboard.remember_me')</label>
             </div>
             <div class="float-right reset">
-                <a href="{{ route('{{$nameSmall}}.password.reset') }}">@lang('{{$nameSmall}}_dashboard.forgot_password_btn')</a>
+                <a href="{{ route('{{$nameSmall}}.password.request') }}">@lang('{{$nameSmall}}_dashboard.forgot_password_btn')</a>
             </div>
         </div>
         <button type="submit" class="btn btn-rounded">@lang('{{$nameSmall}}_dashboard.sign_in')</button>

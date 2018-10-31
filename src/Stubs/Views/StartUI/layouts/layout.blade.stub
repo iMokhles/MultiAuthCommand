@@ -19,8 +19,10 @@
 <div class="page-content">
     <div class="container-fluid">
 
-        {{-- BreadCrumb--}}
-        @include('{{$nameSmall}}.layouts.inc.breadcrumb')
+        @if(config('{{$nameSmall}}_config.enable_breadcrumb'))
+            {{-- BreadCrumb--}}
+            @include('{{$nameSmall}}.layouts.inc.breadcrumb')
+        @endif
 
         @yield('content')
         @stack('content')
