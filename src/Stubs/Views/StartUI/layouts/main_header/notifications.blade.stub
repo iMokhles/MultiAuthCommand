@@ -1,6 +1,6 @@
 <div class="dropdown dropdown-notification notif">
     <a href="#"
-       class="header-alarm dropdown-toggle @if(count($userNotifiactions) > 0) active @endif"
+       class="header-alarm dropdown-toggle no-arr @if(count($userNotifiactions) > 0) active @endif"
        id="dd-notification"
        data-toggle="dropdown"
        aria-haspopup="true"

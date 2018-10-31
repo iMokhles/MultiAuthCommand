@@ -29,7 +29,7 @@ class {{$name}}AccountController extends Controller
 
     public function showAccountInfoForm() {
 
-        $this->data['title'] = '{{$nameSmall}} Account';
+        $this->data['title'] = '{{$name}} Account';
         $this->data['user'] = $this->guard()->user();
 
         return view('{{$nameSmall}}.auth.account.update_info', $this->data);
@@ -48,7 +48,7 @@ class {{$name}}AccountController extends Controller
 
     public function showChangePasswordForm()
     {
-        $this->data['title'] = '{{$nameSmall}} Account';
+        $this->data['title'] = '{{$name}} Account';
         $this->data['user'] = $this->guard()->user();
 
         return view('{{$nameSmall}}.auth.account.change_password', $this->data);

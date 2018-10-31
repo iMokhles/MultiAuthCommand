@@ -23,7 +23,7 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return view('{{$nameSmall}}.home', ['title' => 'Dashboard']);
+        return view('{{$nameSmall}}.dashboard', ['title' => 'Dashboard']);
     }
     /**
      * redirect to dashboard.
@@ -32,6 +32,6 @@ class DashboardController extends Controller
      */
     public function redirect()
     {
-        return redirect(route('{{$nameSmall}}.home'));
+        return redirect(route('{{$nameSmall}}.dashboard'));
     }
 }
