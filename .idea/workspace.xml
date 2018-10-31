@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ea327e4-ed27-4c84-ba0e-659e8a2452e9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Middleware/redirectMiddlewareGuard.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Middleware/redirectMiddlewareGuard.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Route/routeFile.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Route/routeFile.stub" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/account_info_tab.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/account_info_tab.blade.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/sidemenu/items.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/sidemenu/items.blade.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/change_password_tab.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/change_password_tab.blade.stub" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,12 +29,12 @@
           <entry key="json" value="1" />
           <entry key="md" value="1" />
           <entry key="php" value="1" />
-          <entry key="stub" value="7" />
+          <entry key="stub" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Blade" value="7" />
+          <entry key="Blade" value="8" />
           <entry key="JSON" value="1" />
           <entry key="Markdown" value="1" />
           <entry key="PHP" value="1" />
@@ -65,17 +63,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/account_info_tab.blade.stub">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="57" column="15" lean-forward="true" selection-start-line="57" selection-start-column="15" selection-end-line="57" selection-end-column="15" />
+            <state relative-caret-position="294">
+              <caret line="50" column="18" lean-forward="true" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/change_password_tab.blade.stub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="61" column="48" lean-forward="true" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Stubs/Controllers/DashboardController.stub">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+            <state relative-caret-position="223">
+              <caret line="21" column="40" lean-forward="true" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -84,7 +91,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>App\</find>
       <find>mkdir</find>
       <find>back</find>
       <find>route('</find>
@@ -114,6 +120,7 @@
       <find>route('{{$name</find>
       <find>@lang('dashboard</find>
       <find>{{$nameSmall}}.home</find>
+      <find>.home</find>
     </findStrings>
     <replaceStrings>
       <replace>@lang('dashboard</replace>
@@ -123,6 +130,7 @@
       <dir>$PROJECT_DIR$/src/Backpack/Views/inc</dir>
       <dir>$PROJECT_DIR$/src/Backpack/Views/</dir>
       <dir>$PROJECT_DIR$/src/Backpack/Views</dir>
+      <dir>$PROJECT_DIR$</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -177,6 +185,7 @@
         <option value="$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/main_header/notifications.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/left_box.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/account_info_tab.blade.stub" />
+        <option value="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/change_password_tab.blade.stub" />
       </list>
     </option>
   </component>
@@ -333,12 +342,12 @@
       <workItem from="1521970865711" duration="8000" />
       <workItem from="1540742756357" duration="20000" />
       <workItem from="1540941332289" duration="3439000" />
-      <workItem from="1540986038723" duration="954000" />
+      <workItem from="1540986038723" duration="1254000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43545000" />
+    <option name="totallyTimeSpent" value="43845000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1406" height="852" extended-state="0" />
@@ -372,7 +381,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Controllers/Auth/ForgotPasswordController.stub" />
     <entry file="file://$PROJECT_DIR$/src/Controllers/HomeController.stub" />
     <entry file="file://$PROJECT_DIR$/src/Controllers/Auth/MyAccountController.stub" />
     <entry file="file://$PROJECT_DIR$/src/Views/auth/account/update_info.blade.stub" />
@@ -472,17 +480,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/account_info_tab.blade.stub">
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Controllers/DashboardController.stub">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="57" column="15" lean-forward="true" selection-start-line="57" selection-start-column="15" selection-end-line="57" selection-end-column="15" />
+        <state relative-caret-position="223">
+          <caret line="21" column="40" lean-forward="true" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stubs/Controllers/DashboardController.stub">
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/account_info_tab.blade.stub">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        <state relative-caret-position="294">
+          <caret line="50" column="18" lean-forward="true" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/change_password_tab.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="61" column="48" lean-forward="true" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
         </state>
       </provider>
     </entry>

@@ -51,7 +51,7 @@
             </div>
 
             <div class="form-group">
-                <a href="{{route('admin.home')}}" class="btn btn-rounded btn-grey float-left">@lang('{{$nameSmall}}_dashboard.cancel_changes')</a>
+                <a href="{{route('{{$nameSmall}}.home')}}" class="btn btn-rounded btn-grey float-left">@lang('{{$nameSmall}}_dashboard.cancel_changes')</a>
                 <button type="submit" class="btn btn-rounded float-right">@lang('{{$nameSmall}}_dashboard.apply_change')</button>
             </div>
 
