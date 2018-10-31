@@ -7,6 +7,19 @@
 @section('content')
     <form class="sign-box" method="POST" action="{{ route('{{$nameSmall}}.password.email') }}">
 
+        @if ($errors->count())
+            <div class="alert alert-danger alert-no-border alert-close alert-dismissible fade show" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <ul>
+                    @foreach ($errors->all() as $e)
+                        <li>{{ $e }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+
         @csrf
 
         <div class="sign-avatar">
