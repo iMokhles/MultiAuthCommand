@@ -1,5 +1,5 @@
 <li class="grey with-sub">
-    <a href="{{ route('{{$nameSmall}}.home') }}">
+    <a href="{{ route('{{$nameSmall}}.dashboard') }}">
         <i class="font-icon font-icon-dashboard"></i>
         <span class="lbl">@lang('{{$nameSmall}}_dashboard.dashboard')</span>
     </a>

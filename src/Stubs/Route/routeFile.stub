@@ -31,7 +31,7 @@ Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail'
 Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('{{$nameSmall}}.password.reset');
 Route::post('password/reset', 'Auth\ResetPasswordController@reset')->name('{{$nameSmall}}.password.reset');
 
-Route::get('/home', 'DashboardController@index')->name('{{$nameSmall}}.home');
+Route::get('/dashboard', 'DashboardController@index')->name('{{$nameSmall}}.dashboard');
 Route::get('/', 'DashboardController@redirect')->name('{{$nameSmall}}.redirect');
 
 Route::get('edit-account-info', 'Auth\{{$name}}AccountController@showAccountInfoForm')->name('{{$nameSmall}}.account.info');

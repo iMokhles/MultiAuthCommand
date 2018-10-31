@@ -47,7 +47,7 @@
 
             <div class="form-group">
                 <label class="form-label semibold" for="{{$field}}">@lang('{{$nameSmall}}_dashboard.email')</label>
-                <input type="email" class="form-control" id="{{$field}}" name="{{$field}}" placeholder="@lang('{{$nameSmall}}_dashboard.email_plh')">
+                <input type="email" class="form-control" id="{{$field}}" name="{{$field}}" required value="{{ old($field) ? old($field) : $user[$field] }} " placeholder="@lang('{{$nameSmall}}_dashboard.email_plh')">
             </div>
 
             <div class="form-group">
