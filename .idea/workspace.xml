@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ea327e4-ed27-4c84-ba0e-659e8a2452e9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Stubs/Config/config.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/MultiAuthPrepare.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/MultiAuthPrepare.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Controllers/DashboardController.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Controllers/DashboardController.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/inc/breadcrumb.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/inc/breadcrumb.blade.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/inc/head.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/inc/head.blade.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stubs/Controllers/Auth/MyAccountController.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Controllers/Auth/MyAccountController.stub" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,12 +28,12 @@
           <entry key="json" value="2" />
           <entry key="md" value="2" />
           <entry key="php" value="2" />
-          <entry key="stub" value="16" />
+          <entry key="stub" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Blade" value="16" />
+          <entry key="Blade" value="17" />
           <entry key="JSON" value="2" />
           <entry key="Markdown" value="2" />
           <entry key="PHP" value="2" />
@@ -73,11 +68,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Stubs/Config/config.stub">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="8" selection-end-column="2" />
+            <state relative-caret-position="120">
+              <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Stubs/Controllers/Auth/MyAccountController.stub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -86,7 +90,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>route('</find>
       <find>inc.</find>
       <find>::</find>
       <find>@include</find>
@@ -116,6 +119,7 @@
       <find>.home</find>
       <find>.dashboard</find>
       <find>$title</find>
+      <find>'title'</find>
     </findStrings>
     <replaceStrings>
       <replace>@lang('dashboard</replace>
@@ -174,7 +178,6 @@
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/login.blade.stub" />
-        <option value="$PROJECT_DIR$/src/Stubs/Controllers/Auth/MyAccountController.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/main_header/notifications.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/left_box.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/change_password_tab.blade.stub" />
@@ -185,6 +188,7 @@
         <option value="$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/inc/head.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Config/config.stub" />
         <option value="$PROJECT_DIR$/src/Command/MultiAuthPrepare.php" />
+        <option value="$PROJECT_DIR$/src/Stubs/Controllers/Auth/MyAccountController.stub" />
       </list>
     </option>
   </component>
@@ -330,12 +334,12 @@
       <workItem from="1540742756357" duration="20000" />
       <workItem from="1540941332289" duration="3439000" />
       <workItem from="1540986038723" duration="2169000" />
-      <workItem from="1540988796412" duration="607000" />
+      <workItem from="1540988796412" duration="764000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45367000" />
+    <option name="totallyTimeSpent" value="45524000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1406" height="852" extended-state="0" />
@@ -424,13 +428,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stubs/Controllers/Auth/MyAccountController.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="62" column="16" lean-forward="true" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/left_box.blade.stub">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -516,8 +513,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Stubs/Config/config.stub">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="8" selection-end-column="2" />
+        <state relative-caret-position="120">
+          <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Controllers/Auth/MyAccountController.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
         </state>
       </provider>
     </entry>
