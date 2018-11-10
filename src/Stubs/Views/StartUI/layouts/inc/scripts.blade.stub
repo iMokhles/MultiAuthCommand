@@ -1,15 +1,15 @@
 @yield('before_scripts')
 @stack('before_scripts')
 
-<script src="{{ asset('start_ui') }}/js/lib/jquery/jquery-3.2.1.min.js"></script>
-<script src="{{ asset('start_ui') }}/js/lib/popper/popper.min.js"></script>
-<script src="{{ asset('start_ui') }}/js/lib/tether/tether.min.js"></script>
-<script src="{{ asset('start_ui') }}/js/lib/bootstrap/bootstrap.min.js"></script>
-<script src="{{ asset('start_ui') }}/js/plugins.js"></script>
+<script src="{{ asset(config('{{$theme_name}}_config.project_name')) }}/js/lib/jquery/jquery-3.2.1.min.js"></script>
+<script src="{{ asset(config('{{$theme_name}}_config.project_name')) }}/js/lib/popper/popper.min.js"></script>
+<script src="{{ asset(config('{{$theme_name}}_config.project_name')) }}/js/lib/tether/tether.min.js"></script>
+<script src="{{ asset(config('{{$theme_name}}_config.project_name')) }}/js/lib/bootstrap/bootstrap.min.js"></script>
+<script src="{{ asset(config('{{$theme_name}}_config.project_name')) }}/js/plugins.js"></script>
 
-<script type="text/javascript" src="{{ asset('start_ui') }}/js/lib/match-height/jquery.matchHeight.min.js"></script>
+<script type="text/javascript" src="{{ asset(config('{{$theme_name}}_config.project_name')) }}/js/lib/match-height/jquery.matchHeight.min.js"></script>
 
-<script src="{{ asset('start_ui') }}/js/app.js"></script>
+<script src="{{ asset(config('{{$theme_name}}_config.project_name')) }}/js/app.js"></script>
 
 @include('{{$nameSmall}}.layouts.inc.alerts')
 

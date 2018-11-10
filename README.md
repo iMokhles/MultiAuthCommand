@@ -74,7 +74,7 @@ Example usage:
 
 
 ``` bash
-php artisan make:multi-auth Admin --admin_theme="startui"
+php artisan make:multi_auth Admin --admin_theme="startui"
 ```
 
 ## Security

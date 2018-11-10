@@ -1,7 +1,7 @@
 @extends('{{$nameSmall}}.layouts.layout_guest')
 
 @section('before_styles')
-    <link rel="stylesheet" href="{{ asset('start_ui') }}/css/separate/pages/login.min.css">
+    <link rel="stylesheet" href="{{ asset(config('{{$theme_name}}_config.project_name')) }}/css/separate/pages/login.min.css">
 @endsection
 
 @section('content')
@@ -25,7 +25,7 @@
         <input type="hidden" name="token" value="{{ $token }}">
 
         <div class="sign-avatar">
-            <img src="{{ asset('start_ui') }}/img/avatar-sign.png" alt="">
+            <img src="{{ asset(config('{{$theme_name}}_config.project_name')) }}/img/avatar-sign.png" alt="">
         </div>
 
         <div class="text-center">

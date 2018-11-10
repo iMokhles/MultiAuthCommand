@@ -953,10 +953,14 @@ class MultiAuthPrepare extends BaseCommand
 
     public function installProjectConfig()
     {
+        $theme_name = $this->option('admin_theme');
         $nameSmall = snake_case($this->getParsedNameInput());
 
         $projectConfigFile = file_get_contents(__DIR__ . '/../Stubs/Config/config.stub');
-        file_put_contents($this->getConfigsFolderPath().'/'.$nameSmall.'_config.php', $projectConfigFile);
+        $projectConfigFileNew = str_replace('{{$theme_name}}', "$theme_name", $projectConfigFile);
+
+
+        file_put_contents($this->getConfigsFolderPath().'/'.$nameSmall.'_config.php', $projectConfigFileNew);
 
         return true;
 
