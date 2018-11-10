@@ -948,19 +948,20 @@ class MultiAuthPrepare extends BaseCommand
     /**
      * Install Project Config.
      *
-     * @return boolean
+     * @param string $theme_name
+     * @return bool
      */
-
-    public function installProjectConfig()
+    public function installProjectConfig($theme_name = 'startui')
     {
-        $theme_name = $this->option('admin_theme');
         $nameSmall = snake_case($this->getParsedNameInput());
 
         $projectConfigFile = file_get_contents(__DIR__ . '/../Stubs/Config/config.stub');
-        $projectConfigFileNew = str_replace('{{$theme_name}}', "$theme_name", $projectConfigFile);
 
 
-        file_put_contents($this->getConfigsFolderPath().'/'.$nameSmall.'_config.php', $projectConfigFileNew);
+        file_put_contents($this->getConfigsFolderPath().'/'.$nameSmall.'_config.php', str_replace([
+            '{{$theme_name}}'],
+            [$theme_name],
+            $projectConfigFile));
 
         return true;
 
