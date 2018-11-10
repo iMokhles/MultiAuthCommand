@@ -1,5 +1,5 @@
-<script src="{{ asset(config('{{$theme_name}}_config.project_name')) }}/js/lib/pnotify/pnotify.js"></script>
-<script src="{{ asset(config('{{$theme_name}}_config.project_name')) }}/js/lib/pnotify/pnotify-init.js"></script>
+<script src="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/js/lib/pnotify/pnotify.js"></script>
+<script src="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/js/lib/pnotify/pnotify-init.js"></script>
 {{-- Bootstrap Notifications using Prologue Alerts --}}
 <script type="text/javascript">
     jQuery(document).ready(function($) {

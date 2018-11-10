@@ -1,7 +1,7 @@
 @extends('{{$nameSmall}}.layouts.layout_guest')
 
 @section('before_styles')
-    <link rel="stylesheet" href="{{ asset(config('{{$theme_name}}_config.project_name')) }}/css/separate/pages/login.min.css">
+    <link rel="stylesheet" href="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/css/separate/pages/login.min.css">
 @endsection
 
 @section('content')

@@ -1,7 +1,7 @@
 <div class="text-center">
     <div class="profile-card">
         <div class="profile-card-photo">
-            <img src="{{ asset(config('{{$theme_name}}_config.project_name')) }}/img/avatar-2-64.png" alt=""/>
+            <img src="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/img/avatar-2-64.png" alt=""/>
         </div>
         <div class="profile-card-name">{{auth('{{$nameSmall}}')->user()->name}}</div>
         <div class="profile-card-status">{{auth('{{$nameSmall}}')->user()->email}}</div>

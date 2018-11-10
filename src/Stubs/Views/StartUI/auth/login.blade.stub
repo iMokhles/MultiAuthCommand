@@ -1,7 +1,7 @@
 @extends('{{$nameSmall}}.layouts.layout_guest')
 
 @section('before_styles')
-    <link rel="stylesheet" href="{{ asset(config('{{$theme_name}}_config.project_name')) }}/css/separate/pages/login.min.css">
+    <link rel="stylesheet" href="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/css/separate/pages/login.min.css">
 @endsection
 
 @section('content')
@@ -23,7 +23,7 @@
         @csrf
 
         <div class="sign-avatar">
-            <img src="{{ asset(config('{{$theme_name}}_config.project_name')) }}/img/avatar-sign.png" alt="">
+            <img src="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/img/avatar-sign.png" alt="">
         </div>
         <header class="sign-title">@lang('{{$nameSmall}}_dashboard.sign_in')</header>
         <div class="form-group">
