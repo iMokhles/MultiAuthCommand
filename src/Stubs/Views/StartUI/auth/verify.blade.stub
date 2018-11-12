@@ -55,7 +55,7 @@
             <p> @lang('{{$nameSmall}}_dashboard.check_verification_mail_before'), @lang('{{$nameSmall}}_dashboard.if_didnt_receive_verification_mail')  </p>
         </div>
 
-        <a href="{{ route('{{$nameSmall}}.register') }}" class="btn btn-rounded btn-success sign-up">@lang('{{$nameSmall}}_dashboard.sign_up')</a>
+        <a href="{{ route('{{$nameSmall}}.verification.resend') }}" class="btn btn-rounded btn-success sign-up">@lang('{{$nameSmall}}_dashboard.send_verification_mail')</a>
     </div>
 @endsection
 

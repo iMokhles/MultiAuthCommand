@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ea327e4-ed27-4c84-ba0e-659e8a2452e9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/left_box.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/left_box.blade.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/login.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/login.blade.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stubs/Languages/dashboard.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Languages/dashboard.stub" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/passwords/email.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/passwords/email.blade.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/passwords/reset.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/passwords/reset.blade.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/register.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/register.blade.stub" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/verify.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/verify.blade.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/inc/alerts.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/inc/alerts.blade.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/inc/head.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/inc/head.blade.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/inc/scripts.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/inc/scripts.blade.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/main_header/main_header.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/main_header/main_header.blade.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/main_header/user.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/main_header/user.blade.stub" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,36 +62,38 @@
     <session id="1663752895">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="md" value="1" />
           <entry key="php" value="1" />
-          <entry key="stub" value="4" />
+          <entry key="stub" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Markdown" value="1" />
           <entry key="PHP" value="1" />
-          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="PLAIN_TEXT" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="md" value="1" />
           <entry key="php" value="51" />
-          <entry key="stub" value="24" />
+          <entry key="stub" value="59" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="1" />
           <entry key="PHP" value="51" />
-          <entry key="PLAIN_TEXT" value="24" />
+          <entry key="PLAIN_TEXT" value="59" />
         </counts>
       </usages-collector>
     </session>
@@ -109,18 +104,18 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="108">
-                <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+              <first_editor relative-caret-position="1170">
+                <caret line="78" selection-start-line="78" selection-end-line="78" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Command/MultiAuthPrepare.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
+            <state relative-caret-position="14340">
               <caret line="961" column="28" selection-start-line="961" selection-start-column="13" selection-end-line="961" selection-end-column="28" />
             </state>
           </provider>
@@ -158,13 +153,28 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/verify.blade.stub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="61" column="25" lean-forward="true" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Stubs/Languages/dashboard.stub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="314">
+              <caret line="47" column="53" lean-forward="true" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>{{</find>
-      <find>$createFolderLayouts</find>
-      <find>if ($is_backpack_enabled</find>
       <find>update_info</find>
       <find>@if (Auth::guard('{{$nameSmall}}')-&gt;check())</find>
       <find>{{$nameSmall}}</find>
@@ -192,6 +202,9 @@
       <find>asset('start_ui')</find>
       <find>asset(config('{{$theme_name}}_config.project_name'))</find>
       <find>{{$theme_name}}</find>
+      <find>Send Password Reset Link</find>
+      <find>send_password_reset_link</find>
+      <find>send_verification_mail</find>
     </findStrings>
     <replaceStrings>
       <replace>@lang('dashboard</replace>
@@ -214,8 +227,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Middleware/redirectIf.stub" />
-        <option value="$PROJECT_DIR$/src/Exceptions/handlerGuard.stub" />
         <option value="$PROJECT_DIR$/src/Exceptions/handlerUnauthorized.stub" />
         <option value="$PROJECT_DIR$/src/Views/layouts/app.blade.stub" />
         <option value="$PROJECT_DIR$/src/Controllers/Auth/ForgotPasswordController.stub" />
@@ -265,6 +276,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Stubs/Config/config.stub" />
         <option value="$PROJECT_DIR$/src/Command/MultiAuthPrepare.php" />
+        <option value="$PROJECT_DIR$/src/Stubs/Languages/dashboard.stub" />
+        <option value="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/verify.blade.stub" />
       </list>
     </option>
   </component>
@@ -275,7 +288,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="128" />
+    <option name="x" value="75" />
     <option name="y" value="23" />
     <option name="width" value="1278" />
     <option name="height" value="833" />
@@ -285,6 +298,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -315,6 +329,13 @@
               <item name="MultiAuthCommand" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Stubs" type="462c0819:PsiDirectoryNode" />
+              <item name="Languages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MultiAuthCommand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiAuthCommand" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Stubs" type="462c0819:PsiDirectoryNode" />
               <item name="Views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -324,6 +345,15 @@
               <item name="Stubs" type="462c0819:PsiDirectoryNode" />
               <item name="Views" type="462c0819:PsiDirectoryNode" />
               <item name="StartUI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MultiAuthCommand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiAuthCommand" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Stubs" type="462c0819:PsiDirectoryNode" />
+              <item name="Views" type="462c0819:PsiDirectoryNode" />
+              <item name="StartUI" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MultiAuthCommand" type="b2602c69:ProjectViewProjectNode" />
@@ -348,7 +378,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -399,19 +428,20 @@
       <workItem from="1540941332289" duration="3439000" />
       <workItem from="1540986038723" duration="2169000" />
       <workItem from="1540988796412" duration="3465000" />
-      <workItem from="1541849234716" duration="2124000" />
+      <workItem from="1541849234716" duration="3078000" />
+      <workItem from="1541988677330" duration="162000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50349000" />
+    <option name="totallyTimeSpent" value="51465000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="128" y="23" width="1278" height="833" extended-state="0" />
+    <frame x="75" y="23" width="1278" height="833" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.32847896" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.33333334" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="1" />
@@ -503,13 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stubs/Languages/dashboard.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -543,11 +566,6 @@
         <state relative-caret-position="315">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/verify.blade.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-580" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/passwords/reset.blade.stub">
@@ -612,10 +630,24 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="108">
-            <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+          <first_editor relative-caret-position="1170">
+            <caret line="78" selection-start-line="78" selection-end-line="78" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Command/MultiAuthPrepare.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14340">
+          <caret line="961" column="28" selection-start-line="961" selection-start-column="13" selection-end-line="961" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Config/config.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -636,17 +668,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stubs/Config/config.stub">
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Languages/dashboard.stub">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="36" />
+        <state relative-caret-position="314">
+          <caret line="47" column="53" lean-forward="true" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Command/MultiAuthPrepare.php">
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/verify.blade.stub">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="961" column="28" selection-start-line="961" selection-start-column="13" selection-end-line="961" selection-end-column="28" />
+        <state relative-caret-position="196">
+          <caret line="61" column="25" lean-forward="true" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
         </state>
       </provider>
     </entry>

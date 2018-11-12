@@ -34,7 +34,7 @@
             <input type="email" id="email" name="email" class="form-control" placeholder="@lang('{{$nameSmall}}_dashboard.email_plh')"/>
         </div>
 
-        <button type="submit" class="btn btn-rounded">@lang('{{$nameSmall}}_dashboard.send_verification_mail')</button>
+        <button type="submit" class="btn btn-rounded">@lang('{{$nameSmall}}_dashboard.send_password_reset_link')</button>
         <p class="sign-note">Already have an account? <a href="{{ route('{{$nameSmall}}.login') }}">@lang('{{$nameSmall}}_dashboard.sign_in')</a></p>
     </form>
 @endsection
