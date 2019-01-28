@@ -1,0 +1,20 @@
+                <!-- Page-Title -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="page-title-box">
+                            <div class="btn-group float-right">
+                                <ol class="breadcrumb hide-phone p-0 m-0">
+                                @foreach(request()->segments() as $key => $value)
+                                    @if($key == count(request()->segments()) -1)
+                                        <li class="breadcrumb-item active">Notifications</li>
+                                    @else
+                                        <li class="breadcrumb-item"><a href="#">Highdmin</a></li>
+                                    @endif
+                                @endforeach
+                                </ol>
+                            </div>
+                            <h4 class="page-title">{{$page_title}}</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title end breadcrumb -->

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ app()->getLocale() }}">
+<head>
+    {{-- Site-Head --}}
+    @include('{{$nameSmall}}.layouts.inc.head')
+</head>
+
+<body>
+
+{{-- Navigation Bar --}}
+
+        <header id="topnav">
+            @include('{{$nameSmall}}.layouts.main_header.main_header')
+
+            {{-- SideMenu --}}
+            @include('{{$nameSmall}}.layouts.sidemenu.list')
+
+        </header>
+
+<div class="wrapper">
+    <div class="container-fluid">
+        @if(config('{{$nameSmall}}_config.enable_breadcrumb'))
+            {{-- BreadCrumb--}}
+            @include('{{$nameSmall}}.layouts.inc.breadcrumb')
+        @endif
+
+        @yield('content')
+        @stack('content')
+
+    </div>
+</div>
+
+@include('{{$nameSmall}}.layouts.inc.scripts')
+
+</body>
+
+</html>

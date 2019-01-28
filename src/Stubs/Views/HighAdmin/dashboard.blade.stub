@@ -1,0 +1,20 @@
+@extends('{{$nameSmall}}.layouts.layout')
+
+@section('content')
+    <div class="row">
+        <div class="col-12">
+            <div class="card m-b-30">
+                <div class="card-header">
+                    @lang('{{$nameSmall}}_dashboard.login_status')
+                </div>
+                <div class="card-body">
+                    <blockquote class="card-bodyquote">
+                        <p>@lang('{{$nameSmall}}_dashboard.welcome_message')</p>
+
+                    </blockquote>
+                </div>
+            </div>
+
+        </div>
+    </div>
+@endsection

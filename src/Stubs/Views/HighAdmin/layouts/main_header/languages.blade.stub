@@ -1,0 +1,29 @@
+<li class="dropdown notification-list hide-phone">
+    <a class="nav-link dropdown-toggle waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+        <i class="mdi mdi-earth"></i>
+            @php($localKey = 'applocale')
+            @if(session($localKey) === 'en')
+                @lang('{{$nameSmall}}_dashboard.english')
+            @elseif(session($localKey) === 'fr')
+                @lang('{{$nameSmall}}_dashboard.french')
+            @elseif(session($localKey) === 'ar')
+                @lang('{{$nameSmall}}_dashboard.arabic')
+            @endif
+        <i class="mdi mdi-chevron-down"></i>
+    </a>
+
+    <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated">
+        <a href="javascript:void(0);" class="dropdown-item">
+            @lang('{{$nameSmall}}_dashboard.english')
+        </a>
+
+        <a href="javascript:void(0);" class="dropdown-item">
+            @lang('{{$nameSmall}}_dashboard.french')
+        </a>
+
+        <a href="javascript:void(0);" class="dropdown-item">
+            @lang('{{$nameSmall}}_dashboard.arabic')
+        </a>
+
+    </div>
+</li>

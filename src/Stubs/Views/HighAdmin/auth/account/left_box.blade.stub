@@ -1,0 +1,15 @@
+<div class="card-box">
+    <div class="panel-body">
+        <div class="text-center">
+            <span class="mr-3"><img src="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/assets/images/users/avatar-1.jpg" alt="" class="thumb-lg rounded-circle"></span>
+
+            <div class="media-body">
+                <h4 class="mt-1 mb-1 font-18">{{auth('{{$nameSmall}}')->user()->name}}</h4>
+                <p class="font-13">{{auth('{{$nameSmall}}')->user()->email}}</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+

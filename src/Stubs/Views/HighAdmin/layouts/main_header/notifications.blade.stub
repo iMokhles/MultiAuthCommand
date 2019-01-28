@@ -1,0 +1,24 @@
+<li class="dropdown notification-list">
+
+    <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button"
+        aria-haspopup="false" aria-expanded="false">
+        <i class="fi-bell noti-icon"></i>
+        <span class="badge badge-danger badge-pill noti-icon-badge">{{count($userNotifiactions)}}</span>
+    </a>
+
+    <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated dropdown-lg">
+
+        <div class="dropdown-item noti-title">
+            <h6 class="m-0"><span class="float-right"><a href="" class="text-dark"><small>@lang('{{$nameSmall}}_dashboard.see_more')</small></a> </span>@lang('{{$nameSmall}}_dashboard.notifications')</h6>
+        </div>
+
+        <div class="slimscroll" style="max-height: 230px;">
+            @foreach ($userNotifiactions as $notification)
+                 <a href="javascript:void(0);" class="dropdown-item notify-item">
+                    <div class="notify-icon bg-info"><i class="{{$notification['data']['icon_class']}}"></i></div>
+                    <p class="notify-details">{{$notification['data']['message']}}<small class="text-muted">{{$notification['data']['time_ago']}}</small></p>
+                 </a>
+            @endforeach
+        </div>
+    </div>
+</li>

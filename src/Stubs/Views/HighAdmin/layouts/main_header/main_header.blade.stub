@@ -1,0 +1,98 @@
+@php
+    $userNotifiactions = auth('{{$nameSmall}}')->user()->unreadNotifications()->limit(5)->get();
+    $userLogged = auth('{{$nameSmall}}')->user();
+@endphp
+
+        <div class="topbar-main">
+            <div class="container-fluid">
+
+                    <!-- Logo container-->
+                    <div class="logo">
+                        <!-- Text Logo -->
+                        <!-- <a href="index.html" class="logo">
+                            <span class="logo-small"><i class="mdi mdi-radar"></i></span>
+                            <span class="logo-large"><i class="mdi mdi-radar"></i> Highdmin</span>
+                        </a> -->
+                        <!-- Image Logo -->
+                        <a href="index.html" class="logo">
+                            <img src="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/assets/images/logo_sm.png" alt="" height="26" class="logo-small">
+                            <img src="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/assets/images/logo.png" alt="" height="22" class="logo-large">
+                        </a>
+
+                    </div>
+                    <!-- End Logo container-->
+
+                    <div class="menu-extras topbar-custom">
+                        <ul class="list-unstyled topbar-right-menu float-right mb-0">
+
+                            <li class="menu-item">
+                                <!-- Mobile menu toggle-->
+                                <a class="navbar-toggle nav-link">
+                                    <div class="lines">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </a>
+                                <!-- End mobile menu toggle-->
+                            </li>
+
+                            {{-- Right Content --}}
+
+                            {{-- Languages --}}
+
+                            @include('{{$nameSmall}}.layouts.main_header.languages')
+
+                            {{-- Notifications --}}
+
+                            @include('{{$nameSmall}}.layouts.main_header.notifications')
+
+                            {{-- User --}}
+
+                            @include('{{$nameSmall}}.layouts.main_header.user')
+                        </ul>
+                    </div>
+            </div>
+        </div>
+
+
+<header class="site-header">
+    <div class="container-fluid">
+        <a href="#" class="site-logo">
+            <img class="hidden-md-down" src="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/img/logo-2.png" alt="">
+            <img class="hidden-lg-down" src="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/img/logo-2-mob.png" alt="">
+        </a>
+
+        <button id="show-hide-sidebar-toggle" class="show-hide-sidebar">
+            <span>toggle menu</span>
+        </button>
+
+        <button class="hamburger hamburger--htla">
+            <span>toggle menu</span>
+        </button>
+
+        <div class="site-header-content">
+            <div class="site-header-content-in">
+                <div class="site-header-shown">
+
+                    {{-- Right Content --}}
+
+                    {{-- Notifications --}}
+
+                    @include('{{$nameSmall}}.layouts.main_header.notifications')
+
+                    {{-- Languages --}}
+
+                    @include('{{$nameSmall}}.layouts.main_header.languages')
+
+                    {{-- User --}}
+
+                    @include('{{$nameSmall}}.layouts.main_header.user')
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</header>

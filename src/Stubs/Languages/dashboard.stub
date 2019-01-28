@@ -34,6 +34,7 @@ return [
     'login_status' => 'Logged in',
     'welcome_message' => 'Welcome to your dashboard',
     'see_more' => 'See More',
+    'clear_all' => 'Clear All',
     'dashboard' => 'Dashboard',
     'notifications' => 'Notifications',
     'english' => 'English',

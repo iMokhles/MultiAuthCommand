@@ -1,0 +1,60 @@
+@extends('{{$nameSmall}}.layouts.layout_guest')
+
+@section('before_styles')
+    <link rel="stylesheet" href="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/css/separate/pages/login.min.css">
+@endsection
+
+@section('content')
+    <form class="sign-box" method="POST" action="{{ route('{{$nameSmall}}.password.update') }}">
+
+        @if ($errors->count())
+            <div class="alert alert-danger alert-no-border alert-close alert-dismissible fade show" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <ul>
+                    @foreach ($errors->all() as $e)
+                        <li>{{ $e }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+
+        @csrf
+
+        <input type="hidden" name="token" value="{{ $token }}">
+
+        <div class="text-center m-b-20">
+            <p class="text-muted m-b-0">@lang('{{$nameSmall}}_dashboard.reset_password_instruction')</p>
+        </div>
+
+        <div class="form-group row m-b-20">
+            <div class="col-12">
+                <label for="email">@lang('{{$nameSmall}}_dashboard.email')</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="@lang('{{$nameSmall}}_dashboard.email_plh')"/>
+            </div>
+        </div>
+
+        <div class="form-group row m-b-20">
+            <div class="col-12">
+                <label for="password">@lang('{{$nameSmall}}_dashboard.password')</label>
+                <input type="password" id="password" name="password" class="form-control" placeholder="@lang('{{$nameSmall}}_dashboard.password_plh')"/>
+            </div>
+        </div>
+
+        <div class="form-group row m-b-20">
+            <div class="col-12">
+                <label for="password_confirmation">@lang('{{$nameSmall}}_dashboard.passwordConfirmation')</label>
+                <input type="password" id="password_confirmation" name="password_confirmation" class="form-control" placeholder="@lang('{{$nameSmall}}_dashboard.passwordConfirmation_plh')"/>
+            </div>
+        </div>
+
+        <div class="form-group row text-center m-t-10">
+            <div class="col-12">
+                <button class="btn btn-block btn-custom waves-effect waves-light" type="submit">@lang('{{$nameSmall}}_dashboard.reset_password')</button>
+            </div>
+        </div>
+
+    </form>
+
+@endsection

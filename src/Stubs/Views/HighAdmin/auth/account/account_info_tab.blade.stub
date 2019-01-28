@@ -1,0 +1,69 @@
+{{--/**--}}
+ {{--* Created by PhpStorm.--}}
+ {{--* User: imokhles--}}
+ {{--* Date: 20/10/2018--}}
+ {{--* Time: 13:24--}}
+ {{--*/--}}
+
+        <form class="" method="POST" action="{{ route('{{$nameSmall}}.account.info') }}">
+
+            @if (session('success'))
+                <div class="alert alert-success alert-dismissible bg-danger text-white border-0 fade show" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    {{session('success')}}
+                </div>
+
+            @endif
+
+            @if ($errors->count())
+                <div class="alert alert-danger alert-dismissible bg-danger text-white border-0 fade show" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <ul>
+                        @foreach ($errors->all() as $e)
+                            <li>{{ $e }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+
+                @csrf
+
+            @php
+                $field = 'name';
+            @endphp
+
+            <div class="form-group row m-b-20">
+                <div class="col-12">
+                    <label for="{{$field}}">@lang('{{$nameSmall}}_dashboard.name')</label>
+                    <input type="email" id="{{$field}}" name="{{$field}}" class="form-control" required value="{{ old($field) ? old($field) : $user[$field] }} " placeholder="@lang('{{$nameSmall}}_dashboard.name_plh')"/>
+                </div>
+            </div>
+
+
+            @php
+                $field = 'email';
+            @endphp
+
+            <div class="form-group row m-b-20">
+                <div class="col-12">
+                    <label for="{{$field}}">@lang('{{$nameSmall}}_dashboard.email')</label>
+                    <input type="email" id="{{$field}}" name="{{$field}}" class="form-control" required value="{{ old($field) ? old($field) : $user[$field] }} " placeholder="@lang('{{$nameSmall}}_dashboard.email_plh')"/>
+                </div>
+            </div>
+
+            <div class="form-group text-right m-b-0">
+                <a href="{{route('{{$nameSmall}}.dashboard')}}" class="btn btn-light waves-effect m-l-5">
+                    @lang('{{$nameSmall}}_dashboard.cancel_changes')
+                </a>
+                <button class="btn btn-custom waves-effect waves-light" type="submit">
+                    @lang('{{$nameSmall}}_dashboard.apply_change'
+                </button>
+
+            </div>
+
+        </form>
+

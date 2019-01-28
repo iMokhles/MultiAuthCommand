@@ -1,0 +1,3 @@
+<li class="has-submenu">
+    <a href="{{ route('{{$nameSmall}}.dashboard') }}"><i class="icon-speedometer"></i>@lang('{{$nameSmall}}_dashboard.dashboard')</a>
+</li>

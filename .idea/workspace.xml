@@ -4,7 +4,6 @@
     <list default="true" id="6ea327e4-ed27-4c84-ba0e-659e8a2452e9" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Stubs/Languages/dashboard.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Languages/dashboard.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/passwords/email.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/passwords/email.blade.stub" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/verify.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/verify.blade.stub" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,157 +15,22 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="403157070">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.1" value="3" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="json" value="2" />
-          <entry key="md" value="2" />
-          <entry key="php" value="2" />
-          <entry key="stub" value="34" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Blade" value="34" />
-          <entry key="JSON" value="2" />
-          <entry key="Markdown" value="2" />
-          <entry key="PHP" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="json" value="9" />
-          <entry key="md" value="677" />
-          <entry key="php" value="116" />
-          <entry key="stub" value="223" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Blade" value="223" />
-          <entry key="JSON" value="9" />
-          <entry key="Markdown" value="677" />
-          <entry key="PHP" value="116" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="1663752895">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="md" value="1" />
-          <entry key="php" value="1" />
-          <entry key="stub" value="6" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Markdown" value="1" />
-          <entry key="PHP" value="1" />
-          <entry key="PLAIN_TEXT" value="6" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="md" value="1" />
-          <entry key="php" value="51" />
-          <entry key="stub" value="59" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Markdown" value="1" />
-          <entry key="PHP" value="51" />
-          <entry key="PLAIN_TEXT" value="59" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1170">
-                <caret line="78" selection-start-line="78" selection-end-line="78" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Command/MultiAuthPrepare.php">
+        <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/account_info_tab.blade.stub">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14340">
-              <caret line="961" column="28" selection-start-line="961" selection-start-column="13" selection-end-line="961" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Stubs/Config/config.stub">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="36" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/dashboard.blade.stub">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/layout.blade.stub">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="48" lean-forward="true" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/inc/head.blade.stub">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="270">
+              <caret line="57" selection-start-line="57" selection-end-line="65" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/verify.blade.stub">
+        <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/change_password_tab.blade.stub">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="61" column="25" lean-forward="true" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Stubs/Languages/dashboard.stub">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="47" column="53" lean-forward="true" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
+            <state relative-caret-position="131">
+              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
             </state>
           </provider>
         </entry>
@@ -175,7 +39,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>update_info</find>
       <find>@if (Auth::guard('{{$nameSmall}}')-&gt;check())</find>
       <find>{{$nameSmall}}</find>
       <find>{{ route('{{$nameSmall}}.home') }}</find>
@@ -205,6 +68,7 @@
       <find>Send Password Reset Link</find>
       <find>send_password_reset_link</find>
       <find>send_verification_mail</find>
+      <find>more</find>
     </findStrings>
     <replaceStrings>
       <replace>@lang('dashboard</replace>
@@ -227,28 +91,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Exceptions/handlerUnauthorized.stub" />
-        <option value="$PROJECT_DIR$/src/Views/layouts/app.blade.stub" />
-        <option value="$PROJECT_DIR$/src/Controllers/Auth/ForgotPasswordController.stub" />
-        <option value="$PROJECT_DIR$/src/Views/auth/account/update_info.blade.stub" />
-        <option value="$PROJECT_DIR$/src/Controllers/Auth/MyAccountController.stub" />
-        <option value="$PROJECT_DIR$/src/Controllers/Auth/ResetPasswordController.stub" />
-        <option value="$PROJECT_DIR$/src/Controllers/Auth/LoginController.stub" />
-        <option value="$PROJECT_DIR$/src/Config/provider.stub" />
-        <option value="$PROJECT_DIR$/src/Controllers/Auth/RegisterController.stub" />
-        <option value="$PROJECT_DIR$/src/Backpack/Views/inc/main_header.blade.php" />
-        <option value="$PROJECT_DIR$/src/Backpack/Views/inc/menu.blade.php" />
-        <option value="$PROJECT_DIR$/src/Backpack/Views/inc/main_header.blade.stub" />
-        <option value="$PROJECT_DIR$/src/Backpack/Views/inc/sidebar.blade.php" />
-        <option value="$PROJECT_DIR$/src/Route/routeFile.stub" />
-        <option value="$PROJECT_DIR$/src/Backpack/Views/inc/sidebar_user_panel.blade.php" />
-        <option value="$PROJECT_DIR$/src/Backpack/Views/layouts/layout.blade.stub" />
-        <option value="$PROJECT_DIR$/src/Backpack/Views/home.blade.stub" />
-        <option value="$PROJECT_DIR$/src/Backpack/Views/auth/account/change_password.blade.stub" />
-        <option value="$PROJECT_DIR$/src/Backpack/Views/auth/account/update_info.blade.stub" />
-        <option value="$PROJECT_DIR$/src/Backpack/Views/auth/account/sidemenu.blade.php" />
-        <option value="$PROJECT_DIR$/src/Backpack/Model/model.stub" />
-        <option value="$PROJECT_DIR$/src/Backpack/Views/auth/passwords/email.blade.stub" />
         <option value="$PROJECT_DIR$/src/Backpack/Views/auth/passwords/reset.blade.stub" />
         <option value="$PROJECT_DIR$/src/Backpack/Views/auth/register.blade.stub" />
         <option value="$PROJECT_DIR$/src/Backpack/Views/auth/login.blade.stub" />
@@ -276,22 +118,37 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Stubs/Config/config.stub" />
         <option value="$PROJECT_DIR$/src/Command/MultiAuthPrepare.php" />
+        <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/inc/scripts.blade.stub" />
+        <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/inc/head.blade.stub" />
+        <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/inc/alerts.blade.stub" />
+        <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/inc/breadcrumb.blade.stub" />
+        <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/main_header/main_header.blade.stub" />
+        <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/main_header/languages.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Languages/dashboard.stub" />
+        <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/main_header/notifications.blade.stub" />
+        <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/main_header/user.blade.stub" />
+        <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/layout.blade.stub" />
+        <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/sidemenu/list.blade.stub" />
+        <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/sidemenu/items.blade.stub" />
+        <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/dashboard.blade.stub" />
+        <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/layout_guest.blade.stub" />
+        <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/register.blade.stub" />
+        <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/login.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/verify.blade.stub" />
+        <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/passwords/email.blade.stub" />
+        <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/passwords/reset.blade.stub" />
+        <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/update_info.blade.stub" />
+        <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/left_box.blade.stub" />
+        <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/right_box.blade.stub" />
+        <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/account_info_tab.blade.stub" />
+        <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/change_password_tab.blade.stub" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="75" />
     <option name="y" value="23" />
-    <option name="width" value="1278" />
-    <option name="height" value="833" />
+    <option name="width" value="1228" />
+    <option name="height" value="845" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -329,6 +186,21 @@
               <item name="MultiAuthCommand" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Stubs" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MultiAuthCommand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiAuthCommand" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Stubs" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MultiAuthCommand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiAuthCommand" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Stubs" type="462c0819:PsiDirectoryNode" />
               <item name="Languages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -344,35 +216,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Stubs" type="462c0819:PsiDirectoryNode" />
               <item name="Views" type="462c0819:PsiDirectoryNode" />
-              <item name="StartUI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiAuthCommand" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiAuthCommand" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Stubs" type="462c0819:PsiDirectoryNode" />
-              <item name="Views" type="462c0819:PsiDirectoryNode" />
-              <item name="StartUI" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiAuthCommand" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiAuthCommand" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Stubs" type="462c0819:PsiDirectoryNode" />
-              <item name="Views" type="462c0819:PsiDirectoryNode" />
-              <item name="StartUI" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiAuthCommand" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiAuthCommand" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Stubs" type="462c0819:PsiDirectoryNode" />
-              <item name="Views" type="462c0819:PsiDirectoryNode" />
-              <item name="StartUI" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-              <item name="inc" type="462c0819:PsiDirectoryNode" />
+              <item name="HighAdmin" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -384,16 +228,16 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="nodejs_interpreter_path" value="node" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Stubs/Views" />
       <recent name="$PROJECT_DIR$/src/Backpack/Views/auth/account" />
       <recent name="$PROJECT_DIR$/src/Backpack/Views/layouts" />
       <recent name="$PROJECT_DIR$/src/Backpack/Views" />
       <recent name="$PROJECT_DIR$/src/Backpack" />
-      <recent name="$PROJECT_DIR$/src/Exceptions" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -430,22 +274,23 @@
       <workItem from="1540988796412" duration="3465000" />
       <workItem from="1541849234716" duration="3078000" />
       <workItem from="1541988677330" duration="162000" />
+      <workItem from="1548693959441" duration="9901000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51465000" />
+    <option name="totallyTimeSpent" value="61366000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="75" y="23" width="1278" height="833" extended-state="0" />
+    <frame x="0" y="23" width="1228" height="845" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.33333334" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.35328835" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="2" visible="true" weight="0.25910932" />
+      <window_info anchor="bottom" id="Terminal" order="2" visible="true" weight="0.2549801" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
       <window_info anchor="bottom" id="Run" order="5" />
@@ -464,33 +309,7 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/inc/scripts.blade.php" />
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/layouts/app.blade.stub" />
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/layouts/layout_guest.blade.php" />
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/home.blade.stub" />
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/welcome.blade.stub" />
-    <entry file="file://$PROJECT_DIR$/src/Views/layouts/app.blade.stub" />
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/layouts/layout.blade.stub" />
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/inc/main_header.blade.stub" />
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/inc/menu.blade.stub" />
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/inc/sidebar.blade.stub" />
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/inc/sidebar_user_panel.blade.stub" />
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Model/model.stub" />
-    <entry file="file://$PROJECT_DIR$/src/Route/mapRoute.stub" />
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/account/sidemenu.blade.stub" />
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/account/change_password.blade.stub" />
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/account/update_info.blade.stub" />
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/passwords/email.blade.stub" />
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/passwords/reset.blade.stub" />
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/login.blade.stub" />
-    <entry file="file://$PROJECT_DIR$/src/Route/routeFile.stub" />
-    <entry file="file://$PROJECT_DIR$/src/Views/auth/login.blade.stub" />
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/auth/register.blade.stub" />
-    <entry file="file://$PROJECT_DIR$/src/Model/model.stub" />
     <entry file="file://$PROJECT_DIR$/src/MultiAuthCommandServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -547,20 +366,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/register.blade.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/login.blade.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/passwords/email.blade.stub">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -581,9 +386,6 @@
           <caret line="35" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stubs/Controllers/Auth/ForgotPasswordController.stub">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/change_password_tab.blade.stub">
       <provider selected="true" editor-type-id="text-editor">
@@ -644,6 +446,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/dashboard.blade.stub">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/inc/head.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/inc/alerts.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/inc/breadcrumb.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/main_header/languages.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/main_header/notifications.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/main_header/user.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/main_header/main_header.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Stubs/Config/config.stub">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -651,34 +505,158 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/dashboard.blade.stub">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/layout.blade.stub">
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/sidemenu/items.blade.stub">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="48" lean-forward="true" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/inc/head.blade.stub">
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/sidemenu/list.blade.stub">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="75">
+          <caret line="5" column="65" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/inc/head.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="76" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/dashboard.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/layout.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Stubs/Languages/dashboard.stub">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="47" column="53" lean-forward="true" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
+        <state relative-caret-position="540">
+          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/login.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="44" column="130" selection-start-line="44" selection-start-column="130" selection-end-line="44" selection-end-column="171" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/register.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="40" column="115" selection-start-line="40" selection-start-column="110" selection-end-line="40" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/inc/scripts.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-109">
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/layout_guest.blade.stub">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/layouts/layout.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/layout_guest.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/verify.blade.stub">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="61" column="25" lean-forward="true" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
+        <state relative-caret-position="388">
+          <caret line="47" column="184" selection-start-line="47" selection-start-column="184" selection-end-line="47" selection-end-column="184" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Controllers/Auth/ForgotPasswordController.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-188" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/passwords/email.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="47" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/register.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="34" selection-start-line="34" selection-end-line="46" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/passwords/reset.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/update_info.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/left_box.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/right_box.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/login.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="21" selection-start-line="21" selection-end-line="26" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/account_info_tab.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="57" selection-start-line="57" selection-end-line="65" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/change_password_tab.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
         </state>
       </provider>
     </entry>

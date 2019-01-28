@@ -1,0 +1,19 @@
+<div class="navbar-custom">
+    <div class="container-fluid">
+        <div id="navigation">
+            <!-- Navigation Menu-->
+            <ul class="navigation-menu">
+                @include('{{$nameSmall}}.layouts.sidemenu.items')
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<nav class="side-menu">
+    <ul class="side-menu-list">
+
+        @include('{{$nameSmall}}.layouts.sidemenu.items')
+
+    </ul>
+</nav>

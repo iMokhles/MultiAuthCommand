@@ -1,14 +1,19 @@
 @extends('{{$nameSmall}}.layouts.layout_guest')
 
+@section('before_styles')
+    <link rel="stylesheet" href="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/css/separate/pages/login.min.css">
+@endsection
+
 @section('content')
-    <div class="account-content text-center">
+    <div class="sign-box">
+        <div class="text-center">
             <svg version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 98 98"
                  style="enable-background:new 0 0 98 98;height: 140px;" xml:space="preserve">
                                                 <style type="text/css">
                                                     .st0{fill:#FFFFFF;}
-                                                    .st1{fill:#02a8b5;}
-                                                    .st2{fill:#FFFFFF;stroke:#02a8b5;stroke-width:2;stroke-miterlimit:10;}
+                                                    .st1{fill:#4489e4;}
+                                                    .st2{fill:#FFFFFF;stroke:#4489e4;stroke-width:2;stroke-miterlimit:10;}
                                                     .st3{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
                                                 </style>
                 <g i:extraneous="self">
@@ -35,9 +40,10 @@
                     </g>
                 </g>
             </svg>
+        </div>
 
         @if (session('resent'))
-            <div class="alert alert-success alert-dismissible bg-danger text-white border-0 fade show" role="alert">
+            <div class="alert alert-success alert-no-border alert-close alert-dismissible fade show" role="alert">
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -45,8 +51,29 @@
             </div>
         @endif
 
-        <p class="text-muted font-14 mt-2"> @lang('{{$nameSmall}}_dashboard.check_verification_mail_before'), @lang('{{$nameSmall}}_dashboard.if_didnt_receive_verification_mail')  </p>
+        <div class="text-center">
+            <p> @lang('{{$nameSmall}}_dashboard.check_verification_mail_before'), @lang('{{$nameSmall}}_dashboard.if_didnt_receive_verification_mail')  </p>
+        </div>
 
-        <a href="{{ route('{{$nameSmall}}.verification.resend') }}" class="btn btn-md btn-block btn-custom waves-effect waves-light mt-3">@lang('{{$nameSmall}}_dashboard.send_verification_mail')</a>
+        <a href="{{ route('{{$nameSmall}}.verification.resend') }}" class="btn btn-rounded btn-success sign-up">@lang('{{$nameSmall}}_dashboard.send_verification_mail')</a>
     </div>
+@endsection
+
+@section('after_scripts')
+    <script>
+        $(function() {
+            $('.page-center').matchHeight({
+                target: $('html')
+            });
+
+            $(window).resize(function(){
+                setTimeout(function(){
+                    $('.page-center').matchHeight({ remove: true });
+                    $('.page-center').matchHeight({
+                        target: $('html')
+                    });
+                },100);
+            });
+        });
+    </script>
 @endsection
