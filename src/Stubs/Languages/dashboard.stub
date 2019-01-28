@@ -50,7 +50,7 @@ return [
     'conditions_btn' => 'Terms and Conditions',
     'reset_password' => 'Reset Password',
     'send_verification_mail' => 'click here to request another',
-    'send_password_reset_link' => 'Send Password Reset Link'
+    'send_password_reset_link' => 'Send Password Reset Link',
     'apply_change' => 'Apply Changes',
     'cancel_changes' => 'Cancel',
 

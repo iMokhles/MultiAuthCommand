@@ -60,7 +60,7 @@
                     @lang('{{$nameSmall}}_dashboard.cancel_changes')
                 </a>
                 <button class="btn btn-custom waves-effect waves-light" type="submit">
-                    @lang('{{$nameSmall}}_dashboard.apply_change'
+                    @lang('{{$nameSmall}}_dashboard.apply_change')
                 </button>
 
             </div>

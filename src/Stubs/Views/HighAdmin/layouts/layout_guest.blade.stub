@@ -8,7 +8,7 @@
 <body>
 
 <!-- Begin page -->
-<div class="accountbg" style="background: url("{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/assets/images/bg-2.jpg");background-size: cover;background-position: center;"></div>
+<div class="accountbg" style="background: url('{{asset(config('admin_config.theme_name'))}}/assets/images/bg-2.jpg');background-size: cover;background-position: center;"></div>
 <div class="wrapper-page account-page-full">
 
     <div class="card">

@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ea327e4-ed27-4c84-ba0e-659e8a2452e9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Stubs/Languages/dashboard.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Languages/dashboard.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/verify.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/verify.blade.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/account_info_tab.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/account_info_tab.blade.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/change_password_tab.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/change_password_tab.blade.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/layout_guest.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/layout_guest.blade.stub" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,11 +27,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/change_password_tab.blade.stub">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="131">
               <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/layout_guest.blade.stub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -124,14 +134,12 @@
         <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/inc/breadcrumb.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/main_header/main_header.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/main_header/languages.blade.stub" />
-        <option value="$PROJECT_DIR$/src/Stubs/Languages/dashboard.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/main_header/notifications.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/main_header/user.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/layout.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/sidemenu/list.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/sidemenu/items.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/dashboard.blade.stub" />
-        <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/layout_guest.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/register.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/login.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/verify.blade.stub" />
@@ -140,8 +148,10 @@
         <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/update_info.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/left_box.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/right_box.blade.stub" />
+        <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/layout_guest.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/account_info_tab.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/change_password_tab.blade.stub" />
+        <option value="$PROJECT_DIR$/src/Stubs/Languages/dashboard.stub" />
       </list>
     </option>
   </component>
@@ -218,6 +228,24 @@
               <item name="Views" type="462c0819:PsiDirectoryNode" />
               <item name="HighAdmin" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="MultiAuthCommand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiAuthCommand" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Stubs" type="462c0819:PsiDirectoryNode" />
+              <item name="Views" type="462c0819:PsiDirectoryNode" />
+              <item name="HighAdmin" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MultiAuthCommand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiAuthCommand" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Stubs" type="462c0819:PsiDirectoryNode" />
+              <item name="Views" type="462c0819:PsiDirectoryNode" />
+              <item name="HighAdmin" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -274,16 +302,15 @@
       <workItem from="1540988796412" duration="3465000" />
       <workItem from="1541849234716" duration="3078000" />
       <workItem from="1541988677330" duration="162000" />
-      <workItem from="1548693959441" duration="9901000" />
+      <workItem from="1548693959441" duration="10217000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61366000" />
+    <option name="totallyTimeSpent" value="61682000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1228" height="845" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.35328835" />
@@ -578,13 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/layout_guest.blade.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/verify.blade.stub">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="388">
@@ -657,6 +677,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
           <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/layout_guest.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
