@@ -8,12 +8,3 @@
         </div>
     </div>
 </div>
-
-
-<nav class="side-menu">
-    <ul class="side-menu-list">
-
-        @include('{{$nameSmall}}.layouts.sidemenu.items')
-
-    </ul>
-</nav>

@@ -30,6 +30,18 @@
     </div>
 </div>
 
+{{--<!-- Footer -->--}}
+{{--<footer class="footer">--}}
+    {{--<div class="container">--}}
+        {{--<div class="row">--}}
+            {{--<div class="col-12 text-center">--}}
+               {{--FOOTER HERE--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
+{{--</footer>--}}
+{{--<!-- End Footer -->--}}
+
 @include('{{$nameSmall}}.layouts.inc.scripts')
 
 </body>
