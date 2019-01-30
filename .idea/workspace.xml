@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ea327e4-ed27-4c84-ba0e-659e8a2452e9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/change_password_tab.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/change_password_tab.blade.stub" afterDir="false" />
-    </list>
+    <list default="true" id="6ea327e4-ed27-4c84-ba0e-659e8a2452e9" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,19 +28,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/main_header/main_header.blade.stub">
+        <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/change_password_tab.blade.stub">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="54" column="48" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
+            <state relative-caret-position="347">
+              <caret line="65" column="106" selection-start-line="65" selection-start-column="106" selection-end-line="65" selection-end-column="106" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/change_password_tab.blade.stub">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="65" column="106" selection-start-line="65" selection-start-column="106" selection-end-line="65" selection-end-column="106" />
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="919">
+                <caret line="78" selection-start-line="78" selection-end-line="78" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -457,12 +458,12 @@
       <workItem from="1541849234716" duration="3078000" />
       <workItem from="1541988677330" duration="162000" />
       <workItem from="1548693959441" duration="10611000" />
-      <workItem from="1548752006726" duration="3928000" />
+      <workItem from="1548752006726" duration="4284000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66004000" />
+    <option name="totallyTimeSpent" value="66360000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1228" height="845" extended-state="0" />
@@ -588,16 +589,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="54" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1170">
-            <caret line="78" selection-start-line="78" selection-end-line="78" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -840,6 +831,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="347">
           <caret line="65" column="106" selection-start-line="65" selection-start-column="106" selection-end-line="65" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="919">
+            <caret line="78" selection-start-line="78" selection-end-line="78" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
