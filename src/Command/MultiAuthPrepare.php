@@ -127,7 +127,7 @@ class MultiAuthPrepare extends BaseCommand
             $this->progressBar->advance();
 
             $this->line(" installing project config file...");
-            $this->installProjectConfig();
+            $this->installProjectConfig($admin_theme);
             $this->progressBar->advance();
 
             $this->line(" installing prologue alert...");
