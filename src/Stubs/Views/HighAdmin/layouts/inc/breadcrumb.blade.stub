@@ -6,9 +6,9 @@
                                 <ol class="breadcrumb hide-phone p-0 m-0">
                                 @foreach(request()->segments() as $key => $value)
                                     @if($key == count(request()->segments()) -1)
-                                        <li class="breadcrumb-item active">Notifications</li>
+                                        <li class="breadcrumb-item active">{{$value}}</li>
                                     @else
-                                        <li class="breadcrumb-item"><a href="#">Highdmin</a></li>
+                                        <li class="breadcrumb-item"><a href="#">{{$value}}</a></li>
                                     @endif
                                 @endforeach
                                 </ol>

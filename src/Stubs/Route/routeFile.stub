@@ -22,9 +22,15 @@ Route::post('login', 'Auth\LoginController@login')->name('{{$nameSmall}}.login')
 Route::post('logout', 'Auth\LoginController@logout')->name('{{$nameSmall}}.logout');
 Route::get('logout', 'Auth\LoginController@logout')->name('{{$nameSmall}}.logout');
 
+@if(config('{{$nameSmall}}_config.enable_registration'))
+
 // Registration Routes...
 Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('{{$nameSmall}}.register');
 Route::post('register', 'Auth\RegisterController@register')->name('{{$nameSmall}}.register');
+
+@endif
+
+
 // Password Reset Routes...
 Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('{{$nameSmall}}.password.request');
 Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('{{$nameSmall}}.password.email');
