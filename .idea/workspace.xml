@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ea327e4-ed27-4c84-ba0e-659e8a2452e9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Config/config.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Config/config.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Controllers/Auth/RegisterController.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Controllers/Auth/RegisterController.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Route/routeFile.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Route/routeFile.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/inc/breadcrumb.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/inc/breadcrumb.blade.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/change_password_tab.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/change_password_tab.blade.stub" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +34,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="431">
               <caret line="54" column="48" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/change_password_tab.blade.stub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="347">
+              <caret line="65" column="106" selection-start-line="65" selection-start-column="106" selection-end-line="65" selection-end-column="106" />
             </state>
           </provider>
         </entry>
@@ -77,7 +83,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/inc/breadcrumb.blade.stub">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
@@ -109,15 +115,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
               <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/sidemenu/list.blade.stub">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -218,7 +215,6 @@
         <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/right_box.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/layout_guest.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/account_info_tab.blade.stub" />
-        <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/change_password_tab.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Languages/dashboard.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/sidemenu/list.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/main_header/main_header.blade.stub" />
@@ -229,6 +225,7 @@
         <option value="$PROJECT_DIR$/src/Stubs/Route/routeFile.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Controllers/Auth/RegisterController.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/inc/breadcrumb.blade.stub" />
+        <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/change_password_tab.blade.stub" />
       </list>
     </option>
   </component>
@@ -460,12 +457,12 @@
       <workItem from="1541849234716" duration="3078000" />
       <workItem from="1541988677330" duration="162000" />
       <workItem from="1548693959441" duration="10611000" />
-      <workItem from="1548752006726" duration="2674000" />
+      <workItem from="1548752006726" duration="3928000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64750000" />
+    <option name="totallyTimeSpent" value="66004000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1228" height="845" extended-state="0" />
@@ -762,13 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/change_password_tab.blade.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/layout_guest.blade.stub">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="71">
@@ -843,6 +833,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="54" lean-forward="true" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/change_password_tab.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="65" column="106" selection-start-line="65" selection-start-column="106" selection-end-line="65" selection-end-column="106" />
         </state>
       </provider>
     </entry>
