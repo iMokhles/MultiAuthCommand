@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ea327e4-ed27-4c84-ba0e-659e8a2452e9" name="Default" comment="" />
+    <list default="true" id="6ea327e4-ed27-4c84-ba0e-659e8a2452e9" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Stubs/Route/routeFile.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Route/routeFile.stub" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,12 +38,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="919">
-                <caret line="78" selection-start-line="78" selection-end-line="78" />
+              <first_editor relative-caret-position="214">
+                <caret line="31" column="99" selection-start-line="31" selection-start-column="99" selection-end-line="31" selection-end-column="99" />
               </first_editor>
               <second_editor />
             </state>
@@ -66,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Stubs/Route/routeFile.stub">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="24" selection-start-line="24" selection-end-line="30" selection-end-column="6" />
+            <state relative-caret-position="229">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
@@ -198,7 +200,6 @@
         <option value="$PROJECT_DIR$/src/Stubs/Controllers/Auth/VerificationController.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/change_password_tab.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/account/account_info_tab.blade.stub" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/inc/scripts.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/inc/head.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/inc/alerts.blade.stub" />
@@ -223,10 +224,11 @@
         <option value="$PROJECT_DIR$/src/Command/MultiAuthPrepare.php" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/left_box.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Config/config.stub" />
-        <option value="$PROJECT_DIR$/src/Stubs/Route/routeFile.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Controllers/Auth/RegisterController.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/inc/breadcrumb.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/account/change_password_tab.blade.stub" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/Stubs/Route/routeFile.stub" />
       </list>
     </option>
   </component>
@@ -458,12 +460,12 @@
       <workItem from="1541849234716" duration="3078000" />
       <workItem from="1541988677330" duration="162000" />
       <workItem from="1548693959441" duration="10611000" />
-      <workItem from="1548752006726" duration="4284000" />
+      <workItem from="1548752006726" duration="4473000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66360000" />
+    <option name="totallyTimeSpent" value="66549000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1228" height="845" extended-state="0" />
@@ -799,13 +801,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stubs/Route/routeFile.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="24" selection-start-line="24" selection-end-line="30" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Stubs/Controllers/Auth/RegisterController.stub">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -837,10 +832,17 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="919">
-            <caret line="78" selection-start-line="78" selection-end-line="78" />
+          <first_editor relative-caret-position="214">
+            <caret line="31" column="99" selection-start-line="31" selection-start-column="99" selection-end-line="31" selection-end-column="99" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stubs/Route/routeFile.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
