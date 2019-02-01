@@ -18,7 +18,7 @@
                 <div class="card-box p-5">
                     <h2 class="text-uppercase text-center pb-4">
                         <a href="index.html" class="text-success">
-                            <span><img src="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/assets/images/logo.png" alt="" height="26"></span>
+                            <span><img src="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/assets/images/logo.png" alt="" height="50"></span>
                         </a>
                     </h2>
                     @yield('content')

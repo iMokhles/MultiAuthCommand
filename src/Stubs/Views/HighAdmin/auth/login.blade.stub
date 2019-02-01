@@ -52,10 +52,13 @@
         </div>
     </form>
 
+    @if(config('{{$nameSmall}}_config.enable_registration'))
 
     <div class="row m-t-50">
         <div class="col-sm-12 text-center">
             <p class="text-muted">@lang('{{$nameSmall}}_dashboard.dont_have_account') <a href="{{ route('{{$nameSmall}}.register') }}" class="text-dark m-l-5"><b>@lang('{{$nameSmall}}_dashboard.sign_up')</b></a></p>
         </div>
     </div>
+
+    @endif
 @endsection

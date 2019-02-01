@@ -39,7 +39,7 @@
             <div class="form-group row m-b-20">
                 <div class="col-12">
                     <label for="{{$field}}">@lang('{{$nameSmall}}_dashboard.name')</label>
-                    <input type="email" id="{{$field}}" name="{{$field}}" class="form-control" required value="{{ old($field) ? old($field) : $user[$field] }} " placeholder="@lang('{{$nameSmall}}_dashboard.name_plh')"/>
+                    <input type="text" id="{{$field}}" name="{{$field}}" class="form-control" required value="{{ old($field) ? old($field) : $user[$field] }} " placeholder="@lang('{{$nameSmall}}_dashboard.name_plh')"/>
                 </div>
             </div>
 

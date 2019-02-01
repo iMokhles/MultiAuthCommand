@@ -15,8 +15,8 @@
                         </a> -->
                         <!-- Image Logo -->
                         <a href="index.html" class="logo">
-                            <img src="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/assets/images/logo_sm.png" alt="" height="26" class="logo-small">
-                            <img src="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/assets/images/logo.png" alt="" height="22" class="logo-large">
+                            <img src="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/assets/images/logo_sm.png" alt="" height="50" class="logo-small">
+                            <img src="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/assets/images/logo.png" alt="" height="50" class="logo-large">
                         </a>
 
                     </div>
