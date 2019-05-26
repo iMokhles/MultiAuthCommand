@@ -42,7 +42,11 @@
             </div>
         </div>
         <button type="submit" class="btn btn-rounded">@lang('{{$nameSmall}}_dashboard.sign_in')</button>
-        <p class="sign-note">@lang('{{$nameSmall}}_dashboard.dont_have_account') <a href="{{ route('{{$nameSmall}}.register') }}">@lang('{{$nameSmall}}_dashboard.sign_up')</a></p>
+            @if(config('{{$nameSmall}}_config.enable_registration'))
+
+                <p class="sign-note">@lang('{{$nameSmall}}_dashboard.dont_have_account') <a href="{{ route('{{$nameSmall}}.register') }}">@lang('{{$nameSmall}}_dashboard.sign_up')</a></p>
+
+            @endif
     </form>
 @endsection
 

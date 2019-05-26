@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{{ app()->getLocale() }}">
+<head>
+    {{-- Site-Head --}}
+    @include('{{$nameSmall}}.layouts.inc.head')
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+
+<div class="wrapper">
+    {{-- Navigation Bar --}}
+    @include('{{$nameSmall}}.layouts.main_header.main_header')
+
+    {{-- SideMenu --}}
+    @include('{{$nameSmall}}.layouts.sidemenu.list')
+
+    <div class="content-wrapper">
+        @if(config('{{$nameSmall}}_config.enable_breadcrumb'))
+            {{-- BreadCrumb--}}
+            @include('{{$nameSmall}}.layouts.inc.breadcrumb')
+        @endif
+
+        <!-- Main content -->
+            <section class="content">
+                @yield('content')
+                @stack('content')
+            </section>
+
+
+    </div>
+</div>
+
+{{--<footer class="main-footer">--}}
+    {{--<div class="pull-right hidden-xs">--}}
+        {{--<b>Version</b> 2.4.0--}}
+    {{--</div>--}}
+    {{--<strong>Copyright &copy; 2014-2016 <a href="https://adminlte.io">Almsaeed Studio</a>.</strong> All rights--}}
+    {{--reserved.--}}
+{{--</footer>--}}
+{{--<!-- End Footer -->--}}
+
+@include('{{$nameSmall}}.layouts.inc.scripts')
+
+</body>
+
+</html>

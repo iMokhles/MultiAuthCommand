@@ -38,3 +38,4 @@ class MultiAuthCommandServiceProvider extends ServiceProvider
         $this->commands('command.imokhles.make.multi-auth');
     }
 }
+

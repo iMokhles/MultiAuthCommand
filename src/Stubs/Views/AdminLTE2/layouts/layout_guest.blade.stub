@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ app()->getLocale() }}">
+<head>
+    {{-- Site-Head --}}
+    @include('{{$nameSmall}}.layouts.inc.head')
+</head>
+
+<body class="hold-transition login-page">
+
+<div class="login-box">
+    <div class="login-logo">
+        <a href="../../index2.html"><b>Admin</b>LTE</a>
+    </div>
+    <!-- /.login-logo -->
+    <div class="login-box-body">
+        @yield('content')
+        @stack('content')
+    </div>
+</div>
+
+@include('{{$nameSmall}}.layouts.inc.scripts')
+
+</body>
+
+</html>

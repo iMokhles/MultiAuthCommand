@@ -13,15 +13,15 @@
     </a>
 
     <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated">
-        <a href="javascript:void(0);" class="dropdown-item">
+        <a href="javascript:void(0);" class="dropdown-item @if(session($localKey) === 'en') active @endif">
             @lang('{{$nameSmall}}_dashboard.english')
         </a>
 
-        <a href="javascript:void(0);" class="dropdown-item">
+        <a href="javascript:void(0);" class="dropdown-item @if(session($localKey) === 'fr') active @endif">
             @lang('{{$nameSmall}}_dashboard.french')
         </a>
 
-        <a href="javascript:void(0);" class="dropdown-item">
+        <a href="javascript:void(0);" class="dropdown-item @if(session($localKey) === 'ar') active @endif">
             @lang('{{$nameSmall}}_dashboard.arabic')
         </a>
 

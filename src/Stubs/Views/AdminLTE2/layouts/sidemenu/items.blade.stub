@@ -1,0 +1,5 @@
+<li class="{{ Request::is('dashboard') ? 'active' : '' }}">
+    <a href="{{ route('{{$nameSmall}}.dashboard') }}">
+        <i class="fa fa-dashboard"></i> <span>@lang('{{$nameSmall}}_dashboard.dashboard')</span>
+    </a>
+</li>

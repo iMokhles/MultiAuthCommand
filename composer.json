@@ -10,7 +10,10 @@
     "require": {
         "php": ">=5.5.0",
         "illuminate/support": "~5.7",
-        "prologue/alerts": "^0.4.1"
+        "prologue/alerts": "^0.4.1",
+        "illuminate/console": "~5.7",
+        "symfony/process": "^4.2",
+        "illuminate/database": "~5.7"
     },
     "license": "MIT",
     "authors": [

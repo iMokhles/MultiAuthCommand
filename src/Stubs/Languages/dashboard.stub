@@ -42,6 +42,8 @@ return [
     'arabic' => 'Arabic',
     'profile' => 'Profile',
     'logout' => 'Logout',
+    'notifications_counts_message' => 'You have :notifs notifications',
+    'member_since' => 'Member since',
 
     // buttons
     'sign_in' => 'Sign In',
