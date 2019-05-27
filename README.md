@@ -28,10 +28,10 @@ PROJECT_DIR/public/start_ui/*css,js,img,fonts
 
 ## Available themes
 
-* [AdminLTE 2](https://adminlte.io/themes/AdminLTE/index2.html)
-* [Tabler](https://preview.tabler.io/)
-* [StartUI](https://themeforest.net/item/startui-premium-bootstrap-4-admin-dashboard-template/15228250?ref=themesanytime)
-* [HighAdmin](https://themeforest.net/item/highdmin-responsive-bootstrap-4-admin-dashboard/21233941)
+* FREE [AdminLTE 2](https://adminlte.io/themes/AdminLTE/index2.html)
+* FREE [Tabler](https://preview.tabler.io/)
+* PAID [StartUI](https://themeforest.net/item/startui-premium-bootstrap-4-admin-dashboard-template/15228250?ref=themesanytime)
+* PAID [HighAdmin](https://themeforest.net/item/highdmin-responsive-bootstrap-4-admin-dashboard/21233941)
 * more comes later ( and you are welcome to send me a pull request for more themes )
 
 ## Theme folder structure 
