@@ -1,0 +1,35 @@
+@php
+    $userNotifiactions = auth('{{$nameSmall}}')->user()->unreadNotifications()->limit(5)->get();
+    $userLogged = auth('{{$nameSmall}}')->user();
+@endphp
+
+<div class="header py-4">
+    <div class="container">
+        <div class="d-flex">
+            <a class="header-brand" href="{{route('{{$nameSmall}}.dashboard')}}">
+                <img src="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/demo/brand/tabler.svg" class="header-brand-img" alt="tabler logo">
+            </a>
+            <div class="d-flex order-lg-2 ml-auto">
+                <div class="nav-item d-none d-md-flex">
+                    <a href="https://github.com/tabler/tabler" class="btn btn-sm btn-outline-primary" target="_blank">Source code</a>
+                </div>
+
+                {{-- Languages --}}
+
+                @include('{{$nameSmall}}.layouts.main_header.languages')
+
+                {{-- Notifications --}}
+
+                @include('{{$nameSmall}}.layouts.main_header.notifications')
+
+                {{-- User --}}
+
+                @include('{{$nameSmall}}.layouts.main_header.user')
+
+            </div>
+            <a href="#" class="header-toggler d-lg-none ml-3 ml-lg-0" data-toggle="collapse" data-target="#headerMenuCollapse">
+                <span class="header-toggler-icon"></span>
+            </a>
+        </div>
+    </div>
+</div>

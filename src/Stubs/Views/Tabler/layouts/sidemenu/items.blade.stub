@@ -1,0 +1,3 @@
+<li class="nav-item">
+    <a href="{{ route('{{$nameSmall}}.dashboard') }}" class="nav-link {{ Request::is('dashboard') ? 'active' : '' }}"><i class="fe fe-home"></i> @lang('{{$nameSmall}}_dashboard.dashboard')</a>
+</li>

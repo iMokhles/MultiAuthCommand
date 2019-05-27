@@ -1,0 +1,55 @@
+@extends('{{$nameSmall}}.layouts.layout_guest')
+
+@section('content')
+    <form method="POST" action="{{ route('{{$nameSmall}}.login') }}">
+
+        <div class="card-body p-6">
+            <div class="card-title">@lang('{{$nameSmall}}_dashboard.sign_in')</div>
+            @if ($errors->count())
+                <div class="alert alert-danger alert-dismissible">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    <ul>
+                        @foreach ($errors->all() as $e)
+                            <li>{{ $e }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+
+            @csrf
+
+            <div class="form-group">
+                <label class="form-label">@lang('{{$nameSmall}}_dashboard.email')</label>
+                <input type="email" id="email" name="email" class="form-control" aria-describedby="emailHelp" placeholder="@lang('{{$nameSmall}}_dashboard.email_plh')">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">
+                    @lang('{{$nameSmall}}_dashboard.password')
+                    <a href="{{ route('{{$nameSmall}}.password.request') }}" class="float-right small">@lang('{{$nameSmall}}_dashboard.forgot_password_btn')</a>
+                </label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="@lang('{{$nameSmall}}_dashboard.password_plh')">
+            </div>
+
+            <div class="form-group">
+                <label class="custom-control custom-checkbox">
+                    <input type="checkbox" id="remember" name="remember" class="custom-control-input" />
+                    <span class="custom-control-label">@lang('{{$nameSmall}}_dashboard.remember_me')</span>
+                </label>
+            </div>
+
+            <div class="form-footer">
+                <button type="submit" class="btn btn-primary btn-block">@lang('{{$nameSmall}}_dashboard.sign_in')</button>
+            </div>
+        </div>
+    </form>
+
+
+
+    @if(config('{{$nameSmall}}_config.enable_registration'))
+        <div class="text-center text-muted">
+            @lang('{{$nameSmall}}_dashboard.dont_have_account') <a href="{{ route('{{$nameSmall}}.register') }}">@lang('{{$nameSmall}}_dashboard.sign_up')</a>
+        </div>
+    @endif
+
+@endsection

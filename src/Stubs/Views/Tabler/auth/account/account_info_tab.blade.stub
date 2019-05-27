@@ -1,0 +1,58 @@
+{{--/**--}}
+{{--* Created by PhpStorm.--}}
+{{--* User: imokhles--}}
+{{--* Date: 20/10/2018--}}
+{{--* Time: 13:24--}}
+{{--*/--}}
+
+<form class="" method="POST" action="{{ route('{{$nameSmall}}.account.info') }}">
+
+    @if (session('success'))
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            {{session('success')}}
+        </div>
+
+    @endif
+
+    @if ($errors->count())
+        <div class="alert alert-danger alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <ul>
+                @foreach ($errors->all() as $e)
+                    <li>{{ $e }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+
+    @csrf
+
+    @php
+        $field = 'name';
+    @endphp
+
+    <div class="form-group">
+        <label class="form-label">@lang('{{$nameSmall}}_dashboard.name')</label>
+        <input type="text" id="{{$field}}" name="{{$field}}" class="form-control" required value="{{ old($field) ? old($field) : $user[$field] }} " placeholder="@lang('{{$nameSmall}}_dashboard.name_plh')">
+    </div>
+
+
+    @php
+        $field = 'email';
+    @endphp
+
+    <div class="form-group">
+        <label class="form-label">@lang('{{$nameSmall}}_dashboard.email')</label>
+        <input type="email" id="{{$field}}" name="{{$field}}" class="form-control" required value="{{ old($field) ? old($field) : $user[$field] }} " placeholder="@lang('{{$nameSmall}}_dashboard.email_plh')">
+    </div>
+
+    <div class="card-footer text-right">
+        <button type="submit" class="btn btn-success">@lang('{{$nameSmall}}_dashboard.apply_change')</button>
+    </div>
+</form>
+

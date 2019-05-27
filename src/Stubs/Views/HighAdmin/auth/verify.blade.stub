@@ -1,9 +1,5 @@
 @extends('{{$nameSmall}}.layouts.layout_guest')
 
-@section('before_styles')
-    <link rel="stylesheet" href="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/css/separate/pages/login.min.css">
-@endsection
-
 @section('content')
     <div class="sign-box">
         <div class="text-center">

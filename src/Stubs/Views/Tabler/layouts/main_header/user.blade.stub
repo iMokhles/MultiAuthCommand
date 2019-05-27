@@ -1,0 +1,18 @@
+<div class="dropdown">
+    <a href="#" class="nav-link pr-0 leading-none" data-toggle="dropdown">
+        <span class="avatar" style="background-image: url({{ config('{{$nameSmall}}_config.theme_name') }}/demo/faces/female/25.jpg)"></span>
+        <span class="ml-2 d-none d-lg-block">
+                      <span class="text-default">{{auth('{{$nameSmall}}')->user()->name}}</span>
+                      <small class="text-muted d-block mt-1">@lang('{{$nameSmall}}_dashboard.member_since') {{auth('{{$nameSmall}}')->user()->created_at->format('M. Y') }}</small>
+                    </span>
+    </a>
+    <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+        <a class="dropdown-item" href="{{route('{{$nameSmall}}.account.info')}}">
+            <i class="dropdown-icon fe fe-user"></i> @lang('{{$nameSmall}}_dashboard.profile')
+        </a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="{{route('{{$nameSmall}}.logout')}}">
+            <i class="dropdown-icon fe fe-log-out"></i> @lang('{{$nameSmall}}_dashboard.logout')
+        </a>
+    </div>
+</div>

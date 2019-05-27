@@ -1,0 +1,22 @@
+<div class="card">
+    <div class="card-body">
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link" id="account_info" data-toggle="tab" href="#account_info" role="tab" aria-controls="account_info" aria-selected="true">
+                    @lang('{{$nameSmall}}_dashboard.account_info')
+                </a>
+                <a class="nav-item nav-link" id="change_password" data-toggle="tab" href="#change_password" role="tab" aria-controls="change_password" aria-selected="false">
+                    @lang('{{$nameSmall}}_dashboard.change_password')
+                </a>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade" id="account_info" role="tabpanel" aria-labelledby="account_info">
+                @include('{{$nameSmall}}.auth.account.account_info_tab')
+            </div>
+            <div class="tab-pane fade" id="change_password" role="tabpanel" aria-labelledby="change_password">
+                @include('{{$nameSmall}}.auth.account.change_password_tab')
+            </div>
+        </div>
+    </div>
+</div>

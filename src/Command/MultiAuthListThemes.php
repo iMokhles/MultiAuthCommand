@@ -64,6 +64,7 @@ class MultiAuthListThemes extends BaseCommand
 
         return [
             'adminlte2' => 'https://adminlte.io/themes/AdminLTE/index2.html',
+            'tabler' => 'https://preview.tabler.io/',
             'highadmin' => 'https://themeforest.net/item/highdmin-responsive-bootstrap-4-admin-dashboard/21233941',
             'startui' => 'https://themeforest.net/item/startui-premium-bootstrap-4-admin-dashboard-template/15228250',
         ];

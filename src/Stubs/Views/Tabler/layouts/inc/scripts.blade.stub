@@ -1,0 +1,23 @@
+@yield('before_scripts')
+@stack('before_scripts')
+
+<script src="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/assets/js/require.min.js"></script>
+<script>
+    requirejs.config({
+        baseUrl: "{{ asset(config('{{$nameSmall}}_config.theme_name')) }}"
+    });
+</script>
+<!-- Dashboard Core -->
+<script src="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/assets/js/dashboard.js"></script>
+<!-- c3.js Charts Plugin -->
+<script src="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/assets/plugins/charts-c3/plugin.js"></script>
+<script src="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/assets/plugins/maps-google/plugin.js"></script>
+<!-- Input Mask Plugin -->
+<script src="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/assets/plugins/input-mask/plugin.js"></script>
+<!-- Datatables Plugin -->
+<script src="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/assets/plugins/datatables/plugin.js"></script>
+
+@include('{{$nameSmall}}.layouts.inc.alerts')
+
+@yield('after_scripts')
+@stack('after_scripts')

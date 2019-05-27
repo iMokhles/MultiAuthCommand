@@ -1,0 +1,18 @@
+@php($localKey = 'applocale')
+
+<div class="dropdown d-none d-md-flex">
+    <a class="nav-link icon" data-toggle="dropdown">
+        <i class="fe fe-globe"></i>
+    </a>
+    <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+        <a class="dropdown-item @if(session($localKey) === 'en') active @endif" href="javascript:void(0);">
+            <i class="dropdown-icon flag flag-us"></i> @lang('{{$nameSmall}}_dashboard.english')
+        </a>
+        <a class="dropdown-item @if(session($localKey) === 'ar') active @endif" href="javascript:void(0);">
+            <i class="dropdown-icon flag flag-sa"></i> @lang('{{$nameSmall}}_dashboard.arabic')
+        </a>
+        <a class="dropdown-item @if(session($localKey) === 'fr') active @endif" href="javascript:void(0);">
+            <i class="dropdown-icon flag flag-fr"></i> @lang('{{$nameSmall}}_dashboard.french')
+        </a>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<!-- Notifications: style can be found in dropdown.less -->
+<div class="dropdown d-none d-md-flex">
+    <a class="nav-link icon" data-toggle="dropdown">
+        <i class="fe fe-bell"></i>
+        <span class="@if(count($userNotifiactions) > 0) nav-unread @endif"></span>
+    </a>
+    <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+        @foreach ($userNotifiactions as $notification)
+            <a href="#" class="dropdown-item d-flex">
+                <span class="avatar mr-3 align-self-center">
+                    <i class="{{$notification['data']['icon_class']}}" style="font-size: 25px;"></i>
+                </span>
+                <div>
+                    {{$notification['data']['message']}}
+                    <div class="small text-muted">{{$notification['data']['time_ago']}}</div>
+                </div>
+            </a>
+        @endforeach
+        <div class="dropdown-divider"></div>
+        <a href="#" class="dropdown-item text-center">Mark all as read</a>
+    </div>
+</div>
