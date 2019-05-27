@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ea327e4-ed27-4c84-ba0e-659e8a2452e9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Command/MultiAuthListThemes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/MultiAuthPrepare.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/MultiAuthPrepare.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MultiAuthCommandServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MultiAuthCommandServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Command/MultiAuthListThemes.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/MultiAuthListThemes.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Command/MultiAuthPrepare.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="44" />
+            <state relative-caret-position="70">
+              <caret line="71" column="38" lean-forward="true" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="38" />
               <folding>
                 <element signature="e#53#84#0#PHP" expanded="true" />
               </folding>
@@ -56,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Command/MultiAuthListThemes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+            <state relative-caret-position="184">
+              <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -338,12 +336,12 @@
       <workItem from="1558368494069" duration="198000" />
       <workItem from="1558436744875" duration="37000" />
       <workItem from="1558899874043" duration="1198000" />
-      <workItem from="1558953454081" duration="588000" />
+      <workItem from="1558953454081" duration="1313000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83733000" />
+    <option name="totallyTimeSpent" value="84458000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="23" width="1440" height="845" extended-state="0" />
@@ -689,8 +687,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Command/MultiAuthPrepare.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="44" />
+        <state relative-caret-position="70">
+          <caret line="71" column="38" lean-forward="true" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="38" />
           <folding>
             <element signature="e#53#84#0#PHP" expanded="true" />
           </folding>
@@ -699,8 +697,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Command/MultiAuthListThemes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        <state relative-caret-position="184">
+          <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
         </state>
       </provider>
     </entry>

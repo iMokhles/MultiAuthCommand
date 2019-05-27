@@ -45,13 +45,15 @@ class MultiAuthListThemes extends BaseCommand
         $this->progressBar->start();
 
         $this->line(" Listing supported themes. Please wait...");
+        $this->progressBar->advance();
+
         foreach ($themes as $theme => $link) {
             $this->line(" THEME_NAME: $theme\nTHEME_LINK: $link\n");
             $this->progressBar->advance();
         }
 
         $this->progressBar->finish();
-
+        $this->info(" Finished  listed themes.");
         return true;
     }
 
