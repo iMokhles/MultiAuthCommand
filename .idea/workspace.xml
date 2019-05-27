@@ -2,37 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ea327e4-ed27-4c84-ba0e-659e8a2452e9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Stubs/Views/Tabler/auth/account/account_info_tab.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stubs/Views/Tabler/auth/account/change_password_tab.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stubs/Views/Tabler/auth/account/left_box.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stubs/Views/Tabler/auth/account/right_box.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stubs/Views/Tabler/auth/account/update_info.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stubs/Views/Tabler/auth/login.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stubs/Views/Tabler/auth/passwords/email.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stubs/Views/Tabler/auth/passwords/reset.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stubs/Views/Tabler/auth/register.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stubs/Views/Tabler/auth/verify.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stubs/Views/Tabler/dashboard.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stubs/Views/Tabler/layouts/inc/alerts.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stubs/Views/Tabler/layouts/inc/breadcrumb.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stubs/Views/Tabler/layouts/inc/head.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stubs/Views/Tabler/layouts/inc/scripts.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stubs/Views/Tabler/layouts/layout.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stubs/Views/Tabler/layouts/layout_guest.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stubs/Views/Tabler/layouts/main_header/languages.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stubs/Views/Tabler/layouts/main_header/main_header.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stubs/Views/Tabler/layouts/main_header/notifications.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stubs/Views/Tabler/layouts/main_header/user.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stubs/Views/Tabler/layouts/sidemenu/items.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stubs/Views/Tabler/layouts/sidemenu/list.blade.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/MultiAuthListThemes.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/MultiAuthListThemes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Views/AdminLTE2/auth/passwords/reset.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/AdminLTE2/auth/passwords/reset.blade.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Views/AdminLTE2/layouts/main_header/languages.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/AdminLTE2/layouts/main_header/languages.blade.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Views/AdminLTE2/layouts/main_header/user.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/AdminLTE2/layouts/main_header/user.blade.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/passwords/email.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/passwords/email.blade.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/passwords/reset.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/passwords/reset.blade.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/verify.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/auth/verify.blade.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,11 +47,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Command/MultiAuthListThemes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="66" column="19" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
+            <state relative-caret-position="575">
+              <caret line="66" column="51" selection-start-line="66" selection-start-column="51" selection-end-line="66" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -162,7 +141,6 @@
         <option value="$PROJECT_DIR$/src/Stubs/Views/HighAdmin/layouts/layout_guest.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/StartUI/auth/login.blade.stub" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/Command/MultiAuthPrepare.php" />
         <option value="$PROJECT_DIR$/src/MultiAuthCommandServiceProvider.php" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/Tabler/dashboard.blade.stub" />
@@ -193,6 +171,7 @@
         <option value="$PROJECT_DIR$/src/Stubs/Views/Tabler/auth/account/account_info_tab.blade.stub" />
         <option value="$PROJECT_DIR$/src/Stubs/Views/Tabler/auth/account/change_password_tab.blade.stub" />
         <option value="$PROJECT_DIR$/src/Command/MultiAuthListThemes.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -269,14 +248,6 @@
               <item name="Stubs" type="462c0819:PsiDirectoryNode" />
               <item name="Views" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="MultiAuthCommand" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiAuthCommand" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Stubs" type="462c0819:PsiDirectoryNode" />
-              <item name="Views" type="462c0819:PsiDirectoryNode" />
-              <item name="Tabler" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -342,23 +313,23 @@
       <workItem from="1558436744875" duration="37000" />
       <workItem from="1558899874043" duration="1198000" />
       <workItem from="1558953454081" duration="1814000" />
-      <workItem from="1558960748228" duration="6949000" />
+      <workItem from="1558960748228" duration="7030000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91908000" />
+    <option name="totallyTimeSpent" value="91989000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="845" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.3962804" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.3962804" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="2" visible="true" weight="0.43824703" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.43824703" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
       <window_info anchor="bottom" id="Run" order="5" />
@@ -403,13 +374,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
@@ -738,8 +702,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Command/MultiAuthListThemes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="66" column="19" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
+        <state relative-caret-position="575">
+          <caret line="66" column="51" selection-start-line="66" selection-start-column="51" selection-end-line="66" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
         </state>
       </provider>
     </entry>
