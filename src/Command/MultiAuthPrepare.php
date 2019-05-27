@@ -16,7 +16,7 @@ class MultiAuthPrepare extends BaseCommand
      *
      * @var string
      */
-    protected $signature = 'make:multi_auth {name} {--admin_theme= : chose the theme you want} {--list_themes= : get all supported themes list}';
+    protected $signature = 'make:multi_auth {name} {--admin_theme= : chose the theme you want}';
 
     /**
      * The console command description.
@@ -67,18 +67,6 @@ class MultiAuthPrepare extends BaseCommand
         $this->progressBar = $this->output->createProgressBar(14);
         $this->progressBar->start();
 
-        $list_themes = $this->option('list_themes');
-        if (!is_null($list_themes)) {
-            $this->line(" Listing supported themes. Please wait...");
-            $this->progressBar->advance();
-            $themes = $this->listSupportedThemes();
-            foreach ($themes as $theme => $link) {
-                $this->line("THEME_NAME: $theme\nTHEME_LINK: $link\n");
-            }
-
-            $this->progressBar->finish();
-            return true;
-        }
 
         $this->line(" Preparing For MultiAuth. Please wait...");
         $this->progressBar->advance();
@@ -161,17 +149,7 @@ class MultiAuthPrepare extends BaseCommand
         return true;
     }
 
-    /**
-     * @return array
-     */
-    private function listSupportedThemes() {
 
-        return [
-            'adminlte2' => 'https://adminlte.io/themes/AdminLTE/index2.html',
-            'highadmin' => 'https://themeforest.net/item/highdmin-responsive-bootstrap-4-admin-dashboard/21233941',
-            'startui' => 'https://themeforest.net/item/startui-premium-bootstrap-4-admin-dashboard-template/15228250',
-        ];
-    }
     /**
      * @param $admin_theme
      * @return bool

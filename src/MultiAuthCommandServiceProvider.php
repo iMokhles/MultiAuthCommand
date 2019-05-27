@@ -35,7 +35,13 @@ class MultiAuthCommandServiceProvider extends ServiceProvider
         $this->app->singleton('command.imokhles.make.multi-auth', function ($app) {
             return $app['iMokhles\MultiAuthCommand\Command\MultiAuthPrepare'];
         });
-        $this->commands('command.imokhles.make.multi-auth');
+        $this->app->singleton('command.imokhles.make.multi-auth.list-themes', function ($app) {
+            return $app['iMokhles\MultiAuthCommand\Command\MultiAuthListThemes'];
+        });
+        $this->commands([
+            'MultiAuthPrepare' => 'command.imokhles.make.multi-auth',
+            'MultiAuthListThemes' => 'command.imokhles.make.multi-auth.list-themes',
+        ]);
     }
 }
 
