@@ -63,7 +63,7 @@ class MultiAuthListThemes extends BaseCommand
     public static function githubLinksForFreeThemes() {
         return [
             'adminlte2' => 'https://github.com/ColorlibHQ/AdminLTE/archive/master.zip',
-            'tabler' => 'https://github.com/tabler/tabler/archive/dev.zip',
+            'tabler' => 'https://github.com/tabler/tabler/archive/master.zip',
         ];
     }
 

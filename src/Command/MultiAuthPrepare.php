@@ -133,9 +133,12 @@ class MultiAuthPrepare extends BaseCommand
             $this->installProjectConfig($admin_theme);
             $this->progressBar->advance();
 
-            $this->line(" installing admin panel files under public folder...");
-            $this->installPublicFilesIfNeeded($admin_theme);
-            $this->progressBar->advance();
+            if (array_key_exists($admin_theme, MultiAuthListThemes::listFreeThemes())) {
+                $this->line(" installing admin panel files under public folder...");
+                $this->installPublicFilesIfNeeded($admin_theme);
+                $this->progressBar->advance();
+            }
+
 
             $this->line(" installing prologue alert...");
             $this->installPrologueAlert();
@@ -984,17 +987,29 @@ class MultiAuthPrepare extends BaseCommand
      */
     public function installPublicFilesIfNeeded($theme_name = 'adminlte2') {
 
-        $githubLink = $this->getGitLinkForFreeTheme($theme_name);
-        if (!is_null($githubLink) && is_string($githubLink)) {
-            $zipFileName = basename($githubLink);
-            $zipFile = file_get_contents($githubLink);
-            $downloadZipPath = $this->getPublicFolderPath().DIRECTORY_SEPARATOR.$theme_name;
-            if (!file_exists($downloadZipPath)) {
-                mkdir($downloadZipPath);
+        $publicPath = $this->getPublicFolderPath();
+        $themePublicPath = $publicPath.DIRECTORY_SEPARATOR.$theme_name;
+        if (!file_exists($themePublicPath) && !(new \FilesystemIterator($themePublicPath))->valid()) {
+            $githubLink = $this->getGitLinkForFreeTheme($theme_name);
+            if (!is_null($githubLink) && is_string($githubLink)) {
+                $zipFileName = basename($githubLink);
+                $zipFile = file_get_contents($githubLink);
+                $publicPath = $this->getPublicFolderPath();
+                $zipFilePath = $publicPath.DIRECTORY_SEPARATOR.$zipFileName;
+                file_put_contents($zipFilePath, $zipFile);
+                $extracted = $this->unzipThemeFile($zipFilePath, $publicPath);
+                if ($extracted) {
+                    $renamed = false;
+                    if ($theme_name === 'adminlte2') {
+                        $adminLte2Path = $publicPath.DIRECTORY_SEPARATOR."AdminLTE-master";
+                        $renamed = rename($adminLte2Path, $themePublicPath);
+                    } else if ($theme_name === 'tabler') {
+                        $tablerPath = $publicPath.DIRECTORY_SEPARATOR."tabler-master";
+                        $renamed = rename($tablerPath, $themePublicPath);
+                    }
+                    return $renamed;
+                }
             }
-            $zipFilePath = $downloadZipPath.DIRECTORY_SEPARATOR.$zipFileName;
-            file_put_contents($zipFilePath, $zipFile);
-            return $this->unzipThemeFile($zipFilePath, $downloadZipPath);
         }
         return false;
     }
