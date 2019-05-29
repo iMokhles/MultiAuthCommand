@@ -989,7 +989,7 @@ class MultiAuthPrepare extends BaseCommand
 
         $publicPath = $this->getPublicFolderPath();
         $themePublicPath = $publicPath.DIRECTORY_SEPARATOR.$theme_name;
-        if (!file_exists($themePublicPath) && !(new \FilesystemIterator($themePublicPath))->valid()) {
+        if (!file_exists($themePublicPath)) {
             $githubLink = $this->getGitLinkForFreeTheme($theme_name);
             if (!is_null($githubLink) && is_string($githubLink)) {
                 $zipFileName = basename($githubLink);

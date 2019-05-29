@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ea327e4-ed27-4c84-ba0e-659e8a2452e9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Command/MultiAuthListThemes.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/MultiAuthListThemes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Command/MultiAuthPrepare.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/MultiAuthPrepare.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Command/MultiAuthPrepare.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="993" column="66" lean-forward="true" selection-start-line="993" selection-start-column="66" selection-end-line="993" selection-end-column="66" />
+            <state relative-caret-position="76">
+              <caret line="991" column="42" selection-start-line="991" selection-start-column="42" selection-end-line="991" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -61,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -322,12 +321,12 @@
       <workItem from="1558899874043" duration="1198000" />
       <workItem from="1558953454081" duration="1814000" />
       <workItem from="1558960748228" duration="8765000" />
-      <workItem from="1559125795808" duration="5558000" />
+      <workItem from="1559125795808" duration="6014000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99282000" />
+    <option name="totallyTimeSpent" value="99738000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="845" extended-state="6" />
@@ -607,7 +606,7 @@
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -648,8 +647,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Command/MultiAuthPrepare.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="993" column="66" lean-forward="true" selection-start-line="993" selection-start-column="66" selection-end-line="993" selection-end-column="66" />
+        <state relative-caret-position="76">
+          <caret line="991" column="42" selection-start-line="991" selection-start-column="42" selection-end-line="991" selection-end-column="42" />
         </state>
       </provider>
     </entry>
