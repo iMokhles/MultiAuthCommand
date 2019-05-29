@@ -12,7 +12,7 @@
             <div class="row">
                 <div class="col col-login mx-auto">
                     <div class="text-center mb-6">
-                        <img src="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/demo/brand/tabler.svg" class="h-6" alt="">
+                        <img src="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/dist/demo/brand/tabler.svg" class="h-6" alt="">
                     </div>
 
                     @yield('content')

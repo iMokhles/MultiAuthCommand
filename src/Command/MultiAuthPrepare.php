@@ -64,7 +64,7 @@ class MultiAuthPrepare extends BaseCommand
      */
     public function handle()
     {
-        $this->progressBar = $this->output->createProgressBar(14);
+        $this->progressBar = $this->output->createProgressBar(15);
         $this->progressBar->start();
 
 
@@ -75,8 +75,10 @@ class MultiAuthPrepare extends BaseCommand
 
         $admin_theme = $this->option('admin_theme');
         if (is_null($admin_theme)) {
-            $admin_theme = 'startui';
+            $admin_theme = 'adminlte2';
         }
+
+
 
         if ($this->checkIfThemeFileExistsOrNot($admin_theme)) {
             $this->line(" installing migrations...");
@@ -129,6 +131,10 @@ class MultiAuthPrepare extends BaseCommand
 
             $this->line(" installing project config file...");
             $this->installProjectConfig($admin_theme);
+            $this->progressBar->advance();
+
+            $this->line(" installing admin panel files under public folder...");
+            $this->installPublicFilesIfNeeded($admin_theme);
             $this->progressBar->advance();
 
             $this->line(" installing prologue alert...");
@@ -660,7 +666,7 @@ class MultiAuthPrepare extends BaseCommand
      *
      * @param string $theme_name
      */
-    public function installView($theme_name = 'startui')
+    public function installView($theme_name = 'adminlte2')
     {
 
         $nameSmall = snake_case($this->getParsedNameInput());
@@ -953,7 +959,7 @@ class MultiAuthPrepare extends BaseCommand
      * @param string $theme_name
      * @return bool
      */
-    public function installProjectConfig($theme_name = 'startui')
+    public function installProjectConfig($theme_name = 'adminlte2')
     {
         $nameSmall = snake_case($this->getParsedNameInput());
 
@@ -969,6 +975,46 @@ class MultiAuthPrepare extends BaseCommand
 
     }
 
+    /**
+     * Install panel files under public folder
+     * if developer requested free theme
+     *
+     * @param string $theme_name
+     * @return bool
+     */
+    public function installPublicFilesIfNeeded($theme_name = 'adminlte2') {
+
+        $githubLink = $this->getGitLinkForFreeTheme($theme_name);
+        if (!is_null($githubLink) && is_string($githubLink)) {
+            $zipFileName = basename($githubLink);
+            $zipFile = file_get_contents($githubLink);
+            $downloadZipPath = $this->getPublicFolderPath().DIRECTORY_SEPARATOR.$theme_name;
+            if (!file_exists($downloadZipPath)) {
+                mkdir($downloadZipPath);
+            }
+            $zipFilePath = $downloadZipPath.DIRECTORY_SEPARATOR.$zipFileName;
+            file_put_contents($zipFilePath, $zipFile);
+            return $this->unzipThemeFile($zipFilePath, $downloadZipPath);
+        }
+        return false;
+    }
+
+    /**
+     * @param $zipFile
+     * @param $outputPath
+     * @return bool
+     */
+    public function unzipThemeFile($zipFile, $outputPath) {
+        $zip = new \ZipArchive();
+        $res = $zip->open($zipFile);
+        if ($res === TRUE) {
+            $extracted = $zip->extractTo($outputPath);
+            $zip->close();
+            return $extracted;
+        } else {
+            return false;
+        }
+    }
     /**
      * Publish Prologue Alert
      *
@@ -1049,6 +1095,23 @@ class MultiAuthPrepare extends BaseCommand
     }
 
     /**
+     * Get github link for free theme
+     *
+     * @param string $theme_name
+     * @return mixed|null
+     */
+    protected function getGitLinkForFreeTheme($theme_name = 'adminlte2')
+    {
+        $themes = MultiAuthListThemes::githubLinksForFreeThemes();
+        foreach ($themes as $theme => $link) {
+            if ($theme === $theme_name) {
+                return $link;
+            }
+        }
+        return null;
+    }
+
+    /**
      * Write the migration file to disk.
      *
      * @param $name
@@ -1092,6 +1155,16 @@ class MultiAuthPrepare extends BaseCommand
     protected function getAppFolderPath()
     {
         return $this->laravel->basePath().DIRECTORY_SEPARATOR.'app';
+    }
+
+    /**
+     * Get Public Folder Path.
+     *
+     * @return string
+     */
+    protected function getPublicFolderPath()
+    {
+        return $this->laravel->basePath().DIRECTORY_SEPARATOR.'public';
     }
 
     /**

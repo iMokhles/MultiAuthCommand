@@ -39,7 +39,7 @@ class MultiAuthListThemes extends BaseCommand
      */
     public function handle()
     {
-        $themes = $this->listSupportedThemes();
+        $themes = self::listSupportedThemes();
 
         $this->progressBar = $this->output->createProgressBar(count($themes));
         $this->progressBar->start();
@@ -60,13 +60,37 @@ class MultiAuthListThemes extends BaseCommand
     /**
      * @return array
      */
-    private function listSupportedThemes() {
+    public static function githubLinksForFreeThemes() {
+        return [
+            'adminlte2' => 'https://github.com/ColorlibHQ/AdminLTE/archive/master.zip',
+            'tabler' => 'https://github.com/tabler/tabler/archive/dev.zip',
+        ];
+    }
 
+    /**
+     * @return array
+     */
+    public static function listFreeThemes() {
         return [
             'adminlte2' => 'https://adminlte.io/themes/AdminLTE/index2.html',
             'tabler' => 'https://preview.tabler.io/',
+        ];
+    }
+
+    /**
+     * @return array
+     */
+    public static function listPaidThemes() {
+        return [
             'highadmin' => 'https://themeforest.net/item/highdmin-responsive-bootstrap-4-admin-dashboard/21233941',
             'startui' => 'https://themeforest.net/item/startui-premium-bootstrap-4-admin-dashboard-template/15228250',
         ];
+    }
+    /**
+     * @return array
+     */
+    public static function listSupportedThemes() {
+
+        return array_merge(self::listFreeThemes(), self::listPaidThemes());
     }
 }
