@@ -1067,9 +1067,9 @@ class MultiAuthPrepare extends BaseCommand
      * @param string $beforeNotice
      * @param string $afterNotice
      */
-    public function executeProcess($command, $arguments = [], $beforeNotice = false, $afterNotice = false)
+    public function executeProcess($command, $arguments = [], $beforeNotice = '', $afterNotice = '')
     {
-        $beforeNotice = $beforeNotice ? ' '.$beforeNotice : 'php artisan '.implode(' ', (array) $command).' '.implode(' ', $arguments);
+//        $beforeNotice = $beforeNotice ? ' '.$beforeNotice : 'php artisan '.implode(' ', (array) $command).' '.implode(' ', $arguments);
 
         if (!is_null($beforeNotice)) {
             $this->info('### '.$beforeNotice);

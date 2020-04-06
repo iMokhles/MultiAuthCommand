@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ea327e4-ed27-4c84-ba0e-659e8a2452e9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Command/MultiAuthPrepare.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/MultiAuthPrepare.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -133,7 +132,7 @@
       <workItem from="1558953454081" duration="1814000" />
       <workItem from="1558960748228" duration="8765000" />
       <workItem from="1559125795808" duration="6014000" />
-      <workItem from="1586168083107" duration="13541000" />
+      <workItem from="1586168083107" duration="13691000" />
     </task>
     <servers />
   </component>
