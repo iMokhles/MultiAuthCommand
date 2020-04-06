@@ -1,0 +1,36 @@
+<!-- Notifications Dropdown -->
+<div class="dropdown d-inline-block ml-2">
+    <button type="button" class="btn btn-sm btn-dual" id="page-header-notifications-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="si si-bell"></i>
+        @if(count($userNotifiactions) > 0)
+            <span class="badge badge-primary badge-pill">{{count($userNotifiactions)}}</span>
+        @endif
+    </button>
+    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0 border-0 font-size-sm" aria-labelledby="page-header-notifications-dropdown">
+        <div class="p-2 bg-primary text-center">
+            <h5 class="dropdown-header text-uppercase text-white">@lang('{{$nameSmall}}_dashboard.notifications')</h5>
+        </div>
+        <ul class="nav-items mb-0">
+            @foreach ($userNotifiactions as $notification)
+            <li>
+                <a class="text-dark media py-2" href="javascript:void(0)">
+                    <div class="mr-2 ml-3">
+                        <i class="fa fa-fw {{$notification['data']['icon_class']}} text-{{$notification['data']['icon_type']}}"></i>
+                    </div>
+                    <div class="media-body pr-2">
+                        <div class="font-w600">{{$notification['data']['message']}}</div>
+                        <small class="text-muted">{{$notification['data']['time_ago']}}</small>
+                    </div>
+                </a>
+            </li>
+            @endforeach
+        </ul>
+        <div class="p-2 border-top">
+            <a class="btn btn-sm btn-light btn-block text-center" href="javascript:void(0)">
+                <i class="fa fa-fw fa-arrow-down mr-1"></i> @lang('{{$nameSmall}}_dashboard.see_more')
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- END Notifications Dropdown -->

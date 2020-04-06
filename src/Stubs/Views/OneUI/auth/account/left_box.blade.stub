@@ -1,0 +1,14 @@
+<!-- About Instructor -->
+<a class="block block-rounded block-link-shadow" href="javascript:void(0)">
+    <div class="block-header block-header-default text-center">
+        <h3 class="block-title">@lang('{{$nameSmall}}_dashboard.account_info')</h3>
+    </div>
+    <div class="block-content block-content-full text-center">
+        <div class="push">
+            <img class="img-avatar" src="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/media/avatars/avatar13.jpg" alt="">
+        </div>
+        <div class="font-w600 mb-1">{{auth('{{$nameSmall}}')->user()->name}}</div>
+        <div class="font-size-sm text-muted">{{auth('{{$nameSmall}}')->user()->email}}</div>
+    </div>
+</a>
+<!-- END About Instructor -->

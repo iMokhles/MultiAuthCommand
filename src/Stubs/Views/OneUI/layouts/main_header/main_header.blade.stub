@@ -1,0 +1,74 @@
+@php
+    $userNotifiactions = auth('{{$nameSmall}}')->user()->unreadNotifications()->limit(5)->get();
+    $userLogged = auth('{{$nameSmall}}')->user();
+@endphp
+
+<!-- Header -->
+<header class="page-header">
+    <!-- Header Content -->
+    <div class="content-header">
+        <!-- Left Section -->
+        <div class="d-flex align-items-center">
+            <!-- Toggle Sidebar -->
+            <!-- Layout API, functionality initialized in Template._uiApiLayout()-->
+            <button type="button" class="btn btn-sm btn-dual mr-2 d-lg-none" data-toggle="layout" data-action="sidebar_toggle">
+                <i class="fa fa-fw fa-bars"></i>
+            </button>
+            <!-- END Toggle Sidebar -->
+
+            <!-- Toggle Mini Sidebar -->
+            <!-- Layout API, functionality initialized in Template._uiApiLayout()-->
+            <button type="button" class="btn btn-sm btn-dual mr-2 d-none d-lg-inline-block" data-toggle="layout" data-action="sidebar_mini_toggle">
+                <i class="fa fa-fw fa-ellipsis-v"></i>
+            </button>
+            <!-- END Toggle Mini Sidebar -->
+        </div>
+        <!-- END Left Section -->
+
+        <!-- Right Section -->
+        <div class="d-flex align-items-center">
+            {{-- Notifications --}}
+
+            @include('{{$nameSmall}}.layouts.main_header.notifications')
+
+            {{-- Languages --}}
+
+            @include('{{$nameSmall}}.layouts.main_header.languages')
+
+            {{-- User --}}
+
+            @include('{{$nameSmall}}.layouts.main_header.user')
+        </div>
+        <!-- END Right Section -->
+
+    </div>
+    <div class="container-fluid">
+        <a href="#" class="site-logo">
+            <img class="hidden-md-down" src="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/img/logo-2.png" alt="">
+            <img class="hidden-lg-down" src="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/img/logo-2-mob.png" alt="">
+        </a>
+
+        <button id="show-hide-sidebar-toggle" class="show-hide-sidebar">
+            <span>toggle menu</span>
+        </button>
+
+        <button class="hamburger hamburger--htla">
+            <span>toggle menu</span>
+        </button>
+
+        <div class="site-header-content">
+            <div class="site-header-content-in">
+                <div class="site-header-shown">
+
+                    {{-- Right Content --}}
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</header>
+<!-- END Header -->

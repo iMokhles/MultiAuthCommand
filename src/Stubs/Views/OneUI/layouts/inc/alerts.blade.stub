@@ -1,0 +1,21 @@
+<!-- Page JS Plugins -->
+<script src="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/js/plugins/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+<!-- Page JS Helpers (BS Notify Plugin) -->
+<script>jQuery(function(){ One.helpers('notify'); });</script>
+
+{{-- Bootstrap Notifications using Prologue Alerts --}}
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+
+        @foreach (Alert::getMessages() as $type => $messages)
+        @foreach ($messages as $message)
+
+        $(function(){
+            One.helpers('notify', {type: "{{ $type }}", message: "{!! str_replace('"', "'", $message) !!}"});
+        });
+
+        @endforeach
+        @endforeach
+    });
+</script>

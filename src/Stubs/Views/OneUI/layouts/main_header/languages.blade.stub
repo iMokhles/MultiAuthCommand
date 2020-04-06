@@ -1,0 +1,48 @@
+@php($localKey = 'applocale')
+<!-- Languages Dropdown -->
+<div class="dropdown d-inline-block ml-2">
+    <button type="button" class="btn btn-sm btn-dual" id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        @if(session($localKey) === 'en')
+        <span class="flag-icon flag-icon-us"></span>
+        @elseif(session($localKey) === 'fr')
+        <span class="flag-icon flag-icon-fr"></span>
+        @elseif(session($localKey) === 'ar')
+        <span class="flag-icon flag-icon-sa"></span>
+        @endif
+
+        @if(session($localKey) === 'en')
+        <span class="d-none d-sm-inline-block ml-1">@lang('{{$nameSmall}}_dashboard.english')</span>
+        @elseif(session($localKey) === 'fr')
+        <span class="d-none d-sm-inline-block ml-1">@lang('{{$nameSmall}}_dashboard.french')</span>
+        @elseif(session($localKey) === 'ar')
+        <span class="d-none d-sm-inline-block ml-1">@lang('{{$nameSmall}}_dashboard.arabic')</span>
+        @endif
+        <i class="fa fa-fw fa-angle-down d-none d-sm-inline-block"></i>
+    </button>
+    <div class="dropdown-menu dropdown-menu-right p-0 border-0 font-size-sm" aria-labelledby="page-header-user-dropdown">
+        <div class="p-2">
+            <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+                <span>@lang('{{$nameSmall}}_dashboard.english')</span>
+                <span>
+                    @if(session($localKey) === 'en') <span class="badge badge-pill badge-primary"></span> @endif
+                                            <span class="flag-icon flag-icon-us"></span>
+                                        </span>
+            </a>
+            <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+                <span>@lang('{{$nameSmall}}_dashboard.french')</span>
+                <span>
+                    @if(session($localKey) === 'fr') <span class="badge badge-pill badge-primary"></span> @endif
+                                            <span class="flag-icon flag-icon-fr"></span>
+                                        </span>
+            </a>
+            <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+                <span>@lang('{{$nameSmall}}_dashboard.arabic')</span>
+                <span>
+                    @if(session($localKey) === 'ar') <span class="badge badge-pill badge-primary"></span> @endif
+                                            <span class="flag-icon flag-icon-sa"></span>
+                                        </span>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- END Languages Dropdown -->

@@ -55,5 +55,7 @@ return [
     'send_password_reset_link' => 'Send Password Reset Link',
     'apply_change' => 'Apply Changes',
     'cancel_changes' => 'Cancel',
+    'confirm_password' => 'Confirm Password',
+    'confirm_password_instruction' => 'Please confirm your password before continuing.',
 
 ];

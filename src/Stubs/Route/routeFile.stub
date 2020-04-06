@@ -38,6 +38,10 @@ Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail'
 Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('{{$nameSmall}}.password.reset');
 Route::post('password/reset', 'Auth\ResetPasswordController@reset')->name('{{$nameSmall}}.password.update');
 
+// Password Confirm Routes
+Route::get('password/confirm', 'Auth\ConfirmPasswordController@showConfirmForm')->name('{{$nameSmall}}.password.confirm');
+Route::post('password/confirm', 'Auth\ConfirmPasswordController@confirm')->name('{{$nameSmall}}.password.confirm');
+
 Route::get('/dashboard', 'DashboardController@index')->name('{{$nameSmall}}.dashboard');
 Route::get('/', 'DashboardController@redirect')->name('{{$nameSmall}}.redirect');
 

@@ -1,0 +1,6 @@
+<li class="nav-main-item">
+    <a class="nav-main-link" href="{{ route('{{$nameSmall}}.dashboard') }}">
+        <i class="nav-main-link-icon si si-speedometer"></i>
+        <span class="nav-main-link-name">@lang('{{$nameSmall}}_dashboard.dashboard')</span>
+    </a>
+</li>

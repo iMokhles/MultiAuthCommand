@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <form class="sign-box" method="POST" action="{{ route('{{$nameSmall}}.password.update') }}">
+    <form class="sign-box" method="POST" action="{{ route('{{$nameSmall}}.password.confirm') }}">
 
         @if ($errors->count())
             <div class="alert alert-danger alert-no-border alert-close alert-dismissible fade show" role="alert">
@@ -22,29 +22,21 @@
 
         @csrf
 
-        <input type="hidden" name="token" value="{{ $token }}">
-
         <div class="sign-avatar">
             <img src="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/img/avatar-sign.png" alt="">
         </div>
 
         <div class="text-center">
-            <p>@lang('{{$nameSmall}}_dashboard.reset_password_instruction')</p>
-        </div>
-
-        <div class="form-group">
-            <input type="email" id="email" name="email" class="form-control" placeholder="@lang('{{$nameSmall}}_dashboard.email_plh')"/>
+            <p>@lang('{{$nameSmall}}_dashboard.confirm_password_instruction')</p>
         </div>
 
         <div class="form-group">
             <input type="password" id="password" name="password" class="form-control" placeholder="@lang('{{$nameSmall}}_dashboard.password_plh')"/>
         </div>
 
-        <div class="form-group">
-            <input type="password" id="password_confirmation" name="password_confirmation" class="form-control" placeholder="@lang('{{$nameSmall}}_dashboard.passwordConfirmation_plh')"/>
-        </div>
 
-        <button type="submit" class="btn btn-rounded">@lang('{{$nameSmall}}_dashboard.reset_password')</button>
+        <button type="submit" class="btn btn-rounded">@lang('{{$nameSmall}}_dashboard.confirm_password')</button>
+        <p class="sign-note">Already have an account? <a href="{{ route('{{$nameSmall}}.login') }}">@lang('{{$nameSmall}}_dashboard.sign_in')</a></p>
     </form>
 @endsection
 

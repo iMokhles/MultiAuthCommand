@@ -84,6 +84,7 @@ class MultiAuthListThemes extends BaseCommand
         return [
             'highadmin' => 'https://themeforest.net/item/highdmin-responsive-bootstrap-4-admin-dashboard/21233941',
             'startui' => 'https://themeforest.net/item/startui-premium-bootstrap-4-admin-dashboard-template/15228250',
+            'oneui' => 'https://themeforest.net/item/oneui-bootstrap-admin-dashboard-template-ui-framework-angularjs/11820082',
         ];
     }
     /**

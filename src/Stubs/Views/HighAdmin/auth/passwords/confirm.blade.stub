@@ -1,0 +1,38 @@
+@extends('{{$nameSmall}}.layouts.layout_guest')
+
+@section('content')
+    <form class="sign-box" method="POST" action="{{ route('{{$nameSmall}}.password.confirm') }}">
+
+        <div class="card-body p-6">
+            <div class="card-title">@lang('{{$nameSmall}}_dashboard.confirm_password_instruction')</div>
+            @if ($errors->count())
+                <div class="alert alert-danger alert-no-border alert-close alert-dismissible fade show" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <ul>
+                        @foreach ($errors->all() as $e)
+                            <li>{{ $e }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+
+            @csrf
+
+            <div class="form-group">
+                <label class="form-label">@lang('{{$nameSmall}}_dashboard.password')</label>
+                <input type="password" id="password" name="password" class="form-control" placeholder="@lang('{{$nameSmall}}_dashboard.password_plh')">
+            </div>
+
+            <div class="form-footer">
+                <button type="submit" class="btn btn-primary btn-block">@lang('{{$nameSmall}}_dashboard.confirm_password')</button>
+            </div>
+
+        </div>
+    </form>
+
+    <div class="text-center text-muted">
+        @lang('{{$nameSmall}}_dashboard.have_account') <a href="{{ route('{{$nameSmall}}.login') }}">@lang('{{$nameSmall}}_dashboard.sign_in')</a>
+    </div>
+@endsection

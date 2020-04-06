@@ -1,0 +1,18 @@
+@extends('{{$nameSmall}}.layouts.layout')
+
+@section('content')
+<!-- Your Block -->
+<div class="block">
+    <div class="block-header">
+        <h3 class="block-title">
+            @lang('{{$nameSmall}}_dashboard.login_status')
+        </h3>
+    </div>
+    <div class="block-content font-size-sm">
+        <p>
+            @lang('{{$nameSmall}}_dashboard.welcome_message')
+        </p>
+    </div>
+</div>
+<!-- END Your Block -->
+@endsection

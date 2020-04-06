@@ -6,6 +6,7 @@ use Illuminate\Console\Command;
 use Illuminate\Database\Console\Migrations\BaseCommand;
 use Illuminate\Database\Migrations\MigrationCreator;
 use Illuminate\Support\Composer;
+use Illuminate\Support\Str;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
 
@@ -175,7 +176,7 @@ class MultiAuthPrepare extends BaseCommand
 
         $routeServicesContent = file_get_contents($this->getRouteServicesPath());
 
-        if (str_contains($routeServicesContent,'$this->map'.$name.'Routes();')) {
+        if (Str::contains($routeServicesContent,'$this->map'.$name.'Routes();')) {
             return true;
         }
         return false;
@@ -188,9 +189,9 @@ class MultiAuthPrepare extends BaseCommand
      */
     public function installMigration()
     {
-        $nameSmallPlural = str_plural(snake_case($this->getParsedNameInput()));
+        $nameSmallPlural = Str::plural(Str::snake($this->getParsedNameInput()));
         $name = ucfirst($this->getParsedNameInput());
-        $namePlural = str_plural($name);
+        $namePlural =  Str::plural($name);
 
 
 
@@ -214,12 +215,12 @@ class MultiAuthPrepare extends BaseCommand
         ], $modelResetPasswordTableContent);
 
 
-        $migrationName = date('Y_m_d_His') . '_'.'create_' . str_plural(snake_case($name)) .'_table.php';
+        $migrationName = date('Y_m_d_His') . '_'.'create_' .  Str::plural( Str::snake($name)) .'_table.php';
         $migrationModelPath = $this->getMigrationPath().DIRECTORY_SEPARATOR.$migrationName;
         file_put_contents($migrationModelPath, $modelTableContentNew);
 
         $migrationResetName = date('Y_m_d_His') . '_'
-            .'create_' . str_plural(snake_case($name))
+            .'create_' .  Str::plural( Str::snake($name))
             .'_password_resets_table.php';
         $migrationResetModelPath = $this->getMigrationPath().DIRECTORY_SEPARATOR.$migrationResetName;
         file_put_contents($migrationResetModelPath, $modelResetPasswordTableContentNew);
@@ -235,7 +236,7 @@ class MultiAuthPrepare extends BaseCommand
      */
     public function installModel()
     {
-        $nameSmall = snake_case($this->getParsedNameInput());
+        $nameSmall =  Str::snake($this->getParsedNameInput());
         $name = ucfirst($this->getParsedNameInput());
 
 
@@ -246,7 +247,7 @@ class MultiAuthPrepare extends BaseCommand
         $newChanges = [
             $name,
         ];
-        $nameSmallPlural = str_plural(snake_case($this->getParsedNameInput()));
+        $nameSmallPlural =  Str::plural( Str::snake($this->getParsedNameInput()));
         array_push($arrayToChange, '{{$nameSmallPlural}}');
         array_push($arrayToChange, '{{$nameSmall}}');
         array_push($newChanges, $nameSmallPlural);
@@ -306,7 +307,7 @@ class MultiAuthPrepare extends BaseCommand
 
     public function installRouteMaps()
     {
-        $nameSmall = snake_case($this->getParsedNameInput());
+        $nameSmall =  Str::snake($this->getParsedNameInput());
         $name = ucfirst($this->getParsedNameInput());
         $mapCallFunction = file_get_contents(__DIR__ . '/../Stubs/Route/mapRoute.stub');
         $mapCallFunctionNew = str_replace('{{$name}}', "$name", $mapCallFunction);
@@ -332,7 +333,7 @@ class MultiAuthPrepare extends BaseCommand
 
     public function installRouteFiles()
     {
-        $nameSmall = snake_case($this->getParsedNameInput());
+        $nameSmall =  Str::snake($this->getParsedNameInput());
         $name = ucfirst($this->getParsedNameInput());
         $createFolder = $this->getRoutesFolderPath().DIRECTORY_SEPARATOR.$nameSmall;
         if (!file_exists($createFolder)) {
@@ -359,8 +360,8 @@ class MultiAuthPrepare extends BaseCommand
 
     public function installControllers()
     {
-        $nameSmall = snake_case($this->getParsedNameInput());
-        $nameSmallPlural = str_plural(snake_case($this->getParsedNameInput()));
+        $nameSmall =  Str::snake($this->getParsedNameInput());
+        $nameSmallPlural =  Str::plural( Str::snake($this->getParsedNameInput()));
         $name = ucfirst($this->getParsedNameInput());
 
         $nameFolder = $this->getControllersPath().DIRECTORY_SEPARATOR.$name;
@@ -478,7 +479,7 @@ class MultiAuthPrepare extends BaseCommand
 
     public function installRequests()
     {
-        $nameSmall = snake_case($this->getParsedNameInput());
+        $nameSmall =  Str::snake($this->getParsedNameInput());
         $name = ucfirst($this->getParsedNameInput());
 
         $nameFolder = $this->getControllersPath().DIRECTORY_SEPARATOR.$name;
@@ -527,8 +528,8 @@ class MultiAuthPrepare extends BaseCommand
 
     public function installConfigs()
     {
-        $nameSmall = snake_case($this->getParsedNameInput());
-        $nameSmallPlural = str_plural(snake_case($this->getParsedNameInput()));
+        $nameSmall =  Str::snake($this->getParsedNameInput());
+        $nameSmallPlural =  Str::plural( Str::snake($this->getParsedNameInput()));
         $name = ucfirst($this->getParsedNameInput());
 
         $authConfigFile = $this->getConfigsFolderPath().DIRECTORY_SEPARATOR."auth.php";
@@ -573,7 +574,7 @@ class MultiAuthPrepare extends BaseCommand
 
     public function installMiddleware()
     {
-        $nameSmall = snake_case($this->getParsedNameInput());
+        $nameSmall =  Str::snake($this->getParsedNameInput());
 
         $redirectIfMiddlewareFile = $this->getMiddlewarePath().DIRECTORY_SEPARATOR."RedirectIfAuthenticated.php";
         $authenticateMiddlewareFile = $this->getMiddlewarePath().DIRECTORY_SEPARATOR."Authenticate.php";
@@ -591,7 +592,7 @@ class MultiAuthPrepare extends BaseCommand
             file_put_contents($ensureEmailIsVerifiedMiddlewareFile, $ensureEmailIsVerifiedMiddlewareFileeContent);
         }
 
-        if (!str_contains($redirectIfMiddlewareFileContent, 'MultiAuthGuards')) {
+        if (! Str::contains($redirectIfMiddlewareFileContent, 'MultiAuthGuards')) {
             // replace old file
             $deleted = unlink($redirectIfMiddlewareFile);
             if ($deleted) {
@@ -599,7 +600,7 @@ class MultiAuthPrepare extends BaseCommand
             }
         }
 
-        if (!str_contains($authenticateMiddlewareFileContent, 'MultiAuthGuards')) {
+        if (! Str::contains($authenticateMiddlewareFileContent, 'MultiAuthGuards')) {
             // replace old file
             $deleted = unlink($authenticateMiddlewareFile);
             if ($deleted) {
@@ -638,14 +639,14 @@ class MultiAuthPrepare extends BaseCommand
      */
     public function installUnauthenticated()
     {
-        $nameSmall = snake_case($this->getParsedNameInput());
+        $nameSmall =  Str::snake($this->getParsedNameInput());
         $exceptionHandlerFile = $this->getAppFolderPath().DIRECTORY_SEPARATOR."Exceptions".DIRECTORY_SEPARATOR
             ."Handler.php";
         $exceptionHandlerFileContent = file_get_contents($exceptionHandlerFile);
         $exceptionHandlerFileContentNew = file_get_contents(__DIR__ . '/../Stubs/Exceptions/handlerUnauthorized.stub');
 
 
-        if (!str_contains($exceptionHandlerFileContent, 'MultiAuthUnAuthenticated')) {
+        if (! Str::contains($exceptionHandlerFileContent, 'MultiAuthUnAuthenticated')) {
             // replace old file
             $deleted = unlink($exceptionHandlerFile);
             if ($deleted) {
@@ -672,7 +673,7 @@ class MultiAuthPrepare extends BaseCommand
     public function installView($theme_name = 'adminlte2')
     {
 
-        $nameSmall = snake_case($this->getParsedNameInput());
+        $nameSmall =  Str::snake($this->getParsedNameInput());
 
         // layouts
         $layoutBlade = file_get_contents(__DIR__ . '/../Stubs/Views/'.$theme_name.'/layouts/layout.blade.stub');
@@ -947,7 +948,7 @@ class MultiAuthPrepare extends BaseCommand
 
     public function installLangs()
     {
-        $nameSmall = snake_case($this->getParsedNameInput());
+        $nameSmall =  Str::snake($this->getParsedNameInput());
 
         $dashboardLangFile = file_get_contents(__DIR__ . '/../Stubs/Languages/dashboard.stub');
         file_put_contents($this->getLangsFolderPath().'/'.$nameSmall.'_dashboard.php', $dashboardLangFile);
@@ -964,7 +965,7 @@ class MultiAuthPrepare extends BaseCommand
      */
     public function installProjectConfig($theme_name = 'adminlte2')
     {
-        $nameSmall = snake_case($this->getParsedNameInput());
+        $nameSmall =  Str::snake($this->getParsedNameInput());
 
         $projectConfigFile = file_get_contents(__DIR__ . '/../Stubs/Config/config.stub');
 
@@ -1061,7 +1062,7 @@ class MultiAuthPrepare extends BaseCommand
     /**
      * Run a SSH command.
      *
-     * @param string $command
+     * @param mixed $command
      * @param string $beforeNotice
      * @param string $afterNotice
      */
@@ -1096,7 +1097,7 @@ class MultiAuthPrepare extends BaseCommand
      */
     protected function getParsedNameInput()
     {
-        return mb_strtolower(str_singular($this->getNameInput()));
+        return mb_strtolower( Str::singular($this->getNameInput()));
     }
     /**
      * Get the desired class name from the input.

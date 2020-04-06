@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="{{ app()->getLocale() }}">
+<head>
+    {{-- Site-Head --}}
+    @include('{{$nameSmall}}.layouts.inc.head')
+</head>
+
+<body>
+
+<div id="page-container">
+
+    <!-- Main Container -->
+    <main id="main-container">
+        <!-- Page Content -->
+        <div class="hero-static d-flex align-items-center">
+            <div class="w-100">
+                <!-- Auth Section -->
+                <div class="bg-white">
+                    <div class="content content-full">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 col-lg-6 col-xl-4 py-4">
+                                @yield('content')
+                                @stack('content')
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END Page Content -->
+    </main>
+    <!-- END Page Container -->
+</div>
+
+@include('{{$nameSmall}}.layouts.inc.scripts')
+
+<!-- Page JS Plugins -->
+<script src="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/js/plugins/jquery-validation/jquery.validate.min.js"></script>
+
+</body>
+
+</html>

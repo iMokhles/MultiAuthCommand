@@ -1,0 +1,26 @@
+<!-- User Dropdown -->
+<div class="dropdown d-inline-block ml-2">
+    <button type="button" class="btn btn-sm btn-dual" id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img class="rounded" src="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/media/avatars/avatar10.jpg" alt="Header Avatar" style="width: 18px;">
+        <span class="d-none d-sm-inline-block ml-1">{{auth('{{$nameSmall}}')->user()->name}}</span>
+        <i class="fa fa-fw fa-angle-down d-none d-sm-inline-block"></i>
+    </button>
+    <div class="dropdown-menu dropdown-menu-right p-0 border-0 font-size-sm" aria-labelledby="page-header-user-dropdown">
+        <div class="p-3 text-center bg-primary">
+            <img class="img-avatar img-avatar48 img-avatar-thumb" src="{{ asset(config('{{$nameSmall}}_config.theme_name')) }}/media/avatars/avatar10.jpg" alt="">
+        </div>
+        <div class="p-2">
+            <h5 class="dropdown-header text-uppercase">User Options</h5>
+            <a class="dropdown-item d-flex align-items-center justify-content-between" href="{{route('{{$nameSmall}}.account.info')}}">
+                <span>@lang('{{$nameSmall}}_dashboard.profile')</span>
+                <i class="si si-user ml-1"></i>
+            </a>
+
+            <a class="dropdown-item d-flex align-items-center justify-content-between" href="{{route('{{$nameSmall}}.logout')}}">
+                <span>@lang('{{$nameSmall}}_dashboard.logout')</span>
+                <i class="si si-logout ml-1"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- END User Dropdown -->

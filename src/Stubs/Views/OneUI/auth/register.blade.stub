@@ -1,0 +1,68 @@
+@extends('{{$nameSmall}}.layouts.layout_guest')
+
+@section('content')
+<!-- Header -->
+<div class="text-center">
+    <p class="mb-2">
+        <i class="fa fa-2x fa-circle-notch text-primary"></i>
+    </p>
+    <h1 class="h4 mb-1">
+        @lang('{{$nameSmall}}_dashboard.sign_up')
+    </h1>
+</div>
+<!-- END Header -->
+
+<!-- Sign In Form -->
+<!-- jQuery Validation (.js-validation-signin class is initialized in js/pages/op_auth_signin.min.js which was auto compiled from _es6/pages/op_auth_signin.js) -->
+<!-- For more info and examples you can check out https://github.com/jzaefferer/jquery-validation -->
+<form class="js-validation-signin" action="{{ route('{{$nameSmall}}.login') }}" method="POST">
+    @if ($errors->count())
+    <div class="alert alert-danger alert-no-border alert-close alert-dismissible fade show" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <ul>
+            @foreach ($errors->all() as $e)
+            <li>{{ $e }}</li>
+            @endforeach
+        </ul>
+    </div>
+    @endif
+
+    @csrf
+
+    <div class="py-3">
+        <div class="form-group">
+            <input type="text" class="form-control form-control-lg form-control-alt" id="name" name="name" placeholder="@lang('{{$nameSmall}}_dashboard.name_plh')">
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control form-control-lg form-control-alt" id="email" name="email" placeholder="@lang('{{$nameSmall}}_dashboard.email_plh')">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control form-control-lg form-control-alt" id="password" name="password" placeholder="@lang('{{$nameSmall}}_dashboard.password_plh')">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control form-control-lg form-control-alt" id="password_confirmation" name="password_confirmation" placeholder="@lang('{{$nameSmall}}_dashboard.passwordConfirmation_plh')">
+        </div>
+        <div class="form-group">
+            <div class="d-md-flex align-items-md-center justify-content-md-between">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="signup-terms" name="signup-terms">
+                    <label class="custom-control-label font-w400" for="signup-terms">@lang('{{$nameSmall}}_dashboard.i_accept')</label>
+                </div>
+                <div class="py-2">
+                    <a class="font-size-sm" href="javascript:void(0)" data-toggle="modal" data-target="#one-signup-terms">@lang('{{$nameSmall}}_dashboard.conditions_btn')</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group row justify-content-center mb-0">
+        <div class="col-md-6 col-xl-5">
+            <button type="submit" class="btn btn-block btn-primary">
+                <i class="fa fa-fw fa-sign-in-alt mr-1"></i> @lang('{{$nameSmall}}_dashboard.sign_up')
+            </button>
+        </div>
+    </div>
+</form>
+<!-- END Sign In Form -->
+@endsection

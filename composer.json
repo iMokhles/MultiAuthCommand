@@ -8,13 +8,12 @@
         "laravel multiple authentication"
     ],
     "require": {
-        "php": ">=5.5.0",
-        "ext-zip": "*",
-        "illuminate/support": "~5.7",
+        "illuminate/support": "^7.0",
         "prologue/alerts": "^0.4.1",
-        "illuminate/console": "~5.7",
-        "symfony/process": "^4.2",
-        "illuminate/database": "~5.7"
+        "illuminate/console": "^7.0",
+        "symfony/process": "^5.0",
+        "illuminate/database": "^7.0",
+        "laravel/ui": "^2.0"
     },
     "license": "MIT",
     "authors": [
