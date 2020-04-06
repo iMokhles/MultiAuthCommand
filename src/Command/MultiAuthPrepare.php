@@ -6,6 +6,7 @@ use Illuminate\Console\Command;
 use Illuminate\Database\Console\Migrations\BaseCommand;
 use Illuminate\Database\Migrations\MigrationCreator;
 use Illuminate\Support\Composer;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Str;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
@@ -1066,25 +1067,26 @@ class MultiAuthPrepare extends BaseCommand
      * @param string $beforeNotice
      * @param string $afterNotice
      */
-    public function executeProcess($command, $beforeNotice = '', $afterNotice = '')
+    public function executeProcess($command, $arguments = [], $beforeNotice = false, $afterNotice = false)
     {
+        $beforeNotice = $beforeNotice ? ' '.$beforeNotice : 'php artisan '.implode(' ', (array) $command).' '.implode(' ', $arguments);
+
         if (!is_null($beforeNotice)) {
             $this->info('### '.$beforeNotice);
         } else {
             $this->info('### Running: '.$command);
         }
-        $process = new Process(explode(' ', $command));
-        $process->run(function ($type, $buffer) {
-            if (Process::ERR === $type) {
-                echo '... > '.$buffer;
-            } else {
-                echo 'OUT > '.$buffer;
-            }
-        });
-        // executes after the command finishes
-        if (!$process->isSuccessful()) {
-            throw new ProcessFailedException($process);
+
+        try {
+            Artisan::call($command, $arguments);
+        } catch (\Exception $e) {
+            throw new ProcessFailedException($e);
         }
+
+        if ($this->progressBar) {
+            $this->progressBar->advance();
+        }
+
         if (!is_null($afterNotice)) {
             $this->info('### '.$afterNotice);
         }
