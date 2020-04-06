@@ -5,6 +5,7 @@ namespace iMokhles\MultiAuthCommand\Command;
 use Illuminate\Console\Command;
 use Illuminate\Database\Console\Migrations\BaseCommand;
 use Illuminate\Database\Migrations\MigrationCreator;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Composer;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Str;
@@ -659,7 +660,7 @@ class MultiAuthPrepare extends BaseCommand
         $exceptionHandlerGuardContentNew2 = str_replace('{{$nameSmall}}', "$nameSmall",
             $exceptionHandlerGuardContentNew);
 
-        $this->insert($exceptionHandlerFile, '        switch(array_get($exception->guards(), 0)) {',
+        $this->insert($exceptionHandlerFile, '        switch(Arr::get($exception->guards(), 0)) {',
             $exceptionHandlerGuardContentNew2, true);
 
         return true;
