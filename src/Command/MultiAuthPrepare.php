@@ -1073,7 +1073,7 @@ class MultiAuthPrepare extends BaseCommand
         } else {
             $this->info('### Running: '.$command);
         }
-        $process = new Process($command);
+        $process = new Process(explode(' ', $command));
         $process->run(function ($type, $buffer) {
             if (Process::ERR === $type) {
                 echo '... > '.$buffer;
