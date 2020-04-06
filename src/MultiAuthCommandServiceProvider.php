@@ -2,7 +2,11 @@
 
 namespace iMokhles\MultiAuthCommand;
 
+use Illuminate\Database\Migrations\MigrationCreator;
+use Illuminate\Support\Composer;
 use Illuminate\Support\ServiceProvider;
+use iMokhles\MultiAuthCommand\Command\MultiAuthListThemes;
+use iMokhles\MultiAuthCommand\Command\MultiAuthPrepare;
 
 class MultiAuthCommandServiceProvider extends ServiceProvider
 {
@@ -33,10 +37,10 @@ class MultiAuthCommandServiceProvider extends ServiceProvider
     private function registerInstallCommand()
     {
         $this->app->singleton('command.imokhles.make.multi-auth', function ($app) {
-            return $app['iMokhles\MultiAuthCommand\Command\MultiAuthPrepare'];
+            return new MultiAuthPrepare(new MigrationCreator($app['files'], $app->basePath('Stubs')), new Composer($app['files']));
         });
         $this->app->singleton('command.imokhles.make.multi-auth.list-themes', function ($app) {
-            return $app['iMokhles\MultiAuthCommand\Command\MultiAuthListThemes'];
+            return new MultiAuthListThemes();
         });
         $this->commands([
             'MultiAuthPrepare' => 'command.imokhles.make.multi-auth',
