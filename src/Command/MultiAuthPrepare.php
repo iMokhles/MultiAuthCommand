@@ -1040,7 +1040,7 @@ class MultiAuthPrepare extends BaseCommand
     public function installPrologueAlert() {
         $alertsConfigFile = $this->getConfigsFolderPath().DIRECTORY_SEPARATOR."prologue/alerts.php";
         if (!file_exists($alertsConfigFile)) {
-            $this->executeProcess('php artisan vendor:publish --provider="Prologue\Alerts\AlertsServiceProvider"',
+            $this->executeProcess('vendor:publish', ['--provider' => 'Prologue\Alerts\AlertsServiceProvider'],
                 'publishing config for notifications - prologue/alerts');
         }
 
@@ -1054,7 +1054,7 @@ class MultiAuthPrepare extends BaseCommand
         $notificationsTableFile = $this->getMigrationPath().DIRECTORY_SEPARATOR."*_create_notifications_table.php";
         $globArray = glob($notificationsTableFile);
         if (count($globArray) < 1) {
-            $this->executeProcess('php artisan notifications:table',
+            $this->executeProcess('notifications:table', [],
                 'creating notifications table');
         }
 
