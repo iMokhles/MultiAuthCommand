@@ -1,7 +1,7 @@
+@php($localKey = config('{{$nameSmall}}_config.local_session_key'))
 <div class="dropdown dropdown-lang">
     <button class="dropdown-toggle" id="dd-lang-menu" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
-        @php($localKey = 'applocale')
         @if(session($localKey) === 'en')
             <span class="flag-icon flag-icon-us"></span>
         @elseif(session($localKey) === 'fr')

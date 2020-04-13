@@ -1,7 +1,7 @@
+@php($localKey = config('{{$nameSmall}}_config.local_session_key'))
 <li class="dropdown notification-list hide-phone">
     <a class="nav-link dropdown-toggle waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
         <i class="mdi mdi-earth"></i>
-            @php($localKey = 'applocale')
             @if(session($localKey) === 'en')
                 @lang('{{$nameSmall}}_dashboard.english')
             @elseif(session($localKey) === 'fr')

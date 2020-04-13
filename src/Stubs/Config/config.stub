@@ -8,4 +8,5 @@ return [
     'enable_breadcrumb' => true,
     'enable_registration' => false,
     'theme_name' => '{{$theme_name}}',
+    'local_session_key' => 'applocale',
 ];

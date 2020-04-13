@@ -1,4 +1,4 @@
-@php($localKey = 'applocale')
+@php($localKey = config('{{$nameSmall}}_config.local_session_key'))
 
 <div class="dropdown d-none d-md-flex">
     <a class="nav-link icon" data-toggle="dropdown">

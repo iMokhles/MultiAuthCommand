@@ -1,4 +1,4 @@
-@php($localKey = 'applocale')
+@php($localKey = config('{{$nameSmall}}_config.local_session_key'))
 
 <li class="dropdown language-menu">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-language"></i></a>
