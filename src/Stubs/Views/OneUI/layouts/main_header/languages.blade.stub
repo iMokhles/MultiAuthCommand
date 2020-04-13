@@ -8,6 +8,8 @@
         <span class="flag-icon flag-icon-fr"></span>
         @elseif(session($localKey) === 'ar')
         <span class="flag-icon flag-icon-sa"></span>
+        @else
+        <span class="flag-icon flag-icon-us"></span>
         @endif
 
         @if(session($localKey) === 'en')
@@ -16,6 +18,8 @@
         <span class="d-none d-sm-inline-block ml-1">@lang('{{$nameSmall}}_dashboard.french')</span>
         @elseif(session($localKey) === 'ar')
         <span class="d-none d-sm-inline-block ml-1">@lang('{{$nameSmall}}_dashboard.arabic')</span>
+        @else
+        <span class="d-none d-sm-inline-block ml-1">@lang('admin_dashboard.english')</span>
         @endif
         <i class="fa fa-fw fa-angle-down d-none d-sm-inline-block"></i>
     </button>
@@ -24,21 +28,21 @@
             <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
                 <span>@lang('{{$nameSmall}}_dashboard.english')</span>
                 <span>
-                    @if(session($localKey) === 'en') <span class="badge badge-pill badge-primary"></span> @endif
+                    @if(session($localKey) === 'en' || !session()->has($localKey)) <span class="badge badge-pill badge-success"><i class="fa fa-check"></i></span> @endif
                                             <span class="flag-icon flag-icon-us"></span>
                                         </span>
             </a>
             <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
                 <span>@lang('{{$nameSmall}}_dashboard.french')</span>
                 <span>
-                    @if(session($localKey) === 'fr') <span class="badge badge-pill badge-primary"></span> @endif
+                    @if(session($localKey) === 'fr') <span class="badge badge-pill badge-success"><i class="fa fa-check"></i></span> @endif
                                             <span class="flag-icon flag-icon-fr"></span>
                                         </span>
             </a>
             <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
                 <span>@lang('{{$nameSmall}}_dashboard.arabic')</span>
                 <span>
-                    @if(session($localKey) === 'ar') <span class="badge badge-pill badge-primary"></span> @endif
+                    @if(session($localKey) === 'ar') <span class="badge badge-pill badge-success"><i class="fa fa-check"></i></span> @endif
                                             <span class="flag-icon flag-icon-sa"></span>
                                         </span>
             </a>
